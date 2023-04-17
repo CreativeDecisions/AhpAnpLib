@@ -3,10 +3,11 @@ from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 from AhpAnpLib import ratings_AHPLib as rate
-import numpy as np
+from AhpAnpLib import functions_AHPLib as reqLib
 
-#set here the number of decimals that you want to be displayed
-np.set_printoptions(formatter={'float': lambda x: "{0:0.3f}".format(x)})
+#You don't need this
+# #set here the number of decimals that you want to be displayed
+# reqLib.np.set_printoptions(formatter={'float': lambda x: "{0:0.3f}".format(x)})
 
 #create model
 carModel=str.Model()
