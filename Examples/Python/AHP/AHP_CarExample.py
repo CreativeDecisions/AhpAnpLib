@@ -67,7 +67,6 @@ input.genFirstLineAboveDiagQuest(carModel,"important",True)
 
 
 #Qualtrics questionnaires
-
 input.genexport4QualtricsQuestFull("../../IO Files/CarModel_Qualtrics_Full.txt",carModel,"important",False)
 input.genexport4QualtricsFirstLineQuest("../../IO Files/CarModel_Qualtrics_FirstLine.txt",carModel,"important",False)
 input.genexport4QualtricsFirstLineAboveDiagQuest("../../IO Files/CarModel_Qualtrics_FirstAndAbove.txt",carModel,"important",False)
