@@ -3,7 +3,6 @@ from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 from AhpAnpLib import ratings_AHPLib as rate
-import numpy as np
 
 #create model
 lunchModel=str.Model()
@@ -74,7 +73,6 @@ input.export4ExcelQuestFull(lunchModel,"../../IO Files/lunchModel_Excel_empty.xl
 
 inputFilePath="../../IO Files/lunchModel_Excel_filledIn.xlsx"
 outputFilePath="../../IO Files/lunchModel_Results.xlsx"
-np.set_printoptions(formatter={'float': lambda x: "{0:0.3f}".format(x)})
 
 #calculate results and save to results Excel file
 calc.calcAHPMatricesSave2File(lunchModel,inputFilePath,outputFilePath,False,True,False)
