@@ -1,0 +1,310 @@
+set top_net [getTopNet $net]
+set SAVED_WITH_VERSION {3.2.0 made on Wed, 16 Jan 2019 13:36:28 -0500.  VCRevInfo 3197.  Installed on Windows}
+setDefaultCompareMode $net switch_to_question
+set x 133
+set y 460
+set desc {The cluster to contain the goal node}
+set name {1Goal}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "-*-Arial-bold-r-normal-*-28-*-*-*-*-*"
+set width 52
+set height 81
+set clusterName {1Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Goal Node}
+set desc {This is the goal node and the goal is to select the best car}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 676
+set y 477
+set desc {The criteria for buying a car}
+set name {2Criteria}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "-*-Arial-bold-r-normal-*-28-*-*-*-*-*"
+set width 533
+set height 70
+set clusterName {2Criteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1Prestige}
+set desc {Status and prestige projected by the car}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2Price}
+set desc {Initial cost of car}
+set x 0
+set y 35
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3MPG}
+set desc {Miles per gallon}
+set x 0
+set y 70
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {4Comfort}
+set desc {Comfort of interior and ride}
+set x 0
+set y 105
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 837
+set y 885
+set desc {}
+set name {PriceSubCriteria}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "myDefaultFontCluster"
+set width 170
+set height 180
+set clusterName {PriceSubCriteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {2.1InitialCost}
+set desc {}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2.2MaintenanceCost}
+set desc {}
+set x 0
+set y 35
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {1Goal}
+set final {2Criteria}
+connectClusters $net $init $final
+set init {2Criteria}
+set final {PriceSubCriteria}
+connectClusters $net $init $final
+setNodeCompareWord  $net {2Price} {PriceSubCriteria} {Preference}
+nodeCompareFinished $net {Goal Node} {2Criteria} 1
+setNodeCompareWord  $net {Goal Node} {2Criteria} {Preference}
+setNetCompareWord $net {Preference}
+setNetClusterColor $net {gainsboro}
+setNetNodeColor $net {#F0F8FF}
+setNetClusterWinFont $net {myDefaultFontCluster}
+setNetClusterIconFont $net {myDefaultFontCluster}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 0
+catch {limitPowerOptions $net 2 0}
+c-network readAllCompares -network $net -source {
+3
+1Goal
+1
+Goal Node
+2Criteria
+4
+1Prestige
+2Price
+3MPG
+4Comfort
+PriceSubCriteria
+2
+2.1InitialCost
+2.2MaintenanceCost
+
+3 1,0 0,1 2,2 
+ 0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000 
+0
+1 1,0 
+
+1
+1 2,0 
+
+2
+0 
+
+0,0,1
+4 0,0 1,1 2,2 3,3 
+ 0.250000  0.333333  0.500000 
+ 3.000000  1.500000 
+ 0.333300 
+
+1,0,2
+0 
+
+1,1,2
+2 0,0 1,1 
+ 3.000000 
+
+1,2,2
+0 
+
+1,3,2
+0 
+
+}
+ratings new -network $net -src {
+5
+2.1InitialCost
+2.2MaintenanceCost
+1Prestige
+3MPG
+4Comfort
+0
+6
+1Acura TL
+2Toyota Camry
+3Honda Civic
+4Fiat
+5MiniCooper
+6Kia Rio
+6 5
+0.000000 1.000000 0.000000 2.000000 0.000000 
+1.000000 1.000000 1.000000 1.000000 2.000000 
+2.000000 2.000000 4.000000 0.000000 1.000000 
+3.000000 0.000000 2.000000 0.000000 3.000000 
+2.000000 1.000000 0.000000 1.000000 2.000000 
+3.000000 2.000000 4.000000 0.000000 2.000000 
+6 5
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+4
+More than 30 K
+Between 25K and 30K
+Between 20K and 25K
+Less than 20K
+0.000000
+ 0.500000  2.000000  4.000000  0.000000 
+ 4.000000  7.000000  0.000000 
+ 8.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+Hi
+Med
+Lo
+-1.000010
+ 0.346683  0.080129  0.000000 
+ 0.231130  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+5
+Excellent
+Above Average
+Average
+Below Average
+Poor
+0.000000
+ 2.000000  5.000000  7.000000  9.000000  0.000000 
+ 4.000000  5.000000  8.000000  0.000000 
+ 4.000000  7.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+Good
+Med
+Poor
+0.000000
+ 4.000000  9.000000  0.000000 
+ 6.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+5
+Excellent
+Above Average
+Average
+Below Average
+Poor
+0.000000
+ 2.000000  5.000000  7.000000  9.000000  0.000000 
+ 4.000000  5.000000  8.000000  0.000000 
+ 4.000000  7.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+}
+
+set FORMAT 1
+recreateNetInsideFrameOnly $net
