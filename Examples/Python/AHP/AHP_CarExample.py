@@ -10,7 +10,7 @@ from AhpAnpLib import functions_AHPLib as reqLib
 # reqLib.np.set_printoptions(formatter={'float': lambda x: "{0:0.3f}".format(x)})
 
 #create model
-carModel=str.Model()
+carModel=str.Model("Select a Car")
 #create nodes
 goal_node=str.Node("GoalNode",0)
 
@@ -68,33 +68,34 @@ input.genFirstLineAboveDiagQuest(carModel,"important",True)
 
 
 #Qualtrics questionnaires
-input.genexport4QualtricsQuestFull("../../IO Files/CarModel_Qualtrics_Full.txt",carModel,"important",False)
-input.genexport4QualtricsFirstLineQuest("../../IO Files/CarModel_Qualtrics_FirstLine.txt",carModel,"important",False)
-input.genexport4QualtricsFirstLineAboveDiagQuest("../../IO Files/CarModel_Qualtrics_FirstAndAbove.txt",carModel,"important",False)
+#the path is for mac users
+input.genexport4QualtricsQuestFull("/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/CarModel_Qualtrics_Full.txt",carModel,"important",False)
+input.genexport4QualtricsFirstLineQuest("/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/CarModel_Qualtrics_FirstLine.txt",carModel,"important",False)
+input.genexport4QualtricsFirstLineAboveDiagQuest("/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/CarModel_Qualtrics_FirstAndAbove.txt",carModel,"important",False)
 
 # #Google qunestionnaires
-input.genexport4GoogleQuestFull("../../IO Files/CarModel_Google_Full.csv",carModel,"important",False)
-input.genexport4GoogleFirstLineQuest("../../IO Files/CarModel_Google_FirstLine.csv",carModel,"important",False)
-input.genexport4GoogleFirstLineAboveDiagQuest("../../IO Files/CarModel_Google_FirstAndAbove.csv",carModel,"important",False)
+#the path is for mac users
+input.genexport4GoogleQuestFull("/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/CarModel_Google_Full.csv",carModel,"important",False)
+input.genexport4GoogleFirstLineQuest("/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/CarModel_Google_FirstLine.csv",carModel,"important",False)
+input.genexport4GoogleFirstLineAboveDiagQuest("/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/CarModel_Google_FirstAndAbove.csv",carModel,"important",False)
 
 # Excel
 #export to Excel all pairwise comparison matrices - to be filled in and imported back
-#no need to enter all the values
 #verbal true will print out info about the values being exported 
-input.export4ExcelQuestFull(carModel,"../../IO Files/carModel_Excel_empty.xlsx",True)
+input.export4ExcelQuestFull(carModel,"/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/carModel_Excel_empty.xlsx",True)
 
-inputFilePath="../../IO Files/carModel_Excel_filledInJudgments.xlsx"
-#the Excel has mixed input of judgments and direct values
-#inputFilePath="../../IO Files/carModel_Excel_filledInMix.xlsx"
-outputFilepath = "../../IO Files/carModel_Results.xlsx"
+# the path is for mac users
+inputFilePath="/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/carModel_Excel_filledInJudgments.xlsx"
+outputFilepath = "/Users/Shared/GITHUB/AhpAnpLib/Examples/IO Files/carModel_Results.xlsx"
  
 #------------------------------
 #calculate, supermatrix, weighted, limiting and global priorities
 #will save results to filepath
+#if an input file use is True then it will read the file to generate the latest paiwise comp matrices otherwise from memory
 #if normal bar true then will show bars for normal eigen
 #if ideal bar true then will show bars for ideal eigen
 #if verbal will print out the intermediate results
-calc.calcAHPMatricesSave2File(carModel,inputFilePath,outputFilepath,False,True,True)
+calc.calcAHPMatricesSave2File(carModel,inputFilePath,outputFilepath,True,False,True,True)
 
 # sensitivity analysis
 #set output file path to append to excel or "show" to display on screen
