@@ -2,10 +2,9 @@
 from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
-from AhpAnpLib import ratings_AHPLib as rate
 
 # Create a model
-jobOfferModel = str.Model()
+jobOfferModel = str.Model("Choose an offer")
 
 
 # Create goal node
@@ -13,7 +12,6 @@ goalNode = str.Node("Goal", 0) # Name, Order
 print("Goal:\n", goalNode)
 
 
-# Create criteria nodes
 # Create criteria nodes
 compensationNode = str.Node("Total Compensation", 1)
 benefitsNode = str.Node("Benefits", 2)
@@ -99,11 +97,16 @@ jobOfferModel.addNodeConnectionFromNodeToAllNodesOfCluster("Career Advancement",
 # Create all connections from given node named Remote to given cluster named Alternatives
 jobOfferModel.addNodeConnectionFromNodeToAllNodesOfCluster("Remote", "Alternatives")
 
-input.export4ExcelQuestFull(jobOfferModel, "../../IO Files/jobOffer_Excel_Empty.xlsx")
+# mac path
+input.export4ExcelQuestFull(jobOfferModel, "/Users/Shared/PythonAHP/Examples/IO Files/jobOffer_Excel_Empty.xlsx")
+inputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/jobOffer_Excel_filledinFull.xlsx"
+outputFilepath = "/Users/Shared/PythonAHP/Examples/IO Files/jobOffer_Results.xlsx"
 
-inputFilePath="../../IO Files/jobOffer_Excel_filledinFull.xlsx"
-outputFilepath = "../../IO Files/jobOffer_Results.xlsx"
+#windows path
+#input.export4ExcelQuestFull(jobOfferModel, "C:/Users/Public/PythonAHP/Examples/IO Files/jobOffer_Excel_Empty.xlsx")
+#inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/jobOffer_Excel_filledinFull.xlsx"
+#outputFilepath = "C:/Users/Public/PythonAHP/Examples/IO Files/jobOffer_Results.xlsx"
 
-calc.calcAHPMatricesSave2File(jobOfferModel,inputFilePath,outputFilepath,False,True,True)
+calc.calcAHPMatricesSave2File(jobOfferModel,inputFilePath,outputFilepath,True,False,True,True)
 
 calc.sensitivityCellSupermatrixPlot(jobOfferModel,"Alternatives",outputFilepath,"Total Compensation","Benefits","Career Advancement","Remote")

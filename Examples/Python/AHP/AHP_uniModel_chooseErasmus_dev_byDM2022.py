@@ -4,7 +4,7 @@ from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 
 
-UniModel = str.Model() 
+UniModel = str.Model("ChooseErasmus") 
 
 print(UniModel)
 
@@ -90,12 +90,19 @@ print(UniModel)
 UniModel.showAllClusterConnections()
 
 UniModel.showAllNodeConnections()
-q1 =input.genFullQuest(UniModel,"important",True)
-input.export4ExcelQuestFull(UniModel,'../../IO Files/uniModel.xlsx')
 
 
-inputFilePath="../../IO Files/uniModel_Filledin.xlsx"
-outputFilepath="../../IO Files/uniModel_Results.xlsx"
-calc.calcAHPMatricesSave2File(UniModel,inputFilePath,outputFilepath,False,True,True)
+# questionnaire
+# mac path
+input.export4ExcelQuestFull(UniModel,'/Users/Shared/PythonAHP/Examples/IO Files/uniModel.xlsx')
+inputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/uniModel_Filledin.xlsx"
+outputFilepath="/Users/Shared/PythonAHP/Examples/IO Files/uniModel_Results.xlsx"
+
+#windows path
+#input.export4ExcelQuestFull(UniModel,'C:/Users/Public/PythonAHP/Examples/IO Files/uniModel.xlsx')
+#inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/uniModel_Filledin.xlsx"
+#outputFilepath="C:/Users/Public/PythonAHP/Examples/IO Files/uniModel_Results.xlsx"
+
+calc.calcAHPMatricesSave2File(UniModel,inputFilePath,outputFilepath,True,False,True,True)
 
 calc.sensitivityCellSupermatrixPlot(UniModel,"5Alternatives",outputFilepath,"1Academical","2Language","3Financial","4Cultural")

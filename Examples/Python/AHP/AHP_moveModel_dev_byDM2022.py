@@ -4,7 +4,7 @@ from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 
 #model
-moveModel=str.Model()
+moveModel=str.Model("MoveModel")
 
 print(moveModel)
 
@@ -93,12 +93,18 @@ moveModel.showAllClusterConnections()
 
 moveModel.showAllNodeConnections()
 
-q1=input.genFullQuest(moveModel,"dominant")
 
-print(q1)
-inputFilPath="../../IO Files/moveModel_Excel_Filledin.xlsx"
-outputFilepath="../../IO Files/moveModel_Results.xlsx"
-calc.calcAHPMatricesSave2File(moveModel,inputFilPath,outputFilepath,False,True,True)
+# mac path
+input.export4ExcelQuestFull(moveModel,"/Users/Shared/PythonAHP/Examples/IO Files/moveModel_Excel_Empty.xlsx",True)
+inputFilPath="/Users/Shared/PythonAHP/Examples/IO Files/moveModel_Excel_Filledin.xlsx"
+outputFilepath="/Users/Shared/PythonAHP/Examples/IO Files/moveModel_Results.xlsx"
+
+# windows path
+#input.export4ExcelQuestFull(moveModel,"C:/Users/Public/PythonAHP/Examples/IO Files/moveModel_Excel_Empty.xlsx",True)
+#inputFilPath="C:/Users/Public/PythonAHP/Examples/IO Files/moveModel_Excel_Filledin.xlsx"
+#outputFilepath="C:/Users/Public/PythonAHP/Examples/IO Files/moveModel_Results.xlsx"
+
+calc.calcAHPMatricesSave2File(moveModel,inputFilPath,outputFilepath,True,False,True,True)
 calc.sensitivityCellSupermatrixPlot(moveModel,"5Alternatives",outputFilepath,"Distance","Weather","Job Availability","Safety")
 
 

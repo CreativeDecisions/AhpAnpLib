@@ -4,7 +4,7 @@ from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 
 
-shoesModel=str.Model()
+shoesModel=str.Model("Choose Shoes")
 
 # check
 print(shoesModel)
@@ -120,17 +120,21 @@ shoesModel.addNodeConnectionFromTo("Price","Asics")
 # check all connections in the model
 shoesModel.showAllNodeConnections()
 
+# text questionnaires
 input.genFullQuest(shoesModel,"important")
-
 input.genFirstLineAboveDiagQuest(shoesModel,"dominant")
-
 input.genFirstLineQuest(shoesModel,"likelihood")
 
-input.export4ExcelQuestFull(shoesModel, "shoesModel__Excel_empty.xlsx")
+# export Excel questionnaires
+# mac path
+input.export4ExcelQuestFull(shoesModel, "/Users/Shared/PythonAHP/Examples/IO Files/shoesModel__Excel_empty.xlsx")
+inputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/shoesModel_Excel_filledin.xlsx"
+outputFilepath = "/Users/Shared/PythonAHP/Examples/IO Files/shoesModel_Results.xlsx"
 
+#windows path
+#input.export4ExcelQuestFull(shoesModel, "C:/Users/Public/PythonAHP/Examples/IO Files/shoesModel__Excel_empty.xlsx")
+#inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/shoesModel_Excel_filledin.xlsx"
+#outputFilepath = "C:/Users/Public/PythonAHP/Examples/IO Files/shoesModel_Results.xlsx"
 
-inputFilePath="../../IO Files/shoesModel_Excel_filledin.xlsx"
-outputFilepath = "../../IO Files/shoesModel_Results.xlsx"
-
-calc.calcAHPMatricesSave2File(shoesModel,inputFilePath,outputFilepath,False,True,True)
+calc.calcAHPMatricesSave2File(shoesModel,inputFilePath,outputFilepath,True,False,True,True)
 calc.sensitivityCellSupermatrixPlot(shoesModel,"4_Alternatives",outputFilepath,"Quality","Weight","Style","Price")
