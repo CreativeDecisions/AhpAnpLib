@@ -2,10 +2,9 @@
 from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
-from AhpAnpLib import ratings_AHPLib as rate
 
 #create model
-lunchModel=str.Model()
+lunchModel=str.Model("Where to order lunch")
 print(lunchModel)
 
 #create nodes
@@ -63,17 +62,16 @@ input.genFullQuest(lunchModel,"important",False)
 input.genFirstLineQuest(lunchModel,"important",False)
 input.genFirstLineAboveDiagQuest(lunchModel,"important",True)
 
-#Qualtrics
-input.genexport4QualtricsQuestFull("../../IO Files/LunchModel_Qualtrics_Full.txt",lunchModel,"important",False)
-input.genexport4QualtricsFirstLineQuest("../../IO Files/LunchModel_Qualtrics_FirstLine.txt",lunchModel,"important",False)
-input.genexport4QualtricsFirstLineAboveDiagQuest("../../IO Files/LunchModel_Qualtrics_FirstAndAbove.txt",lunchModel,"important",False)
-
-#Excel
-input.export4ExcelQuestFull(lunchModel,"../../IO Files/lunchModel_Excel_empty.xlsx",True)
-
-inputFilePath="../../IO Files/lunchModel_Excel_filledIn.xlsx"
-outputFilePath="../../IO Files/lunchModel_Results.xlsx"
+#Excel questionnaire
+# path for mac users
+input.export4ExcelQuestFull(lunchModel,"/Users/Shared/PythonAHP/Examples/IO Files/lunchModel_Excel_empty.xlsx",True)
+inputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/lunchModel_Excel_filledIn.xlsx"
+outputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/lunchModel_Results.xlsx"
+# path for windows users
+#input.export4ExcelQuestFull(lunchModel,"C:/Users/Public/PythonAHP/Examples/IO Files/lunchModel_Excel_empty.xlsx",True)
+#inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/lunchModel_Excel_filledIn.xlsx"
+#outputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/lunchModel_Results.xlsx"
 
 #calculate results and save to results Excel file
-calc.calcAHPMatricesSave2File(lunchModel,inputFilePath,outputFilePath,False,True,False)
+calc.calcAHPMatricesSave2File(lunchModel,inputFilePath,outputFilePath,True,False,True,False)
 calc.sensitivityCellSupermatrixPlot(lunchModel,"3Alternatives",outputFilePath,"1Quality","2Price","3Menu","4Speed")
