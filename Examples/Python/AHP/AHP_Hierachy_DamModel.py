@@ -2,11 +2,10 @@
 from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
-from AhpAnpLib import ratings_AHPLib as rate
 
 
 #create model
-damModel=str.Model()
+damModel=str.Model("Choose Dam Level")
 
 #create the nodes and clusters, and add nodes to clusters
 goal_cluster=str.Cluster("1Goal cluster",1) #create first cluster: goal_cluster
@@ -120,12 +119,17 @@ damModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("6Objectives cluster",
 damModel.printStruct()
 
 print("-----------------------------Excel Questionnaire--------------------------------------\n")
-input.export4ExcelQuestFull(damModel,"../../IO Files/damModel_Excel_empty.xlsx",True)
+# for mac users
+input.export4ExcelQuestFull(damModel,"/Users/Shared/PythonAHP/Examples/IO Files/damModel_Excel_empty.xlsx",True)
+inputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/damModel_Excel_direct.xlsx"
+outputFilepath = "/Users/Shared/PythonAHP/Examples/IO Files/damModel_Results.xlsx"
 
-inputFilePath="../../IO Files/damModel_Excel_direct.xlsx"
-outputFilepath = "../../IO Files/damModel_Results.xlsx"
+# for windows users
+#input.export4ExcelQuestFull(damModel,"C:/Users/Public/PythonAHP/Examples/IO Files/damModel_Excel_empty.xlsx",True)
+#inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/damModel_Excel_direct.xlsx"
+#outputFilepath = "C:/Users/Public/PythonAHP/Examples/IO Files/damModel_Results.xlsx"
 
-calc.calcAHPMatricesSave2File(damModel,inputFilePath,outputFilepath,False,True,True)
+calc.calcAHPMatricesSave2File(damModel,inputFilePath,outputFilepath,True,False,True,True)
 
 calc.sensitivityCellSupermatrixPlot(damModel,"7Alternatives cluster",outputFilepath,"Financial")
 
