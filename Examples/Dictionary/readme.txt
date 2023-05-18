@@ -1,0 +1,1 @@
+The dictionary folder has all python code examples we have in the online Python AhpAnpLib dictionary.
