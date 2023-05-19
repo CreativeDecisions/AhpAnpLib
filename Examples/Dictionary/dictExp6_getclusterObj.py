@@ -1,0 +1,7 @@
+from AhpAnpLib import structs_AHPLib as str
+myModel=str.Model("my model name") 
+clusterX=str.Cluster("cluster x",0)
+
+myModel.addCluster2Model(clusterX)
+
+print(myModel.getClusterObjByName("cluster x"))
