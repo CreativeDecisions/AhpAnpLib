@@ -10,4 +10,7 @@ myCluster.addNode2Cluster(XNode)
 #add the cluster to the model 
 myModel.addCluster2Model(myCluster)
 
-print(myModel.getNodeObjByName("Node Name X"))
+refNodeObj= myModel.getNodeObjByName("Node Name X")
+
+print(refNodeObj.order)
+

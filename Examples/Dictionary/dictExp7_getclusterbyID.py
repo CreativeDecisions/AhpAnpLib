@@ -5,4 +5,6 @@ clusterX=str.Cluster("cluster x",0)
 myModel.addCluster2Model(clusterX)
 clusterXID=myModel.getClusterIDByName("cluster x")
 
-print(myModel.getClusterObjByID(clusterXID))
+refClusterObj=myModel.getClusterObjByID(clusterXID)
+
+print(refClusterObj.name)

@@ -30,7 +30,6 @@ cluster2=str.Cluster("3Alternatives",2)
 cluster0.addNode2Cluster(goal_node) #on purpose wrong assignment
 
 cluster1.addNode2Cluster(prestige)
-cluster1.remNodeFromCluster(prestige)
 cluster1.addNode2Cluster(price)
 cluster1.addNode2Cluster(mpg)
 cluster1.addNode2Cluster(comf)
