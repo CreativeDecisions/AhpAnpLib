@@ -20,7 +20,7 @@ twoCluster.addNode2Cluster(FourthNode)
 myModel.addCluster2Model(oneCluster)
 myModel.addCluster2Model(twoCluster)
 #add connections from Node X to Node Z
-myModel.addNodeConnectionFromNodeToAllNodesOfCluster("Node X","Cluster A")
+myModel.addNodeConnectionFromNodeToAllNodesOfCluster("Node X","Cluster B")
 
 myModel.printStruct()
 
