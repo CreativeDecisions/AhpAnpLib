@@ -1,10 +1,21 @@
 from AhpAnpLib import structs_AHPLib as str
+
 myModel=str.Model("my model name") 
-clusterX=str.Cluster("cluster x",0)
+clusterX=str.Cluster("cluster x",1)
+clusterY=str.Cluster("cluster y",2)
+
+nodeA=str.Node("node A", 0)
+clusterX.addNode2Cluster(nodeA)
+nodeB=str.Node("node B", 1)
+nodeC=str.Node("node C", 2)
+clusterY.addNode2Cluster(nodeB)
+clusterY.addNode2Cluster(nodeC)
 
 myModel.addCluster2Model(clusterX)
-clusterXID=myModel.getClusterIDByName("cluster x")
+myModel.addCluster2Model(clusterY)
 
-refClusterObj=myModel.getClusterObjByID(clusterXID)
+clusterYID=myModel.getClusterIDByName("cluster y")
 
-print(refClusterObj.name)
+myObjCluster = myModel.getClusterObjByID(clusterYID) 
+
+print(f"These are the nodes of cluster y in the model’s cluster list: {myObjCluster.nodes}")

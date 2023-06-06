@@ -3,15 +3,17 @@ from AhpAnpLib import structs_AHPLib as str
 myModel=str.Model("Model’s name")
 # create node
 XNode=str.Node("Node Name X",0)
+YNode=str.Node("Node Name Y",1)
 # create cluster
 myCluster=str.Cluster("My Cluster",0)
 #add the node to the cluster
 myCluster.addNode2Cluster(XNode) 
+myCluster.addNode2Cluster(YNode) 
 #add the cluster to the model 
 myModel.addCluster2Model(myCluster)
 
-refNodeObj=myModel.getNodeInClusterModelByName("Node Name X")
+refNodeObj=myModel.getNodeInClusterModelByName("Node Name Y")
 
-print(refNodeObj.order)
-
+nodeYOder=refNodeObj.order
+print(f"Display order of node Y is {nodeYOder}")
 
