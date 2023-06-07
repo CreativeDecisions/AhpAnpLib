@@ -15,4 +15,3 @@ myModel.addCluster2Model(myCluster)
 refNodeObj= myModel.getNodeObjByName("Node Name Y")
 
 print(f"Display order of the YNode is {refNodeObj.order}")
-
