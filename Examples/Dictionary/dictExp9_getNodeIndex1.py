@@ -16,4 +16,4 @@ myModel.addCluster2Model(myCluster)
 
 nodeZIndex=myModel.getNodeIndexInClusterModelByName("Node Name Z")
 
-print(nodeZIndex)
+print(f"node X index in Cluster My Cluster is {nodeZIndex}")

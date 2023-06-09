@@ -15,5 +15,7 @@ myModel.addCluster2Model(myCluster)
 refNodeObj=myModel.getNodeInClusterModelByName("Node Name Y")
 
 nodeYOder=refNodeObj.order
-print(f"Display order of node Y is {nodeYOder}")
+nodeYname=refNodeObj.name
+print(f"Display order of node {nodeYname} is {nodeYOder}")
+
 

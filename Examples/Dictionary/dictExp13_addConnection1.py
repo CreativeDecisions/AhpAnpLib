@@ -20,3 +20,5 @@ myModel.addCluster2Model(oneCluster)
 myModel.addCluster2Model(twoCluster)
 #add connections from Node X to Node Z
 myModel.addNodeConnectionFromTo("Node X","Node Z",True)
+myModel.addNodeConnectionFromTo("Node Y","Node Z",False)
+myModel.addNodeConnectionFromTo("Node Y","Node R")
