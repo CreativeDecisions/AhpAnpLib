@@ -13,7 +13,7 @@ ZNode=str.Node("Z",6)
 # create clusters
 Cluster1=str.Cluster("One",0)
 Cluster2=str.Cluster("Two",1)
-Cluster3=str.Cluster("Three",1)
+Cluster3=str.Cluster("Three",2)
 #add nodes to clusters
 Cluster1.addNode2Cluster(ANode) 
 Cluster1.addNode2Cluster(BNode)
