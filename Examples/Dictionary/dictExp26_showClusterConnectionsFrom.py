@@ -31,5 +31,3 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Three")
 
 myModel.showAllClusterConnectionsFrom("One")
-
-myModel.listAllClusterConnections("One")
