@@ -18,4 +18,4 @@ clusterYID=myModel.getClusterIDByName("cluster y")
 
 myObjCluster = myModel.getClusterObjByID(clusterYID) 
 
-print(f"These are the nodes of cluster y in the model’s cluster list: {myObjCluster.nodes}")
+print(f"Nodes of cluster y in the model’s cluster list: {myObjCluster.nodes}")

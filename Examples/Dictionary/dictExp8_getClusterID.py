@@ -7,4 +7,4 @@ myModel.addCluster2Model(clusterX)
 myModel.addCluster2Model(clusterY)
 clusterYID=myModel.getClusterIDByName("cluster y")
 
-print(clusterYID)
+print(f'cluster y ID is {clusterYID}')

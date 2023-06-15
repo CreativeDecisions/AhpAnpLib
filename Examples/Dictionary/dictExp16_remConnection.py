@@ -31,7 +31,7 @@ myModel.addNodeConnectionFromTo("A","Z")
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("B","Three")
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("A","Two")
 
-myModel.remNodeConnectionFromTo("A","Z")
+myModel.remNodeConnectionFromTo("A","Z", True)
 
 myModel.printStruct()
 

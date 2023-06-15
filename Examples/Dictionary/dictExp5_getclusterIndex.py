@@ -12,4 +12,4 @@ myModel.addCluster2Model(clusterZ)
 clusterIndex2 = myModel.getClusterIndexByName("cluster y") 
 
 print(f"These are all  my clusters: {myModel.clusters}")
-print(f"This is the index of cluster y in the model’s cluster list: {clusterIndex2}")
+print(f"Index of cluster y in the model’s cluster list: {clusterIndex2}")
