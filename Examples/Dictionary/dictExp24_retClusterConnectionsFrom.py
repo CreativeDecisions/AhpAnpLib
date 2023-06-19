@@ -1,7 +1,7 @@
 
 from AhpAnpLib import structs_AHPLib as str
 
-myModel=str.Model("my model")
+myModel=str.Model()
 # create nodes
 ANode=str.Node("A",0)
 BNode=str.Node("B",1)
@@ -31,4 +31,4 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Three")
 
 print(f'clusters that are connected from cluster1 are: {myModel.retAllClusterConnectionsFrom("One")}')
-
+myModel.printStruct()
