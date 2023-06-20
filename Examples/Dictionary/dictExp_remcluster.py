@@ -23,5 +23,5 @@ myModel.addCluster2Model(myCB)
 
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("Cluster A","Cluster B")
 myModel.printStruct()
-myModel.remClusterFromModel("Cluster A")
+myModel.remClusterByNameFromModel("Cluster A")
 myModel.printStruct()
