@@ -30,5 +30,7 @@ myModel.addCluster2Model(Cluster3)
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Three")
 
-print(f'clusters that are connected from cluster1 are: {myModel.retAllClusterConnectionsFrom("One")}')
-myModel.printStruct()
+list1=myModel.retAllClusterConnectionsFrom("One",True)
+list2=myModel.retAllClusterConnectionsFrom("Two")
+
+print(f"List of connections from Two: {list2}")

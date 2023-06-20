@@ -1,4 +1,3 @@
-
 from AhpAnpLib import structs_AHPLib as str
 
 myModel=str.Model("my model")
@@ -30,7 +29,8 @@ myModel.addCluster2Model(Cluster3)
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Three")
 
-myModel.retAllClusterConnectionsFromNode("A",False)
-myModel.retAllClusterConnectionsFromNode("B",True)
-myModel.retAllClusterConnectionsFromNode("C")
+listA=myModel.retAllClusterConnectionsFromNode("A",False)
+listB=myModel.retAllClusterConnectionsFromNode("B",True)
+listC=myModel.retAllClusterConnectionsFromNode("C")
 
+print("\nConnections from node A:",listA,"\nConnections from node B:",listB,"\nConnections from node C:",listC)
