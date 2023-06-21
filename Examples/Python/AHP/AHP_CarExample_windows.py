@@ -56,11 +56,11 @@ carModel.printStruct()
 #export to Excel all pairwise comparison matrices - to be filled in and imported back
 #filepath format is for windows users,you can replace it with the file path and name you would like to export to
 #verbal true will print out info about the values being exported
-input.export4ExcelQuestFull(carModel,"C:/Users/Public/PythonAHP/Examples/IO Files/carModel_Excel_empty.xlsx",True)
+input.export4ExcelQuestFull(carModel,"carModel_Excel_empty.xlsx",True)
 
 #the paths below are for windows users
-inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/carModel_Excel_filledInJudgments.xlsx"
-outputFilepath = "C:/Users/Public/PythonAHP/Examples/IO Files/carModel_Results.xlsx"
+inputFilePath="carModel_Excel_filledInJudgments.xlsx"
+outputFilepath = "carModel_Results.xlsx"
 
 #------------------------------
 #calculate, supermatrix, weighted, limiting and global priorities
