@@ -16,6 +16,7 @@ Cluster2=str.Cluster("Two",1)
 Cluster1.addNode2Cluster(ANode) 
 Cluster1.addNode2Cluster(BNode)
 Cluster1.addNode2Cluster(CNode) 
+
 Cluster2.addNode2Cluster(XNode)
 Cluster2.addNode2Cluster(YNode)
 Cluster2.addNode2Cluster(ZNode)
