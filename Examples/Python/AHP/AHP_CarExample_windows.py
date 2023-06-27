@@ -27,6 +27,7 @@ cluster1=str.Cluster("2Criteria",1)
 cluster2=str.Cluster("3Alternatives",2)
 
 #add nodes to clusters
+#you can add nodes one at a time or many nodes at once
 cluster0.addNode2Cluster(goal_node) 
 
 cluster1.addNode2Cluster(prestige)
@@ -40,9 +41,12 @@ cluster2.addNode2Cluster(alt3)
 
 
 #add clusters to the model 
+
 carModel.addCluster2Model(cluster0)
 carModel.addCluster2Model(cluster1)
 carModel.addCluster2Model(cluster2)
+#you can add one cluster at a time or multiple cluster at once e.g. 
+#
 
 #set up node connections from Goal Node to all the nodes in the 2Criteria cluster
 carModel.addNodeConnectionFromNodeToAllNodesOfCluster("GoalNode","2Criteria")
@@ -52,15 +56,21 @@ carModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("2Criteria","3Alternat
 # Print out model structure
 carModel.printStruct()
 
-#Generate Excel questionnaires 
+#Generate an Excel to enter judgments 
 #export to Excel all pairwise comparison matrices - to be filled in and imported back
-#filepath format is for windows users,you can replace it with the file path and name you would like to export to
-#verbal true will print out info about the values being exported
-input.export4ExcelQuestFull(carModel,"carModel_Excel_empty.xlsx",True)
+#in this example the command will generate files in the location that your command prompt shows, 
+# which will be your current working folder
+# you can define any destination file path and filename you want e.g.
+input.export4ExcelQuestFull(carModel,"carModel_Excel_empty.xlsx")
 
-#the paths below are for windows users
-inputFilePath="carModel_Excel_filledInJudgments.xlsx"
+# Note that you get the carModel_Excel_filledInJudgments.xlsx by starting from
+# the carModel_Excel_empty.xlsx, filling in the judgments and then saving it as
+# carModel_Excel_filledInJudgments.xlsx 
+# while the carModel_Results.xlsx will hold all the calculations and associated results of the 
+#AHP/ANP method
+inputFilePath="C:\GitCODE\AhpAnpLib\Examples\IO Files\carModel_Excel_filledInJudgments.xlsx"
 outputFilepath = "carModel_Results.xlsx"
+
 
 #------------------------------
 #calculate, supermatrix, weighted, limiting and global priorities
@@ -69,7 +79,7 @@ outputFilepath = "carModel_Results.xlsx"
 #if normal bar true then will show bars for normal eigen
 #if ideal bar true then will show bars for ideal eigen
 #if verbal will print out the intermediate results
-calc.calcAHPMatricesSave2File(carModel,inputFilePath,outputFilepath,True,False,True,True)
+calc.calcAHPMatricesSave2File(carModel,inputFilePath,outputFilepath,True,False,True,False)
 
 # sensitivity analysis
 #set output file path to append to excel that set in the outputFilepath above
