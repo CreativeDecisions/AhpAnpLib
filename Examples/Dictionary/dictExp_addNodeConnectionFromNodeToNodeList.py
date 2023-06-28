@@ -10,8 +10,11 @@ FourthNode=str.Node("Node R",4)
 oneCluster=str.Cluster("Cluster A",0)
 twoCluster=str.Cluster("Cluster B",1)
 #add nodes to clusters
-oneCluster.addNode2Cluster(FirstNode)
+oneCluster.addNode2Cluster(FirstNode) 
 oneCluster.addMultipleNodes2Cluster(SecondNode,ThirdNode,FourthNode) 
+
+myModel.addCluster2Model(oneCluster)
+myModel.addCluster2Model(twoCluster)
 
 myModel.addNodeConnectionFromNodeToNodeList("Node X","Node Y","Node Z")
 
