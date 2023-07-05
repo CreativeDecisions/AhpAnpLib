@@ -11,7 +11,7 @@ oneCluster=str.Cluster("Cluster A",0)
 twoCluster=str.Cluster("Cluster B",1)
 #add nodes to clusters
 oneCluster.addNode2Cluster(FirstNode) 
-oneCluster.addMultipleNodes2Cluster(SecondNode,ThirdNode,FourthNode) 
+twoCluster.addMultipleNodes2Cluster(SecondNode,ThirdNode,FourthNode) 
 
 myModel.addCluster2Model(oneCluster)
 myModel.addCluster2Model(twoCluster)
