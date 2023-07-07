@@ -7,8 +7,8 @@ SecondNode=str.Node("Node Y",1)
 ThirdNode=str.Node("Node Z",2)
 FourthNode=str.Node("Node R",4)
 # create clusters
-oneCluster=str.Cluster("Cluster A",0)
-twoCluster=str.Cluster("Cluster B",1)
+oneCluster=str.Cluster("Cluster One",0)
+twoCluster=str.Cluster("Cluster Two",1)
 #add nodes to clusters
 oneCluster.addNode2Cluster(FirstNode) 
 twoCluster.addMultipleNodes2Cluster(SecondNode,ThirdNode,FourthNode) 
@@ -18,4 +18,6 @@ myModel.addCluster2Model(twoCluster)
 
 myModel.addNodeConnectionFromNodeToNodeList("Node X","Node Y","Node Z")
 
-myModel.printStruct()
+oneCluster.calcAllConnectionsFrom()
+
+print(oneCluster.connectedTo)
