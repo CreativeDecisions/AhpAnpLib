@@ -1,6 +1,8 @@
 # from AHPLib import *
 from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
+from AhpAnpLib import calcs_AHPLib as calc
+import pandas as pd
 
 hamburger=str.Model()
 clusterAlternatives=str.Cluster("1 Alternatives",0)
@@ -151,36 +153,33 @@ hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("8 Reputation","2 Adverti
 hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("8 Reputation","3 Quality of Food" )
 hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("8 Reputation","4 Other" )
 
-#hamburger.printStruct()
-print("---------------------------------------------------------------------------\n")
-##########################################################################
-
-input.genFullQuest(hamburger,"important",False)
-# print("---------------------------------------------------------------------------\n")
-
-input.genFirstLineQuest(hamburger,"important",False)
-# print("---------------------------------------------------------------------------\n")
-
-input.genFirstLineAboveDiagQuest(hamburger,"important",False)
-
-#mac path format
-#Qualtrics
-
-input.genexport4QualtricsQuestFull("/Users/Shared/PythonAHP/Examples/IO Files/HamburgerModel_Qualtrics_Full.txt",hamburger,"important",True)
-
-input.genexport4QualtricsFirstLineQuest("/Users/Shared/PythonAHP/Examples/IO Files/HamburgerModel_Qualtrics_FirstLine.txt",hamburger,"important",True)
-
-input.genexport4QualtricsFirstLineAboveDiagQuest("/Users/Shared/PythonAHP/Examples/IO Files/HamburgerModel_Qualtrics_FirstAndAbove.txt",hamburger,"important",True)
-
-# #Google
-
-input.genexport4GoogleQuestFull("/Users/Shared/PythonAHP/Examples/IO Files/HamburgerModel_Google_Full.csv",hamburger,"important",False)
-
-input.genexport4GoogleFirstLineQuest("/Users/Shared/PythonAHP/Examples/IO Files/HamburgerModel_Google_FirstLine.csv",hamburger,"important",False)
-
-input.genexport4GoogleFirstLineAboveDiagQuest("/Users/Shared/PythonAHP/Examples/IO Files/HamburgerModel_Google_FirstAndAbove.csv",hamburger,"important",False)
-
 # Excel
-input.export4ExcelQuestFull(hamburger,"/Users/Shared/PythonAHP/Examples/IO Files/HamburgerModel_Excel_Full.xlsx",False)
+input.export4ExcelQuestFull(hamburger,"HamburgerModel_Excel_Full.xlsx",False)
 
+#Import Excel
+#import
+input.importFromExcel(hamburger,'HamburgerModel_Excel_filledIn.xlsx',0)
+
+# calculate
+listTitles=calc.nodeNameList(hamburger)
+
+unWighted=calc.calcUnweightedSuperMatrix(hamburger)
+
+df = pd.DataFrame(unWighted,index=listTitles,columns=listTitles)
+filepath = "HamburgerModel_Excel_results_unWeighted.xlsx"
+df.to_excel(filepath)
+
+weighted = calc.calcWeightedSupermatrix(hamburger)
+df3 = pd.DataFrame(weighted,index=listTitles,columns=listTitles)
+filepath = "HamburgerModel_Excel_results_weighted.xlsx"
+df.to_excel(filepath)
+
+limit = calc.calcLimitANP(weighted,hamburger)
+
+df2 = pd.DataFrame (limit,index=listTitles)
+filepath = "HamburgerModel_Excel_results_limit.xlsx"
+df2.to_excel(filepath)
+
+#plot
+hamburger.drawGraphModel()
 
