@@ -32,4 +32,3 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Three")
 myModel.moveNode2Cluster(BNode,Cluster2,True,True)
 
 myModel.moveNode2Cluster(CNode,Cluster1,False,True)
-myModel.printStruct()
