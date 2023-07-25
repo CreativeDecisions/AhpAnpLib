@@ -1,0 +1,185 @@
+set top_net [getTopNet $net]
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_matrix
+set x 271
+set y 159
+set desc {There are three purposes: Flood Control, Recreation, and Hydroelectric Power.}
+set name {1Purposes}
+set color #ddeeff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 192
+set height 158
+set clusterName {1Purposes}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1Flood Control}
+set desc {Flood Control for communities and farmers downstream is one purpose of the dam.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2Recreation}
+set desc {Fishing, water-skiing, swimming and other recreational uses.}
+set x 0
+set y 50
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3Hydroelectric Power}
+set desc {Generation of electric power is one way the dam is used.}
+set x 0
+set y 100
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 721
+set y 215
+set desc {There are three possible water levels at which to maintain the dam.}
+set name {2Alternative Water Levels}
+set color #ffeaea
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 174
+set height 42
+set clusterName {2Alternative Water Levels}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1Lo}
+set desc {Low water level}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2Med}
+set desc {Medium water level}
+set x 61
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3Hi}
+set desc {High water level}
+set x 142
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {2Alternative Water Levels}
+set final {1Purposes}
+connectClusters $net $init $final
+set init {1Purposes}
+set final {2Alternative Water Levels}
+connectClusters $net $init $final
+setNodeCompareWord  $net {1Flood Control} {2Alternative Water Levels} {important}
+setNodeCompareWord  $net {1Lo} {1Purposes} {important}
+setNodeCompareWord  $net {2Med} {1Purposes} {important}
+setNodeCompareWord  $net {2Recreation} {2Alternative Water Levels} {important}
+setNodeCompareWord  $net {3Hi} {1Purposes} {important}
+setNodeCompareWord  $net {3Hydroelectric Power} {2Alternative Water Levels} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 0
+catch {limitPowerOptions $net 2 0}
+c-network readAllCompares -network $net -source {
+2
+1Purposes
+3
+1Flood Control
+2Recreation
+3Hydroelectric Power
+2Alternative Water Levels
+3
+1Lo
+2Med
+3Hi
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 1.000000  0.000000 
+0
+1 1,0 
+
+1
+1 0,0 
+
+0,0,1
+3 0,0 1,1 2,2 
+ 3.521951  9.890411 
+ 2.808219 
+
+0,1,1
+3 0,0 1,1 2,2 
+ 0.110940  0.258065 
+ 2.326165 
+
+0,2,1
+3 0,0 1,1 2,2 
+ 0.280193  0.078912 
+ 0.281633 
+
+1,0,0
+3 0,0 1,1 2,2 
+ 2.468992  6.066667 
+ 2.457143 
+
+1,1,0
+3 0,0 1,1 2,2 
+ 0.333333  1.000000 
+ 3.000000 
+
+1,2,0
+3 0,0 1,1 2,2 
+ 0.259740  0.084626 
+ 0.325811 
+
+}
+set FORMAT 1
+recreateNetInsideFrameOnly $net
