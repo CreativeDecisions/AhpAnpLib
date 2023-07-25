@@ -172,7 +172,7 @@ df.to_excel(filepath)
 weighted = calc.calcWeightedSupermatrix(hamburger)
 df3 = pd.DataFrame(weighted,index=listTitles,columns=listTitles)
 filepath = "HamburgerModel_Excel_results_weighted.xlsx"
-df.to_excel(filepath)
+df3.to_excel(filepath)
 
 limit = calc.calcLimitANP(weighted,hamburger)
 
@@ -182,4 +182,5 @@ df2.to_excel(filepath)
 
 #plot
 hamburger.drawGraphModel()
+hamburger.drawGraphClusters()
 
