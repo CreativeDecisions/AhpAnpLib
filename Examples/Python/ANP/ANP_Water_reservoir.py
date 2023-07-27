@@ -58,5 +58,5 @@ filepath = "WaterReservior_results_Limit.xlsx"
 df2.to_excel(filepath)
 
 #plot
-#Reservoir.drawGraphModel()
-#Reservoir.drawGraphClusters()
+Reservoir.drawGraphModel()
+Reservoir.drawGraphClusters()

@@ -3,6 +3,8 @@ from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 
+import pandas as pd
+
 # initialize model
 economy2001 = str.Model("US Economy Prediction 2001")
 
@@ -64,6 +66,26 @@ economy2001.printStruct()
 economy2001.drawGraphModel()
 economy2001.drawGraphClusters()
 
+#export questionnaire
+input.export4ExcelQuestFull(economy2001,"UsEconomy_Excel_Full.xlsx")
+
+#import the filledin qurstionnaire
+input.importFromExcel(economy2001,"UsEconomy_Excel_Filledin.xlsx")
+
+#export matrix
+listTitles=calc.nodeNameList(economy2001)
+unWighted=calc.calcUnweightedSuperMatrix(economy2001)
+df = pd.DataFrame(unWighted,index=listTitles,columns=listTitles)
+filepath = "UsEconomy_Excel_results_unWeighted.xlsx"
+df.to_excel(filepath)
+weighted = calc.calcWeightedSupermatrix(economy2001)
+df3 = pd.DataFrame(weighted,index=listTitles,columns=listTitles)
+filepath = "UsEconomy_results_Weighted.xlsx"
+df3.to_excel(filepath)
+limit = calc.calcLimitANP(weighted,economy2001)
+df2 = pd.DataFrame (limit,index=listTitles)
+filepath = "UsEconomy_results_Limit.xlsx"
+df2.to_excel(filepath)
 
 
 
