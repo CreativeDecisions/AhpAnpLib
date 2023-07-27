@@ -70,7 +70,7 @@ economy2001.drawGraphClusters()
 input.export4ExcelQuestFull(economy2001,"UsEconomy_Excel_Full.xlsx")
 
 #import the filledin qurstionnaire
-input.importFromExcel(economy2001,"UsEconomy_Excel_Filledin.xlsx")
+input.importFromExcel(economy2001,"UsEconomy_Excel_Filledin.xlsx",0)
 
 #export matrix
 listTitles=calc.nodeNameList(economy2001)
