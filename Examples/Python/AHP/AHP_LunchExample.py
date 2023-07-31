@@ -46,32 +46,31 @@ lunchModel.addCluster2Model(cluster0)
 lunchModel.addCluster2Model(cluster1)
 lunchModel.addCluster2Model(cluster2)
 
-#print
-print(lunchModel)
-
 #set up node connections from Goal Node to all the nodes of the 2Criteria cluster
 lunchModel.addNodeConnectionFromNodeToAllNodesOfCluster("GoalNode","2Criteria")
 #set up node connections from all the nodes of the 2Criteria cluster to all the nodes of the cluster 3Alternatives
 lunchModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("2Criteria","3Alternatives")
 
-# Print out model
+# Print out model to valide the structure
 lunchModel.printStruct()
 
-#Generate questionnaires
-input.genFullQuest(lunchModel,"important",False)
-input.genFirstLineQuest(lunchModel,"important",False)
-input.genFirstLineAboveDiagQuest(lunchModel,"important",True)
+#Export Excel questionnaire
+# when only file name is specified, the file will be exported to the current working folder
+# you can also define path in the export file then the file will be exported to the specific folder
+# verbal true will print out info about the values being exported 
+input.export4ExcelQuestFull(lunchModel,"lunchModel_Excel_empty.xlsx",True)
+inputFilePath="lunchModel_Excel_filledIn.xlsx"
+outputFilePath="lunchModel_Results.xlsx"
 
-#Excel questionnaire
-# path for mac users
-input.export4ExcelQuestFull(lunchModel,"/Users/Shared/PythonAHP/Examples/IO Files/lunchModel_Excel_empty.xlsx",True)
-inputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/lunchModel_Excel_filledIn.xlsx"
-outputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/lunchModel_Results.xlsx"
-# path for windows users
-#input.export4ExcelQuestFull(lunchModel,"C:/Users/Public/PythonAHP/Examples/IO Files/lunchModel_Excel_empty.xlsx",True)
-#inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/lunchModel_Excel_filledIn.xlsx"
-#outputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/lunchModel_Results.xlsx"
 
-#calculate results and save to results Excel file
+#calculate supermatrix, weighted, limiting and global priorities
+#will save results to filepath of set as outputFile above
+#4th parameter: if an input file use is True then it will read the inputfile to generate the latest paiwise comp matrices otherwise from memory
+#5th parameter: if normal bar true then will show bars for normal eigen
+#6th parameter: if ideal bar true then will show bars for ideal eigen
+#7th parameter: if verbal true will print out the intermediate results
 calc.calcAHPMatricesSave2File(lunchModel,inputFilePath,outputFilePath,True,False,True,False)
+
+# sensitivity analysis
+#set output file the same as results file above will append sensitivity graphs to the Excel 
 calc.sensitivityCellSupermatrixPlot(lunchModel,"3Alternatives",outputFilePath,"1Quality","2Price","3Menu","4Speed")

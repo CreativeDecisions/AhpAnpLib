@@ -29,19 +29,25 @@ cluster2=str.Cluster("3Alternatives",2)
 
 #add nodes to clusters
 cluster0.addNode2Cluster(goal_node) 
-# add nodes to the cluster one at a time
+
+# you can add node one at a time using addNode2Cluster command 
+# or add multiple nodes to the same cluster in one command addMultipleNodes2Cluster
+
+# add nodes to the cluster one at a time:
 cluster1.addNode2Cluster(prestige)
 cluster1.addNode2Cluster(price)
 cluster1.addNode2Cluster(mpg)
 cluster1.addNode2Cluster(comf)
 
-# add multiple nodes to the cluster once
+# add multiple nodes to the cluster once:
 cluster2.addMultipleNodes2Cluster(alt1,alt2,alt3)
 
-#add clusters to the model 
+# you can add one cluster to the model at a time using addCluster2Model
+# or you use add multiple clusters one a model using one command: addMultipleClusters2Model
+# add clusters to the model 
 carModel.addCluster2Model(cluster0)
-carModel.addCluster2Model(cluster1)
-carModel.addCluster2Model(cluster2)
+carModel.addMultipleClusters2Model(cluster1,cluster2)
+
 
 #set up node connections from Goal Node to all the nodes in the 2Criteria cluster
 carModel.addNodeConnectionFromNodeToAllNodesOfCluster("GoalNode","2Criteria")
@@ -53,8 +59,9 @@ carModel.printStruct()
 
 #Generate Excel questionnaires 
 #export to Excel all pairwise comparison matrices - to be filled in and imported back
-#filepath format is for mac users (you can replace the filepath - the second parameter in the command to the place that you'd like to save the excel file)
-#verbal true will print out info about the values being exported 
+# when only file name is specified, the file will be exported to the current working folder
+# you can also define path in the export file then the file will be exported to the specific folder
+# verbal true will print out info about the values being exported 
 input.export4ExcelQuestFull(carModel,"carModel_Excel_empty.xlsx",True)
 
 # import back the excel that has filed in judgments
