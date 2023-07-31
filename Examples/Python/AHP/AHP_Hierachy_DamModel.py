@@ -3,7 +3,6 @@ from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 
-
 #create model
 damModel=str.Model("Choose Dam Level")
 
@@ -11,11 +10,12 @@ damModel=str.Model("Choose Dam Level")
 goal_cluster=str.Cluster("1Goal cluster",1) #create first cluster: goal_cluster
 goal_node=str.Node("Choose dam level",1) # create goal node to be placed in the goal cluster
 goal_cluster.addNode2Cluster(goal_node) # add goal_node to goal_cluster
-damModel.addCluster2Model(goal_cluster) #Add goal_cluster to lunchModel 
+damModel.addCluster2Model(goal_cluster) # add goal_cluster to damModel 
 
 #create the second level: decision criteria
 criteria_cluster2=str.Cluster("2Decision Criteria cluster",2)
-criteria_node21=str.Node("Financial",2) #create nodes for criteria cluster
+ #create nodes for criteria cluster
+criteria_node21=str.Node("Financial",2)
 criteria_node22=str.Node("Political",3)
 criteria_node23=str.Node("Environment protection",4)
 criteria_node24=str.Node("Social protection",5)
@@ -102,7 +102,7 @@ damModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("3Decision Makers clus
 # set up node connections from all the nodes of the factors cluster
 # to all the nodes of the groups affected cluster
 damModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("4Factors cluster","5Groups Affected cluster")
-# set uo node connections from nodes in of the groups affected clusters
+# set up node connections from nodes in of the groups affected clusters
 # to the corresponding nodes of the objectives cluster
 # note that different group has different objectives, so not all the nodes connected to all the nodes of the objectives cluster
 damModel.addNodeConnectionFromTo("Farmers","Irrigation")
@@ -118,20 +118,21 @@ damModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("6Objectives cluster",
 
 damModel.printStruct()
 
-print("-----------------------------Excel Questionnaire--------------------------------------\n")
-# for mac users
-input.export4ExcelQuestFull(damModel,"/Users/Shared/PythonAHP/Examples/IO Files/damModel_Excel_empty.xlsx",True)
-inputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/damModel_Excel_direct.xlsx"
-outputFilepath = "/Users/Shared/PythonAHP/Examples/IO Files/damModel_Results.xlsx"
+# export excel questionnair
+# when set up export file name, if no path speficied it will export to your current working folder
+# you can also export to a specific folder by specifying the path, e.g. C:/Users/Public/PythonAHP/Examples/IO Files/damModel_Excel_empty.xlsx
+input.export4ExcelQuestFull(damModel,"damModel_Excel_empty.xlsx",True)
 
-# for windows users
-#input.export4ExcelQuestFull(damModel,"C:/Users/Public/PythonAHP/Examples/IO Files/damModel_Excel_empty.xlsx",True)
-#inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/damModel_Excel_direct.xlsx"
-#outputFilepath = "C:/Users/Public/PythonAHP/Examples/IO Files/damModel_Results.xlsx"
+# inputFile will be the filledin questionnair Excel file
+# in the questionnair you can use direct value or paire-wise comparisons 
+inputFile="damModel_Excel_direct.xlsx"
+# caculated results will be exported the the outputFile
+outputFile = "damModel_Results.xlsx"
 
-calc.calcAHPMatricesSave2File(damModel,inputFilePath,outputFilepath,True,False,True,True)
+calc.calcAHPMatricesSave2File(damModel,inputFile,outputFile,True,False,True,True)
 
-calc.sensitivityCellSupermatrixPlot(damModel,"7Alternatives cluster",outputFilepath,"Financial")
+# we use the same output file to export sensitivity results
+calc.sensitivityCellSupermatrixPlot(damModel,"7Alternatives cluster",outputFile,"Financial")
 
 
 
