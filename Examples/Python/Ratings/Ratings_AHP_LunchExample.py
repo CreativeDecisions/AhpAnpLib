@@ -60,25 +60,33 @@ lunchModel.setModelTypeRatings()
 lunchModel.rateModel.addCriteriaByVar(quality,price,menu)
 lunchModel.rateModel.addCriteriaByName("4Speed")
 
-# 
+# Create scales to use for the evaluation of the alternatives with respect to the selected criteria
+scaleEtoP=input.readRatScaleRPCfile("ExcellentToPoor","ExcellentToPoor.rcp")
+# add the scale to the model
+lunchModel.rateModel.addScaleByVar(scaleEtoP)
+# assign the scale to criteria
+# we can assign the same scale to multiple criteria
+lunchModel.rateModel.assignScale2CriterionByName("1Quality","ExcellentToPoor")
+lunchModel.rateModel.assignScale2CriterionByName("3Menu","ExcellentToPoor")
 
-#Export Excel questionnaire
-# when only file name is specified, the file will be exported to the current working folder
-# you can also define path in the export file then the file will be exported to the specific folder
-# verbal true will print out info about the values being exported 
-input.export4ExcelQuestFull(lunchModel,"lunchModel_Excel_empty.xlsx",True)
-inputFilePath="lunchModel_Excel_filledIn.xlsx"
-outputFilePath="lunchModel_Results.xlsx"
+# scale for price
+scalePrice=input.readRatScaleRPCfile("PriceScale","HitoLo.rcp")
+lunchModel.rateModel.addScaleByVar(scalePrice)
+lunchModel.rateModel.assignScale2CriterionByName("2Price","PriceScale")
 
+# scale for speed
+scaleSpeed=rate.RatScale("SpeedScale")
+scaleSpeed.defineScaleByValue(None,False,"Fast","Average","Slow")
+lunchModel.rateModel.addScaleByVar(scaleSpeed)
+lunchModel.rateModel.assignScale2CriterionByName("4Speed","scaleSpeed")
 
-#calculate supermatrix, weighted, limiting and global priorities
-#will save results to filepath of set as outputFile above
-#4th parameter: if an input file use is True then it will read the inputfile to generate the latest paiwise comp matrices otherwise from memory
-#5th parameter: if normal bar true then will show bars for normal eigen
-#6th parameter: if ideal bar true then will show bars for ideal eigen
-#7th parameter: if verbal true will print out the intermediate results
-calc.calcAHPMatricesSave2File(lunchModel,inputFilePath,outputFilePath,True,False,True,False)
+#Export Excel questionnaire for criteria
+input.export4ExcelQuestFull(lunchModel,"lunchModel_Ratings_Criteria_empty.xlsx",True)
+#Import Criteria questionnaire to calculate priorities 
+input.importFromExcel(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","pairwise_comp",True)
+input.calcAHPMatricesSave2File(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","LunchModel_Ratings_Criteria_initialresults.xlsx",True,False,True)
 
-# sensitivity analysis
-#set output file the same as results file above will append sensitivity graphs to the Excel 
-calc.sensitivityCellSupermatrixPlot(lunchModel,"3Alternatives",outputFilePath,"1Quality","2Price","3Menu","4Speed")
+#Export Excel questionnaire for ratings invluding ratings scale and ratings table
+input.export4ExcelRatingsSetup(lunchModel,"LunchModel_Ratings_Table_empty.xlsx",True) 
+#Import ratings table and calculate results
+input.calcExcelRatings(lunchModel,"LunchModel_Ratings_Table_filledIn.xlsx","carModel_Ratings_Results.xlsx",True)
