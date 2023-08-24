@@ -1,3 +1,6 @@
 
 *.py
 VenvLocal/
+.DS_Store
+Examples/.DS_Store
+Examples/.DS_Store
