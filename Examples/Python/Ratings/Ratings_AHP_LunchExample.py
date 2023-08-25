@@ -59,6 +59,8 @@ lunchModel.setModelTypeRatings()
 # or we can use rateModel.addCriteriaByName command to add criteria using names of criteria
 lunchModel.rateModel.addCriteriaByVar(quality,price,menu)
 lunchModel.rateModel.addCriteriaByName("4Speed")
+# add ratings altenatives
+lunchModel.rateModel.addAlternativesByName("1Primanti","2Panera","3Piada")
 
 # Create scales to use for the evaluation of the alternatives with respect to the selected criteria
 scaleEtoP=input.readRatScaleRPCfile("ExcellentToPoor","ExcellentToPoor.rcp")
@@ -76,17 +78,18 @@ lunchModel.rateModel.assignScale2CriterionByName("2Price","PriceScale")
 
 # scale for speed
 scaleSpeed=rate.RatScale("SpeedScale")
-scaleSpeed.defineScaleByValue(None,False,"Fast","Average","Slow")
+scaleSpeed.defineScaleByValue(None,False,["Fast",1],["Average",0.5],["Slow",0.2])
 lunchModel.rateModel.addScaleByVar(scaleSpeed)
-lunchModel.rateModel.assignScale2CriterionByName("4Speed","scaleSpeed")
+lunchModel.rateModel.assignScale2CriterionByName("4Speed","SpeedScale")
 
 #Export Excel questionnaire for criteria
 input.export4ExcelQuestFull(lunchModel,"lunchModel_Ratings_Criteria_empty.xlsx",True)
 #Import Criteria questionnaire to calculate priorities 
 input.importFromExcel(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","pairwise_comp",True)
-input.calcAHPMatricesSave2File(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","LunchModel_Ratings_Criteria_initialresults.xlsx",True,False,True)
+calc.calcAHPMatricesSave2File(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","LunchModel_Ratings_Criteria_initialresults.xlsx",True,False,True)
 
 #Export Excel questionnaire for ratings invluding ratings scale and ratings table
+#We need to set third parameter as True
 input.export4ExcelRatingsSetup(lunchModel,"LunchModel_Ratings_Table_empty.xlsx",True) 
 #Import ratings table and calculate results
-input.calcExcelRatings(lunchModel,"LunchModel_Ratings_Table_filledIn.xlsx","carModel_Ratings_Results.xlsx",True)
+input.calcExcelRatings(lunchModel,"LunchModel_Ratings_Table_filledIn.xlsx","lunchModel_Ratings_Results.xlsx",True)
