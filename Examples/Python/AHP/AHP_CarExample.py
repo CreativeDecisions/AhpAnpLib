@@ -62,7 +62,7 @@ carModel.printStruct()
 input.export4ExcelQuestFull(carModel,"carModel_Excel_empty.xlsx",True)
 
 # import back the excel that has filed in judgments and save results in a file
-inputFile="carModel_Excel_filledInJudgments.xlsx"
+inputFile="carModel_Excel_filledin.xlsx"
 outputFile = "carModel_Results.xlsx"
 calc.calcAHPMatricesSave2File(carModel,inputFile,outputFile,True,False,True,True)
 
