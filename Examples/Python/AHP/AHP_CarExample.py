@@ -32,13 +32,11 @@ cluster0.addNode2Cluster(goal_node)
 
 # you can add node one at a time using addNode2Cluster command 
 # or add multiple nodes to the same cluster in one command addMultipleNodes2Cluster
-
 # add nodes to the cluster one at a time:
 cluster1.addNode2Cluster(prestige)
 cluster1.addNode2Cluster(price)
 cluster1.addNode2Cluster(mpg)
 cluster1.addNode2Cluster(comf)
-
 # add multiple nodes to the cluster once:
 cluster2.addMultipleNodes2Cluster(alt1,alt2,alt3)
 
@@ -47,7 +45,6 @@ cluster2.addMultipleNodes2Cluster(alt1,alt2,alt3)
 # add clusters to the model 
 carModel.addCluster2Model(cluster0)
 carModel.addMultipleClusters2Model(cluster1,cluster2)
-
 
 #set up node connections from Goal Node to all the nodes in the 2Criteria cluster
 carModel.addNodeConnectionFromNodeToAllNodesOfCluster("GoalNode","2Criteria")
@@ -64,7 +61,7 @@ carModel.printStruct()
 # verbal true will print out info about the values being exported 
 input.export4ExcelQuestFull(carModel,"carModel_Excel_empty.xlsx",True)
 
-# import back the excel that has filed in judgments
+# import back the excel that has filed in judgments and save results in a file
 inputFile="carModel_Excel_filledInJudgments.xlsx"
 outputFile = "carModel_Results.xlsx"
 calc.calcAHPMatricesSave2File(carModel,inputFile,outputFile,True,False,True,True)
