@@ -1,0 +1,36 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		GoalNode [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1Prestige" [color="#64b4f5" style=filled]
+		"2Price" [color="#64b4f5" style=filled]
+		"3MPG" [color="#64b4f5" style=filled]
+		"4Comfort" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"2.1InitialCost" [color="#63c273" style=filled]
+		"2.2Maintenance" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"1Acura TL" [color="#f5e50c" style=filled]
+		"2Toyota Camry" [color="#f5e50c" style=filled]
+		"3Honda Civic" [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		"4Fiat" [color="#cb7bed" style=filled]
+		"5MiniCooper" [color="#cb7bed" style=filled]
+		"6Kia Rio" [color="#cb7bed" style=filled]
+	}
+	GoalNode -> "1Prestige"
+	GoalNode -> "2Price"
+	GoalNode -> "3MPG"
+	GoalNode -> "4Comfort"
+	"2Price" -> "2.1InitialCost"
+	"2Price" -> "2.2Maintenance"
+}

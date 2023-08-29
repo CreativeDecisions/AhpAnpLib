@@ -1,0 +1,10 @@
+#RATINGS COMPARISONS TEMPLATE
+set group {!DEFAULT_GROUPING!__!_!!______++++_}
+ratings newGroup -network $net -criteria $crit -group $group
+set nnodes 4
+ratings newCategory -network $net -criteria $crit -group $group -category {More than 30 K}
+ratings newCategory -network $net -criteria $crit -group $group -category {Between 25K and 30K}
+ratings newCategory -network $net -criteria $crit -group $group -category {Between 20K and 25K}
+ratings newCategory -network $net -criteria $crit -group $group -category {Less than 20K}
+set values {0.500000 2.000000 4.000000 4.000000 7.000000 8.000000}
+::RA::setAllCategoryCompares $net $crit $group $values $nnodes

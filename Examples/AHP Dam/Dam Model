@@ -1,0 +1,147 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Choose dam level" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		Financial [color="#64b4f5" style=filled]
+		Political [color="#64b4f5" style=filled]
+		"Environment protection" [color="#64b4f5" style=filled]
+		"Social protection" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		Congress [color="#63c273" style=filled]
+		"Dept of Interior" [color="#63c273" style=filled]
+		Courts [color="#63c273" style=filled]
+		State [color="#63c273" style=filled]
+		Lobbies [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		Clout [color="#f5e50c" style=filled]
+		"Legal Position" [color="#f5e50c" style=filled]
+		"Irreversability Environment" [color="#f5e50c" style=filled]
+		"Archeological Problems" [color="#f5e50c" style=filled]
+		"Current Financial Resources" [color="#f5e50c" style=filled]
+		"Potential Financial Loss" [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		Farmers [color="#cb7bed" style=filled]
+		Recreationists [color="#cb7bed" style=filled]
+		"Power Users" [color="#cb7bed" style=filled]
+		Environmentalists [color="#cb7bed" style=filled]
+	}
+	subgraph cluster_5 {
+		color=lightgrey style=filled
+		Irrigation [color="#f7952d" style=filled]
+		"Flood Control" [color="#f7952d" style=filled]
+		"Full Water in Dam" [color="#f7952d" style=filled]
+		"Low Water in Dam" [color="#f7952d" style=filled]
+		"Cheap Power" [color="#f7952d" style=filled]
+		"Protect Environment" [color="#f7952d" style=filled]
+	}
+	subgraph cluster_6 {
+		color=lightgrey style=filled
+		"Full dam" [color="#f79ee4" style=filled]
+		"Half-full dam" [color="#f79ee4" style=filled]
+	}
+	"Choose dam level" -> Financial
+	"Choose dam level" -> Political
+	"Choose dam level" -> "Environment protection"
+	"Choose dam level" -> "Social protection"
+	Financial -> Congress
+	Financial -> "Dept of Interior"
+	Financial -> Courts
+	Financial -> State
+	Financial -> Lobbies
+	Political -> Congress
+	Political -> "Dept of Interior"
+	Political -> Courts
+	Political -> State
+	Political -> Lobbies
+	"Environment protection" -> Congress
+	"Environment protection" -> "Dept of Interior"
+	"Environment protection" -> Courts
+	"Environment protection" -> State
+	"Environment protection" -> Lobbies
+	"Social protection" -> Congress
+	"Social protection" -> "Dept of Interior"
+	"Social protection" -> Courts
+	"Social protection" -> State
+	"Social protection" -> Lobbies
+	Congress -> Clout
+	Congress -> "Legal Position"
+	Congress -> "Irreversability Environment"
+	Congress -> "Archeological Problems"
+	Congress -> "Current Financial Resources"
+	Congress -> "Potential Financial Loss"
+	"Dept of Interior" -> Clout
+	"Dept of Interior" -> "Legal Position"
+	"Dept of Interior" -> "Irreversability Environment"
+	"Dept of Interior" -> "Archeological Problems"
+	"Dept of Interior" -> "Current Financial Resources"
+	"Dept of Interior" -> "Potential Financial Loss"
+	Courts -> Clout
+	Courts -> "Legal Position"
+	Courts -> "Irreversability Environment"
+	Courts -> "Archeological Problems"
+	Courts -> "Current Financial Resources"
+	Courts -> "Potential Financial Loss"
+	State -> Clout
+	State -> "Legal Position"
+	State -> "Irreversability Environment"
+	State -> "Archeological Problems"
+	State -> "Current Financial Resources"
+	State -> "Potential Financial Loss"
+	Lobbies -> Clout
+	Lobbies -> "Legal Position"
+	Lobbies -> "Irreversability Environment"
+	Lobbies -> "Archeological Problems"
+	Lobbies -> "Current Financial Resources"
+	Lobbies -> "Potential Financial Loss"
+	Clout -> Farmers
+	Clout -> Recreationists
+	Clout -> "Power Users"
+	Clout -> Environmentalists
+	"Legal Position" -> Farmers
+	"Legal Position" -> Recreationists
+	"Legal Position" -> "Power Users"
+	"Legal Position" -> Environmentalists
+	"Irreversability Environment" -> Farmers
+	"Irreversability Environment" -> Recreationists
+	"Irreversability Environment" -> "Power Users"
+	"Irreversability Environment" -> Environmentalists
+	"Archeological Problems" -> Farmers
+	"Archeological Problems" -> Recreationists
+	"Archeological Problems" -> "Power Users"
+	"Archeological Problems" -> Environmentalists
+	"Current Financial Resources" -> Farmers
+	"Current Financial Resources" -> Recreationists
+	"Current Financial Resources" -> "Power Users"
+	"Current Financial Resources" -> Environmentalists
+	"Potential Financial Loss" -> Farmers
+	"Potential Financial Loss" -> Recreationists
+	"Potential Financial Loss" -> "Power Users"
+	"Potential Financial Loss" -> Environmentalists
+	Farmers -> Irrigation
+	Farmers -> "Flood Control"
+	Recreationists -> "Full Water in Dam"
+	Recreationists -> "Low Water in Dam"
+	"Power Users" -> "Cheap Power"
+	Environmentalists -> "Protect Environment"
+	Irrigation -> "Full dam"
+	Irrigation -> "Half-full dam"
+	"Flood Control" -> "Full dam"
+	"Flood Control" -> "Half-full dam"
+	"Full Water in Dam" -> "Full dam"
+	"Full Water in Dam" -> "Half-full dam"
+	"Low Water in Dam" -> "Full dam"
+	"Low Water in Dam" -> "Half-full dam"
+	"Cheap Power" -> "Full dam"
+	"Cheap Power" -> "Half-full dam"
+	"Protect Environment" -> "Full dam"
+	"Protect Environment" -> "Half-full dam"
+}
