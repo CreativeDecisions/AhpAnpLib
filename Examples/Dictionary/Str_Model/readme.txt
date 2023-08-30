@@ -1,0 +1,1 @@
+The dictionary folder has all Python code examples to create and structure AHP/ANP models.
