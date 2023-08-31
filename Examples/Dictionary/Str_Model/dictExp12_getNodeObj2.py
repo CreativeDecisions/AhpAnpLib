@@ -3,7 +3,7 @@ from AhpAnpLib import structs_AHPLib as str
 myModel=str.Model("Model’s name")
 # create node
 XNode=str.Node("Node Name X",0)
-YNode=str.Node("Node Name X",1)
+YNode=str.Node("Node Name Y",1)
 # create cluster
 myCluster=str.Cluster("My Cluster",0)
 #add the node to the cluster
