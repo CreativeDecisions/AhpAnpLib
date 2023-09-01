@@ -1,0 +1,213 @@
+set top_net [getTopNet $net]
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_direct
+set x 323
+set y 56
+set desc {}
+set name {Criteria}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "myDefaultFontCluster"
+set width 170
+set height 180
+set clusterName {Criteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1Quality}
+set desc {}
+set x 0
+set y 70
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2Price}
+set desc {}
+set x 0
+set y 35
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3Menu}
+set desc {}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {4Speed}
+set desc {}
+set x 0
+set y 105
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 27
+set y 57
+set desc {}
+set name {Goal}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "myDefaultFontCluster"
+set width 170
+set height 180
+set clusterName {Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Goal: where to order lunch}
+set desc {}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Goal}
+set final {Criteria}
+connectClusters $net $init $final
+setNodeCompareWord  $net {Goal: where to order lunch} {Criteria} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {gainsboro}
+setNetNodeColor $net {#F0F8FF}
+setNetClusterWinFont $net {myDefaultFontCluster}
+setNetClusterIconFont $net {myDefaultFontCluster}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 0
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+2
+Criteria
+4
+1Quality
+2Price
+3Menu
+4Speed
+Goal
+1
+Goal: where to order lunch
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 0.000000  0.000000 
+0
+0 
+
+1
+1 0,0 
+
+1,0,0
+4 2,0 1,1 0,2 3,3 
+ 2.000000  0.500000  0.333333 
+ 0.500000  0.333333 
+ 0.500000 
+
+}
+ratings new -network $net -src {
+4
+1Quality
+2Price
+3Menu
+4Speed
+0
+3
+Panera
+Primanti
+Subway
+3 4
+1.000000 1.000000 0.000000 1.000000 
+3.000000 2.000000 3.000000 1.000000 
+2.000000 0.000000 2.000000 1.000000 
+3 4
+1 1 1 1 
+1 1 1 1 
+1 1 1 1 
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+4
+Excellent
+Above average
+Average
+Poor
+1.000000
+ 1.800000  7.000000  9.000000  0.000000 
+ 3.000000  7.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+6 to 8 dollars
+8 to 10 dollars
+more than 10 dollars
+1.000000
+ 0.500000  1.000000  0.000000 
+ 2.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+4
+Excellent
+Above average
+Average
+Poor
+1.000000
+ 1.800000  7.000000  9.000000  0.000000 
+ 3.000000  7.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+5 minutes
+10 minutes
+15 minutes
+1.000000
+ 6.000000  9.000000  0.000000 
+ 2.000000  0.000000 
+ 0.000000 
+0
+0
+}
+set FORMAT 1
+recreateNetInsideFrameOnly $net

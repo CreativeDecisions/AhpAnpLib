@@ -63,17 +63,17 @@ lunchModel.rateModel.addCriteriaByName("4Speed")
 lunchModel.rateModel.addAlternativesByName("1Panera","2Primanti","3Subway")
 
 #create ratings scales for each criterion
-scale1=rate.RatScale("1QualityScale")
+scale1=rate.RatScale("QualityScale")
 scale1.defineScaleByValue(None,False,
 "Excellent","Above Average","Average","Poor")
 
-scale2=rate.RatScale("2PriceScale")
+scale2=rate.RatScale("PriceScale")
 scale2.defineScaleByValue(None,False,
-["6 to 8 dollars", 51],
-["8 to 10 dollars",52], 
-["more than 10 dollars",53])
+["6 to 8 dollars", .25],
+["8 to 10 dollars", .5], 
+["more than 10 dollars",.25])
 
-scale3=rate.RatScale("4SpeedScale")
+scale3=rate.RatScale("SpeedScale")
 scale3.defineScaleByValue(None,False,
 "5 minutes","10 minutes","15 minutes")
 
@@ -81,22 +81,19 @@ scale3.defineScaleByValue(None,False,
 lunchModel.rateModel.addScaleByVar(scale1,scale2,scale3)
 
 #
-lunchModel.rateModel.assignScale2CriterionByName("1Quality","1QualityScale")
-lunchModel.rateModel.assignScale2CriterionByName("2Price","2PriceScale")
-lunchModel.rateModel.assignScale2CriterionByName("3Menu","1QualityScale")
-lunchModel.rateModel.assignScale2CriterionByName("4Speed","4SpeedScale")
-
-# Excel
-input.export4ExcelQuestFull(lunchModel,"lunchModel_Ratings_Criteria_empty.xlsx",True)
+lunchModel.rateModel.assignScale2CriterionByName("1Quality","QualityScale")
+lunchModel.rateModel.assignScale2CriterionByName("2Price","PriceScale")
+lunchModel.rateModel.assignScale2CriterionByName("3Menu","QualityScale")
+lunchModel.rateModel.assignScale2CriterionByName("4Speed","SpeedScale")
 
 #Export Excel questionnaire for criteria
-#input.export4ExcelQuestFull(lunchModel,"lunchModel_Ratings_Criteria_empty.xlsx",True)
+input.export4ExcelQuestFull(lunchModel,"lunchModel_Ratings_Criteria_empty.xlsx",True)
 #Import Criteria questionnaire to calculate priorities 
-#input.importFromExcel(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","pairwise_comp",True)
+input.importFromExcel(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","pairwise_comp",True)
 #calc.calcAHPMatricesSave2File(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","LunchModel_Ratings_Criteria_initialresults.xlsx",True,False,True)
 
 #Export Excel questionnaire for ratings invluding ratings scale and ratings table
 #We need to set third parameter as True
-#input.export4ExcelRatingsSetup(lunchModel,"LunchModel_Ratings_Table_empty.xlsx",True) 
-#Import ratings table and calculate results
-#input.calcExcelRatings(lunchModel,"LunchModel_Ratings_Table_filledIn.xlsx","lunchModel_Ratings_Results.xlsx",True)
+input.export4ExcelRatingsSetup(lunchModel,"LunchModel_Ratings_Table_empty.xlsx",True) 
+#Import ratings table and calculate resultscd ..
+input.calcExcelRatings(lunchModel,"LunchModel_Ratings_Table_filledIn.xlsx","lunchModel_Ratings_Results.xlsx",True)
