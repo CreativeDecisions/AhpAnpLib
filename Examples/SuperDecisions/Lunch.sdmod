@@ -1,5 +1,5 @@
 set top_net [getTopNet $net]
-set SAVED_WITH_VERSION {3.2.0 made on Tue, 26 Feb 2019 02:13:09 -0500.  VCRevInfo .  Installed on MacOSX}
+set SAVED_WITH_VERSION {3.0.0 made on Tue, 30 Aug 2016 14:08:20 -0400.  VCRevInfo 3068.  Installed on MacOSX}
 setDefaultCompareMode $net switch_to_matrix
 set x 617
 set y 57
@@ -74,18 +74,7 @@ setClusterTitleFont $net $name $winFont
 setClusterWinSize $net $name $width $height
 setClusterCompareWord $net $name $clusterCompareWord
 deIconizeCluster $net $name
-set name {Menu}
-set desc {}
-set x 0
-set y 0
-set color {#F0F8FF}
-set iconUU {}
-set font {myDefaultFontNode}
-makeNode $net $clusterName $name $desc $x $y
-setNodeIconUU $net $name $iconUU
-setNodeColor $net $name $color
-setNodeFont $net $name $font
-set name {Price}
+set name {1Quality}
 set desc {}
 set x 0
 set y 70
@@ -96,7 +85,7 @@ makeNode $net $clusterName $name $desc $x $y
 setNodeIconUU $net $name $iconUU
 setNodeColor $net $name $color
 setNodeFont $net $name $font
-set name {Quality}
+set name {2Price}
 set desc {}
 set x 0
 set y 35
@@ -107,9 +96,20 @@ makeNode $net $clusterName $name $desc $x $y
 setNodeIconUU $net $name $iconUU
 setNodeColor $net $name $color
 setNodeFont $net $name $font
-set name {Speed}
+set name {3Menu}
 set desc {}
-set x -1
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {4Speed}
+set desc {}
+set x 0
 set y 105
 set color {#F0F8FF}
 set iconUU {}
@@ -155,16 +155,17 @@ connectClusters $net $init $final
 set init {Goal}
 set final {Criteria}
 connectClusters $net $init $final
+nodeCompareFinished $net {1Quality} {Alternatives} 1
+setNodeCompareWord  $net {1Quality} {Alternatives} {important}
+nodeCompareFinished $net {2Price} {Alternatives} 1
+setNodeCompareWord  $net {2Price} {Alternatives} {important}
+setNodeCompareDirectMult  $net {2Price} {Alternatives} -35.0
+nodeCompareFinished $net {3Menu} {Alternatives} 1
+setNodeCompareWord  $net {3Menu} {Alternatives} {important}
+setNodeCompareDirectMult  $net {3Menu} {Alternatives} 0.67176999999999998
+nodeCompareFinished $net {4Speed} {Alternatives} 1
+setNodeCompareWord  $net {4Speed} {Alternatives} {important}
 setNodeCompareWord  $net {Goal: where to order lunch} {Criteria} {important}
-nodeCompareFinished $net {Menu} {Alternatives} 1
-setNodeCompareWord  $net {Menu} {Alternatives} {important}
-nodeCompareFinished $net {Price} {Alternatives} 1
-setNodeCompareWord  $net {Price} {Alternatives} {important}
-setNodeCompareDirectMult  $net {Price} {Alternatives} -33.75
-nodeCompareFinished $net {Quality} {Alternatives} 1
-setNodeCompareWord  $net {Quality} {Alternatives} {important}
-nodeCompareFinished $net {Speed} {Alternatives} 1
-setNodeCompareWord  $net {Speed} {Alternatives} {important}
 setNetCompareWord $net {important}
 setNetClusterColor $net {gainsboro}
 setNetNodeColor $net {#F0F8FF}
@@ -176,60 +177,69 @@ setFormulaType $net 0
 catch {limitPowerOptions $net 2 1}
 c-network readAllCompares -network $net -source {
 3
-Goal
-1
-Goal: where to order lunch
-Criteria
-4
-Menu
-Quality
-Price
-Speed
 Alternatives
 3
 1 Primanti
 2 Panera
 3 Piada
-
-3 1,0 0,1 2,2 
- 0.000000  1.000000  0.000000 
- 0.000000  0.000000  0.000000 
- 1.000000  0.000000  0.000000 
-0
-1 1,0 
-
+Criteria
+4
+3Menu
+2Price
+1Quality
+4Speed
+Goal
 1
-1 2,0 
+Goal: where to order lunch
 
-2
+3 0,0 1,1 2,2 
+ 0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000 
+0
 0 
 
-0,0,1
-4 0,0 2,1 1,2 3,3 
- 4.000000  1.000000  3.000000 
- 0.250000  0.500000 
+1
+1 0,0 
+
+2
+1 1,0 
+
+1,0,0
+3 1,0 2,1 0,2 
+ 3.000000  4.000000 
+ 5.000000 
+
+1,1,0
+3 1,0 2,1 0,2 
+ 1.272727  0.909091 
+ 0.714286 
+
+1,2,0
+3 1,0 2,1 0,2 
+ 2.000000  2.000000 
+ 3.000003 
+
+1,3,0
+3 1,0 2,1 0,2 
+ 1.000000  0.333333 
+ 0.500000 
+
+2,0,1
+4 0,0 1,1 2,2 3,3 
+ 0.500000  0.250000  3.000000 
+ 0.500000  0.500000 
  1.000000 
 
-1,0,2
-3 1,0 2,1 0,2 
- 3.000000  0.250000 
- 0.500000 
+}
+ratings new -network $net -src {
+0
 
-1,1,2
-3 1,0 2,1 0,2 
- 0.333333  3.000000 
- 4.000000 
+0
+0
 
-1,2,2
-3 1,0 2,1 0,2 
- 0.777113  0.747195 
- 0.961501 
-
-1,3,2
-3 1,0 2,1 0,2 
- 0.250000  0.200000 
- 0.500000 
-
+0 0
+0 0
 }
 
 set FORMAT 1
