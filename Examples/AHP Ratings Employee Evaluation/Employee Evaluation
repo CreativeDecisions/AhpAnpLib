@@ -1,0 +1,36 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		GoalNode [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		Dependability [color="#64b4f5" style=filled]
+		Education [color="#64b4f5" style=filled]
+		Experience [color="#64b4f5" style=filled]
+		Attitude [color="#64b4f5" style=filled]
+		Work [color="#64b4f5" style=filled]
+		Leadership [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		Quantity [color="#63c273" style=filled]
+		Quality [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"Jim Kendall" [color="#f5e50c" style=filled]
+		"Sally Brown" [color="#f5e50c" style=filled]
+		"John Carter" [color="#f5e50c" style=filled]
+		"Mi Sung" [color="#f5e50c" style=filled]
+		"Arturo Chavez" [color="#f5e50c" style=filled]
+	}
+	GoalNode -> Dependability
+	GoalNode -> Education
+	GoalNode -> Experience
+	GoalNode -> Attitude
+	GoalNode -> Work
+	GoalNode -> Leadership
+	Work -> Quality
+	Work -> Quantity
+}
