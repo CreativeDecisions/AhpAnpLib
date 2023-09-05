@@ -1,6 +1,6 @@
 set top_net [getTopNet $net]
 set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
-setDefaultCompareMode $net switch_to_question
+setDefaultCompareMode $net switch_to_direct
 set x 323
 set y 56
 set desc {}
@@ -27,7 +27,7 @@ set x 0
 set y 70
 set color {#F0F8FF}
 set iconUU {}
-set font {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+set font {myDefaultFontNode}
 makeNode $net $clusterName $name $desc $x $y
 setNodeIconUU $net $name $iconUU
 setNodeColor $net $name $color
@@ -38,7 +38,7 @@ set x 0
 set y 35
 set color {#F0F8FF}
 set iconUU {}
-set font {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+set font {myDefaultFontNode}
 makeNode $net $clusterName $name $desc $x $y
 setNodeIconUU $net $name $iconUU
 setNodeColor $net $name $color
@@ -49,7 +49,7 @@ set x 0
 set y 0
 set color {#F0F8FF}
 set iconUU {}
-set font {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+set font {myDefaultFontNode}
 makeNode $net $clusterName $name $desc $x $y
 setNodeIconUU $net $name $iconUU
 setNodeColor $net $name $color
@@ -60,7 +60,7 @@ set x 0
 set y 105
 set color {#F0F8FF}
 set iconUU {}
-set font {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+set font {myDefaultFontNode}
 makeNode $net $clusterName $name $desc $x $y
 setNodeIconUU $net $name $iconUU
 setNodeColor $net $name $color
@@ -88,7 +88,7 @@ deIconizeCluster $net $name
 set name {Goal: where to order lunch}
 set desc {}
 set x 0
-set y 1
+set y 0
 set color {#F0F8FF}
 set iconUU {}
 set font {myDefaultFontNode}
@@ -113,9 +113,9 @@ c-network readAllCompares -network $net -source {
 2
 Criteria
 4
-3Menu
-2Price
 1Quality
+2Price
+3Menu
 4Speed
 Goal
 1
@@ -131,43 +131,41 @@ Goal: where to order lunch
 1 0,0 
 
 1,0,0
-4 0,0 1,1 2,2 3,3 
- 0.500000  0.250000  3.000000 
- 0.500000  0.500000 
- 1.000000 
+4 2,0 1,1 0,2 3,3 
+ 2.000000  0.500000  0.333333 
+ 0.500000  0.333333 
+ 0.500000 
 
 }
 ratings new -network $net -src {
 4
-3Menu
-2Price
 1Quality
+2Price
+3Menu
 4Speed
 0
 3
-1Primanti
-2Panera
-3Piada
+Panera
+Primanti
+Subway
 3 4
-2.000000 1.000000 1.000000 0.000000 
-0.000000 1.000000 0.000000 1.000000 
-3.000000 2.000000 2.000000 0.000000 
+1.000000 1.000000 0.000000 1.000000 
+3.000000 2.000000 3.000000 1.000000 
+2.000000 0.000000 2.000000 1.000000 
 3 4
 1 1 1 1 
 1 1 1 1 
 1 1 1 1 
 1
 !DEFAULT_GROUPING!__!_!!______++++_
-5
+4
 Excellent
-Above Average
+Above average
 Average
-Below Average
 Poor
-0.000000
- 2.000000  5.000000  7.000000  9.000000  0.000000 
- 4.000000  5.000000  8.000000  0.000000 
- 4.000000  7.000000  0.000000 
+1.000000
+ 1.800000  7.000000  9.000000  0.000000 
+ 3.000000  7.000000  0.000000 
  3.000000  0.000000 
  0.000000 
 0
@@ -175,27 +173,25 @@ Poor
 1
 !DEFAULT_GROUPING!__!_!!______++++_
 3
-Hi
-Med
-Lo
-0.000000
- 0.346683  0.080129  0.000000 
- 0.231130  0.000000 
+6 to 8 dollars
+8 to 10 dollars
+more than 10 dollars
+1.000000
+ 0.500000  1.000000  0.000000 
+ 2.000000  0.000000 
  0.000000 
 0
 0
 1
 !DEFAULT_GROUPING!__!_!!______++++_
-5
+4
 Excellent
-Above Average
+Above average
 Average
-Below Average
 Poor
-0.000000
- 2.000000  5.000000  7.000000  9.000000  0.000000 
- 4.000000  5.000000  8.000000  0.000000 
- 4.000000  7.000000  0.000000 
+1.000000
+ 1.800000  7.000000  9.000000  0.000000 
+ 3.000000  7.000000  0.000000 
  3.000000  0.000000 
  0.000000 
 0
@@ -203,12 +199,12 @@ Poor
 1
 !DEFAULT_GROUPING!__!_!!______++++_
 3
-Fast
-Average
-Slow
-1.833330
- 2.000000  5.000000  0.000000 
- 2.500000  0.000000 
+5 minutes
+10 minutes
+15 minutes
+1.000000
+ 6.000000  9.000000  0.000000 
+ 2.000000  0.000000 
  0.000000 
 0
 0
