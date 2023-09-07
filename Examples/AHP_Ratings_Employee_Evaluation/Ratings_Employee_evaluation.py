@@ -59,7 +59,7 @@ EmployEvaluation.rateModel.addCriteriaByName("Quantity","Quality")
 # here we add new alternatives directly to the ratings model
 # when the alternatives are not created, we use the addAlternativesByName and provide alternative names
 # then the alternatives will be created automatically
-EmployEvaluation.rateModel.addAlternativesByName("Jim Kendall","Sally Brown","John Carter","Mi Sung","Arturo Chavez","Lirong Wei")
+EmployEvaluation.rateModel.addAlternativesByName("Jim Kendall","Sally Brown","John Carter","Mi Sung","Arturo Chavez")
 
 # 1. Create a new scale (make pairewise comparisons in Excel questionnaire)
 scale1=rate.RatScale("OutstandingtoUnsatisfactory")
@@ -101,4 +101,7 @@ calc.calcAHPMatricesSave2File(EmployEvaluation,"Ratings_Employee_Eval_withjudgme
 # the command will export ratings scales pairwise comparison file in sheet 1
 # and the ratings table will be export to the same Excel file in sheet 2
 # we can then pairwise compare scale caterogies to get priorities of scales when needed
-input.export4ExcelRatingsSetup(EmployEvaluation,"Ratings_Employee_Eval_ratingstable.xlsx")
+input.export4ExcelRatingsSetup(EmployEvaluation,"Ratings_Employee_Eval_ratingstable.xlsx",True)
+
+# in this last step, we calculate ratings results and export it to an excel file
+input.calcExcelRatings(EmployEvaluation,"Ratings_Employee_Eval_ratingstable_filledin.xlsx","Ratings_Employee_Eval_ratingsresults.xlsx")
