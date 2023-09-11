@@ -66,7 +66,7 @@ Shoesmodel.addNodeConnectionFromTo("Print Ad.","Creativity",False)
 Shoesmodel.addNodeConnectionFromTo("Print Ad.","Frequency",False)
 
 Shoesmodel.addNodeConnectionFromNodeToAllNodesOfCluster("Television","1. Alternatives")
-Shoesmodel.addNodeConnectionFromNodeToAllNodesOfCluster("Television.","3. Product Characteristics")
+Shoesmodel.addNodeConnectionFromNodeToAllNodesOfCluster("Television","3. Product Characteristics")
 Shoesmodel.addNodeConnectionFromNodeToAllNodesOfCluster("Television","4. Customers")
 Shoesmodel.addNodeConnectionFromTo("Television","Creativity",False)
 Shoesmodel.addNodeConnectionFromTo("Television","Frequency",False)
