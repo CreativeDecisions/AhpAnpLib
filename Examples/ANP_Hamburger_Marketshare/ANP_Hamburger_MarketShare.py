@@ -2,9 +2,8 @@
 from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
-import pandas as pd
 
-hamburger=str.Model()
+hamburger=str.Model("Hamburger Marketshare")
 clusterAlternatives=str.Cluster("1 Alternatives",0)
 a1 = str.Node("1 McDonald's",1)
 a2 = str.Node("2 Burger King",2)
@@ -33,34 +32,15 @@ o6 = str.Node("6 Menu Item",15)
 o7 = str.Node("7 Take-out",16)
 o8 = str.Node("8 Reputation",17)
 
-
 clusterAlternatives.addNode2Cluster(a1) 
 clusterAlternatives.addNode2Cluster(a2) 
 clusterAlternatives.addNode2Cluster(a3) 
 
-clusterAdvertising.addNode2Cluster(ad1)
-clusterAdvertising.addNode2Cluster(ad2)
-clusterAdvertising.addNode2Cluster(ad3)
+clusterAdvertising.addMultipleNodes2Cluster(ad1,ad2,ad3)
+clusterQualityofFood.addMultipleNodes2Cluster(q1,q2,q3)
+clusterOther.addMultipleNodes2Cluster(o1,o2,o3,o4,o5,o6,o7,o8)
 
-clusterQualityofFood.addNode2Cluster(q1)
-clusterQualityofFood.addNode2Cluster(q2)
-clusterQualityofFood.addNode2Cluster(q3)
-
-clusterOther.addNode2Cluster(o1)
-clusterOther.addNode2Cluster(o2)
-clusterOther.addNode2Cluster(o3)
-clusterOther.addNode2Cluster(o4)
-clusterOther.addNode2Cluster(o5)
-clusterOther.addNode2Cluster(o6)
-clusterOther.addNode2Cluster(o7)
-clusterOther.addNode2Cluster(o8)
-
-
-
-hamburger.addCluster2Model(clusterAlternatives)
-hamburger.addCluster2Model(clusterAdvertising)
-hamburger.addCluster2Model(clusterQualityofFood)
-hamburger.addCluster2Model(clusterOther)
+hamburger.addMultipleClusters2Model(clusterAlternatives,clusterAdvertising,clusterQualityofFood,clusterOther)
 
 #alternative nodes connects to all nodes expect itself in Alternatives cluster
 hamburger.addNodeConnectionFromTo("1 McDonald's","2 Burger King")
@@ -110,7 +90,7 @@ hamburger.addNodeConnectionFromTo("1 Price","3 Portion")
 hamburger.addNodeConnectionFromTo("1 Price","2 Location")
 hamburger.addNodeConnectionFromTo("1 Price","7 Take-out")
 
-#location node connects
+#location node connects to
 hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("2 Location","1 Alternatives")
 
 #3 Service connects to
@@ -154,31 +134,16 @@ hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("8 Reputation","3 Quality
 hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("8 Reputation","4 Other" )
 
 # Excel
-input.export4ExcelQuestFull(hamburger,"HamburgerModel_Excel_Full.xlsx",False)
+input.export4ExcelQuestFull(hamburger,"HamburgerModel_Excel_empty.xlsx",False)
 
-#Import Excel
-#import
+#Import Excel with filledin
 input.importFromExcel(hamburger,'HamburgerModel_Excel_filledIn.xlsx',0)
 
-# calculate
-listTitles=calc.nodeNameList(hamburger)
-
+# calculate supermatrix 
+# unweighted supermatrix, weighted supermatrix and limit supermatrix
 unWighted=calc.calcUnweightedSuperMatrix(hamburger)
-
-df = pd.DataFrame(unWighted,index=listTitles,columns=listTitles)
-filepath = "HamburgerModel_Excel_results_unWeighted.xlsx"
-df.to_excel(filepath)
-
 weighted = calc.calcWeightedSupermatrix(hamburger)
-df3 = pd.DataFrame(weighted,index=listTitles,columns=listTitles)
-filepath = "HamburgerModel_Excel_results_weighted.xlsx"
-df3.to_excel(filepath)
-
 limit = calc.calcLimitANP(weighted,hamburger)
-
-df2 = pd.DataFrame (limit,index=listTitles)
-filepath = "HamburgerModel_Excel_results_limit.xlsx"
-df2.to_excel(filepath)
 
 #plot
 hamburger.drawGraphModel()
