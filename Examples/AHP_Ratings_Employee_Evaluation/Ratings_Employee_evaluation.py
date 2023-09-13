@@ -104,4 +104,4 @@ calc.calcAHPMatricesSave2File(EmployEvaluation,"Ratings_Employee_Eval_withjudgme
 input.export4ExcelRatingsSetup(EmployEvaluation,"Ratings_Employee_Eval_ratingstable.xlsx",True)
 
 # in this last step, we calculate ratings results and export it to an excel file
-input.calcExcelRatings(EmployEvaluation,"Ratings_Employee_Eval_ratingstable_filledin.xlsx","Ratings_Employee_Eval_ratingsresults.xlsx")
+input.calcExcelRatings(EmployEvaluation,"Ratings_Employee_Eval_ratingstable_filled.xlsx","Ratings_Employee_Eval_ratingsresults.xlsx")
