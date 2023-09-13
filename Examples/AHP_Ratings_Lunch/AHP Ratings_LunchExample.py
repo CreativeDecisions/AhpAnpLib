@@ -97,3 +97,9 @@ input.importFromExcel(lunchModel,"lunchModel_Ratings_Criteria_filledin.xlsx","pa
 input.export4ExcelRatingsSetup(lunchModel,"LunchModel_Ratings_Table_empty.xlsx",True) 
 #Import ratings table and calculate resultscd ..
 input.calcExcelRatings(lunchModel,"LunchModel_Ratings_Table_filledIn.xlsx","lunchModel_Ratings_Results.xlsx",True)
+
+# now we'd like to add more alternatives to rate
+# add ratings altenatives
+lunchModel.rateModel.addAlternativesByName("4Domino's","5PizzaHut","6PapaJohns","7PandaExpress")
+# we export the ratings table again but with a different name
+input.export4ExcelRatingsSetup(lunchModel,"LunchModel_Ratings_Table_moreAlts_empty.xlsx",True) 
