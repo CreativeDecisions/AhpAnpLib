@@ -67,16 +67,16 @@ economy2001.drawGraphModel()
 economy2001.drawGraphClusters()
 
 #export questionnaire
-input.export4ExcelQuestFull(economy2001,"UsEconomy_Excel_Full.xlsx")
+input.export4ExcelQuestFull(economy2001,"USEconomy_Excel_Full_empty.xlsx")
 
 #import the filledin qurstionnaire
-input.importFromExcel(economy2001,"UsEconomy_Excel_Filledin.xlsx",0)
+input.importFromExcel(economy2001,"USEconomy_Excel_Full_Filledin.xlsx",0)
 
 #export matrix
 listTitles=calc.nodeNameList(economy2001)
 unWighted=calc.calcUnweightedSuperMatrix(economy2001)
 df = pd.DataFrame(unWighted,index=listTitles,columns=listTitles)
-filepath = "UsEconomy_Excel_results_unWeighted.xlsx"
+filepath = "USEconomy_Excel_results_unWeighted.xlsx"
 df.to_excel(filepath)
 weighted = calc.calcWeightedSupermatrix(economy2001)
 df3 = pd.DataFrame(weighted,index=listTitles,columns=listTitles)
