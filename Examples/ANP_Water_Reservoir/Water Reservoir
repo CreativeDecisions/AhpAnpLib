@@ -1,0 +1,32 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"1FloodControl" [color="#f57a64" style=filled]
+		"2Recreation" [color="#f57a64" style=filled]
+		"3Hydroelectric Power" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1Lo" [color="#64b4f5" style=filled]
+		"2Med" [color="#64b4f5" style=filled]
+		"3Hi" [color="#64b4f5" style=filled]
+	}
+	"1FloodControl" -> "1Lo"
+	"1FloodControl" -> "2Med"
+	"1FloodControl" -> "3Hi"
+	"2Recreation" -> "1Lo"
+	"2Recreation" -> "2Med"
+	"2Recreation" -> "3Hi"
+	"3Hydroelectric Power" -> "1Lo"
+	"3Hydroelectric Power" -> "2Med"
+	"3Hydroelectric Power" -> "3Hi"
+	"1Lo" -> "1FloodControl"
+	"1Lo" -> "2Recreation"
+	"1Lo" -> "3Hydroelectric Power"
+	"2Med" -> "1FloodControl"
+	"2Med" -> "2Recreation"
+	"2Med" -> "3Hydroelectric Power"
+	"3Hi" -> "1FloodControl"
+	"3Hi" -> "2Recreation"
+	"3Hi" -> "3Hydroelectric Power"
+}
