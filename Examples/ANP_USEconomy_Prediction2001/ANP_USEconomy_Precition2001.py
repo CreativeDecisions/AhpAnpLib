@@ -40,7 +40,7 @@ supply.addMultipleNodes2Cluster(labor,natural,expectations)
 # geopolitical contexts
 political = str.Node("1 Major International Political Relationships",1)
 ecomonic = str.Node("2 Major International Economic Relationships",2)
-geopolitical.addMultipleNodes2Cluster(political,ecomonic,geopolitical)
+geopolitical.addMultipleNodes2Cluster(political,ecomonic)
 
 # alternatives
 threeM = str.Node("1 Three months",1)
