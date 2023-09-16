@@ -1,0 +1,319 @@
+[[AdvancedFormat]]
+[[Block: With respect to: GoalNode]]
+
+[[Question:MC:SingleAnswer]]
+1. With respect to GoalNode which one is more dominate:
+
+[[Choices]]
+1Prestige
+2Price
+
+[[Question:MC:Dropdown]]
+2. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+3. With respect to GoalNode which one is more dominate:
+
+[[Choices]]
+1Prestige
+3MPG
+
+[[Question:MC:Dropdown]]
+4. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+5. With respect to GoalNode which one is more dominate:
+
+[[Choices]]
+1Prestige
+4Comfort
+
+[[Question:MC:Dropdown]]
+6. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1Prestige]]
+
+[[Question:MC:SingleAnswer]]
+7. With respect to 1Prestige which one is more dominate:
+
+[[Choices]]
+1Acura TL
+2Toyota Camry
+
+[[Question:MC:Dropdown]]
+8. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+9. With respect to 1Prestige which one is more dominate:
+
+[[Choices]]
+1Acura TL
+3Honda Civic
+
+[[Question:MC:Dropdown]]
+10. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2Price]]
+
+[[Question:MC:SingleAnswer]]
+11. With respect to 2Price which one is more dominate:
+
+[[Choices]]
+2.1InitialCost
+2.2Maintenance
+
+[[Question:MC:Dropdown]]
+12. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 3MPG]]
+
+[[Question:MC:SingleAnswer]]
+13. With respect to 3MPG which one is more dominate:
+
+[[Choices]]
+1Acura TL
+2Toyota Camry
+
+[[Question:MC:Dropdown]]
+14. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+15. With respect to 3MPG which one is more dominate:
+
+[[Choices]]
+1Acura TL
+3Honda Civic
+
+[[Question:MC:Dropdown]]
+16. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 4Comfort]]
+
+[[Question:MC:SingleAnswer]]
+17. With respect to 4Comfort which one is more dominate:
+
+[[Choices]]
+1Acura TL
+2Toyota Camry
+
+[[Question:MC:Dropdown]]
+18. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+19. With respect to 4Comfort which one is more dominate:
+
+[[Choices]]
+1Acura TL
+3Honda Civic
+
+[[Question:MC:Dropdown]]
+20. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2.1InitialCost]]
+
+[[Question:MC:SingleAnswer]]
+21. With respect to 2.1InitialCost which one is more dominate:
+
+[[Choices]]
+1Acura TL
+2Toyota Camry
+
+[[Question:MC:Dropdown]]
+22. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+23. With respect to 2.1InitialCost which one is more dominate:
+
+[[Choices]]
+1Acura TL
+3Honda Civic
+
+[[Question:MC:Dropdown]]
+24. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2.2Maintenance]]
+
+[[Question:MC:SingleAnswer]]
+25. With respect to 2.2Maintenance which one is more dominate:
+
+[[Choices]]
+1Acura TL
+2Toyota Camry
+
+[[Question:MC:Dropdown]]
+26. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+27. With respect to 2.2Maintenance which one is more dominate:
+
+[[Choices]]
+1Acura TL
+3Honda Civic
+
+[[Question:MC:Dropdown]]
+28. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1Acura TL]]
+[[Block: With respect to: 2Toyota Camry]]
+[[Block: With respect to: 3Honda Civic]]
