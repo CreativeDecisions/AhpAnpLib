@@ -1,0 +1,1934 @@
+[[AdvancedFormat]]
+[[Block: With respect to: 1 Aggregate Demand]]
+
+[[Question:MC:SingleAnswer]]
+1. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+1 Consumption
+2 Exports
+
+[[Question:MC:Dropdown]]
+2. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+3. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+1 Consumption
+3 Investment
+
+[[Question:MC:Dropdown]]
+4. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+5. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+1 Consumption
+4 Confidence
+
+[[Question:MC:Dropdown]]
+6. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+7. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+1 Consumption
+5 Fiscal Policy
+
+[[Question:MC:Dropdown]]
+8. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+9. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+1 Consumption
+6 Monetary Policy
+
+[[Question:MC:Dropdown]]
+10. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+11. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+1 Consumption
+7 Expectations
+
+[[Question:MC:Dropdown]]
+12. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+13. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+2 Exports
+3 Investment
+
+[[Question:MC:Dropdown]]
+14. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+15. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+3 Investment
+4 Confidence
+
+[[Question:MC:Dropdown]]
+16. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+17. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+4 Confidence
+5 Fiscal Policy
+
+[[Question:MC:Dropdown]]
+18. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+19. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+5 Fiscal Policy
+6 Monetary Policy
+
+[[Question:MC:Dropdown]]
+20. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+21. With respect to 1 Aggregate Demand which one is more dominate:
+
+[[Choices]]
+6 Monetary Policy
+7 Expectations
+
+[[Question:MC:Dropdown]]
+22. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2 Aggregate Supply]]
+
+[[Question:MC:SingleAnswer]]
+23. With respect to 2 Aggregate Supply which one is more dominate:
+
+[[Choices]]
+1 Labor Costs
+2 Natural Resources Costs
+
+[[Question:MC:Dropdown]]
+24. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+25. With respect to 2 Aggregate Supply which one is more dominate:
+
+[[Choices]]
+1 Labor Costs
+3 Expectations
+
+[[Question:MC:Dropdown]]
+26. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+27. With respect to 2 Aggregate Supply which one is more dominate:
+
+[[Choices]]
+2 Natural Resources Costs
+3 Expectations
+
+[[Question:MC:Dropdown]]
+28. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 3 Geopolitical Contexts]]
+
+[[Question:MC:SingleAnswer]]
+29. With respect to 3 Geopolitical Contexts which one is more dominate:
+
+[[Choices]]
+1 Major International Political Relationships
+2 Major International Economic Relationships
+
+[[Question:MC:Dropdown]]
+30. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1 Consumption]]
+
+[[Question:MC:SingleAnswer]]
+31. With respect to 1 Consumption which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+32. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+33. With respect to 1 Consumption which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+34. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+35. With respect to 1 Consumption which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+36. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+37. With respect to 1 Consumption which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+38. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+39. With respect to 1 Consumption which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+40. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2 Exports]]
+
+[[Question:MC:SingleAnswer]]
+41. With respect to 2 Exports which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+42. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+43. With respect to 2 Exports which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+44. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+45. With respect to 2 Exports which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+46. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+47. With respect to 2 Exports which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+48. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+49. With respect to 2 Exports which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+50. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 3 Investment]]
+
+[[Question:MC:SingleAnswer]]
+51. With respect to 3 Investment which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+52. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+53. With respect to 3 Investment which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+54. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+55. With respect to 3 Investment which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+56. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+57. With respect to 3 Investment which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+58. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+59. With respect to 3 Investment which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+60. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 4 Confidence]]
+
+[[Question:MC:SingleAnswer]]
+61. With respect to 4 Confidence which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+62. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+63. With respect to 4 Confidence which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+64. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+65. With respect to 4 Confidence which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+66. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+67. With respect to 4 Confidence which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+68. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+69. With respect to 4 Confidence which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+70. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 5 Fiscal Policy]]
+
+[[Question:MC:SingleAnswer]]
+71. With respect to 5 Fiscal Policy which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+72. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+73. With respect to 5 Fiscal Policy which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+74. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+75. With respect to 5 Fiscal Policy which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+76. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+77. With respect to 5 Fiscal Policy which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+78. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+79. With respect to 5 Fiscal Policy which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+80. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 6 Monetary Policy]]
+
+[[Question:MC:SingleAnswer]]
+81. With respect to 6 Monetary Policy which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+82. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+83. With respect to 6 Monetary Policy which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+84. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+85. With respect to 6 Monetary Policy which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+86. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+87. With respect to 6 Monetary Policy which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+88. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+89. With respect to 6 Monetary Policy which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+90. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 7 Expectations]]
+
+[[Question:MC:SingleAnswer]]
+91. With respect to 7 Expectations which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+92. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+93. With respect to 7 Expectations which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+94. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+95. With respect to 7 Expectations which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+96. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+97. With respect to 7 Expectations which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+98. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+99. With respect to 7 Expectations which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+100. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1 Labor Costs]]
+
+[[Question:MC:SingleAnswer]]
+101. With respect to 1 Labor Costs which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+102. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+103. With respect to 1 Labor Costs which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+104. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+105. With respect to 1 Labor Costs which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+106. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+107. With respect to 1 Labor Costs which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+108. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+109. With respect to 1 Labor Costs which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+110. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2 Natural Resources Costs]]
+
+[[Question:MC:SingleAnswer]]
+111. With respect to 2 Natural Resources Costs which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+112. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+113. With respect to 2 Natural Resources Costs which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+114. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+115. With respect to 2 Natural Resources Costs which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+116. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+117. With respect to 2 Natural Resources Costs which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+118. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+119. With respect to 2 Natural Resources Costs which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+120. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 3 Expectations]]
+
+[[Question:MC:SingleAnswer]]
+121. With respect to 3 Expectations which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+122. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+123. With respect to 3 Expectations which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+124. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+125. With respect to 3 Expectations which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+126. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+127. With respect to 3 Expectations which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+128. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+129. With respect to 3 Expectations which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+130. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1 Major International Political Relationships]]
+
+[[Question:MC:SingleAnswer]]
+131. With respect to 1 Major International Political Relationships which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+132. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+133. With respect to 1 Major International Political Relationships which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+134. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+135. With respect to 1 Major International Political Relationships which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+136. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+137. With respect to 1 Major International Political Relationships which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+138. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+139. With respect to 1 Major International Political Relationships which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+140. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2 Major International Economic Relationships]]
+
+[[Question:MC:SingleAnswer]]
+141. With respect to 2 Major International Economic Relationships which one is more dominate:
+
+[[Choices]]
+1 Three months
+2 Six months
+
+[[Question:MC:Dropdown]]
+142. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+143. With respect to 2 Major International Economic Relationships which one is more dominate:
+
+[[Choices]]
+1 Three months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+144. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+145. With respect to 2 Major International Economic Relationships which one is more dominate:
+
+[[Choices]]
+1 Three months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+146. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+147. With respect to 2 Major International Economic Relationships which one is more dominate:
+
+[[Choices]]
+2 Six months
+3 Twelve months
+
+[[Question:MC:Dropdown]]
+148. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+149. With respect to 2 Major International Economic Relationships which one is more dominate:
+
+[[Choices]]
+3 Twelve months
+4 Twenty four months
+
+[[Question:MC:Dropdown]]
+150. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1 Three months]]
+
+[[Question:MC:SingleAnswer]]
+151. With respect to 1 Three months which one is more dominate:
+
+[[Choices]]
+1 Aggregate Demand
+2 Aggregate Supply
+
+[[Question:MC:Dropdown]]
+152. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+153. With respect to 1 Three months which one is more dominate:
+
+[[Choices]]
+1 Aggregate Demand
+3 Geopolitical Contexts
+
+[[Question:MC:Dropdown]]
+154. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+155. With respect to 1 Three months which one is more dominate:
+
+[[Choices]]
+2 Aggregate Supply
+3 Geopolitical Contexts
+
+[[Question:MC:Dropdown]]
+156. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2 Six months]]
+
+[[Question:MC:SingleAnswer]]
+157. With respect to 2 Six months which one is more dominate:
+
+[[Choices]]
+1 Aggregate Demand
+2 Aggregate Supply
+
+[[Question:MC:Dropdown]]
+158. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+159. With respect to 2 Six months which one is more dominate:
+
+[[Choices]]
+1 Aggregate Demand
+3 Geopolitical Contexts
+
+[[Question:MC:Dropdown]]
+160. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+161. With respect to 2 Six months which one is more dominate:
+
+[[Choices]]
+2 Aggregate Supply
+3 Geopolitical Contexts
+
+[[Question:MC:Dropdown]]
+162. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 3 Twelve months]]
+
+[[Question:MC:SingleAnswer]]
+163. With respect to 3 Twelve months which one is more dominate:
+
+[[Choices]]
+1 Aggregate Demand
+2 Aggregate Supply
+
+[[Question:MC:Dropdown]]
+164. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+165. With respect to 3 Twelve months which one is more dominate:
+
+[[Choices]]
+1 Aggregate Demand
+3 Geopolitical Contexts
+
+[[Question:MC:Dropdown]]
+166. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+167. With respect to 3 Twelve months which one is more dominate:
+
+[[Choices]]
+2 Aggregate Supply
+3 Geopolitical Contexts
+
+[[Question:MC:Dropdown]]
+168. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 4 Twenty four months]]
+
+[[Question:MC:SingleAnswer]]
+169. With respect to 4 Twenty four months which one is more dominate:
+
+[[Choices]]
+1 Aggregate Demand
+2 Aggregate Supply
+
+[[Question:MC:Dropdown]]
+170. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+171. With respect to 4 Twenty four months which one is more dominate:
+
+[[Choices]]
+1 Aggregate Demand
+3 Geopolitical Contexts
+
+[[Question:MC:Dropdown]]
+172. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+173. With respect to 4 Twenty four months which one is more dominate:
+
+[[Choices]]
+2 Aggregate Supply
+3 Geopolitical Contexts
+
+[[Question:MC:Dropdown]]
+174. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+

@@ -1,0 +1,106 @@
+With respect to 1 Aggregate Demand which one is more dominate,1 Consumption,2 Exports
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Aggregate Demand which one is more dominate,1 Consumption,3 Investment
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Aggregate Demand which one is more dominate,1 Consumption,4 Confidence
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Aggregate Demand which one is more dominate,1 Consumption,5 Fiscal Policy
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Aggregate Demand which one is more dominate,1 Consumption,6 Monetary Policy
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Aggregate Demand which one is more dominate,1 Consumption,7 Expectations
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Aggregate Supply which one is more dominate,1 Labor Costs,2 Natural Resources Costs
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Aggregate Supply which one is more dominate,1 Labor Costs,3 Expectations
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Geopolitical Contexts which one is more dominate,1 Major International Political Relationships,2 Major International Economic Relationships
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Consumption which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Consumption which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Consumption which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Exports which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Exports which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Exports which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Investment which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Investment which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Investment which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 4 Confidence which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 4 Confidence which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 4 Confidence which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 5 Fiscal Policy which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 5 Fiscal Policy which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 5 Fiscal Policy which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 6 Monetary Policy which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 6 Monetary Policy which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 6 Monetary Policy which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 7 Expectations which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 7 Expectations which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 7 Expectations which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Labor Costs which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Labor Costs which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Labor Costs which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Natural Resources Costs which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Natural Resources Costs which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Natural Resources Costs which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Expectations which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Expectations which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Expectations which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Major International Political Relationships which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Major International Political Relationships which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Major International Political Relationships which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Major International Economic Relationships which one is more dominate,1 Three months,2 Six months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Major International Economic Relationships which one is more dominate,1 Three months,3 Twelve months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Major International Economic Relationships which one is more dominate,1 Three months,4 Twenty four months
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Three months which one is more dominate,1 Aggregate Demand,2 Aggregate Supply
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 1 Three months which one is more dominate,1 Aggregate Demand,3 Geopolitical Contexts
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Six months which one is more dominate,1 Aggregate Demand,2 Aggregate Supply
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 2 Six months which one is more dominate,1 Aggregate Demand,3 Geopolitical Contexts
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Twelve months which one is more dominate,1 Aggregate Demand,2 Aggregate Supply
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 3 Twelve months which one is more dominate,1 Aggregate Demand,3 Geopolitical Contexts
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 4 Twenty four months which one is more dominate,1 Aggregate Demand,2 Aggregate Supply
+By how much?,1,2,3,4,5,6,7,8,9
+With respect to 4 Twenty four months which one is more dominate,1 Aggregate Demand,3 Geopolitical Contexts
+By how much?,1,2,3,4,5,6,7,8,9
