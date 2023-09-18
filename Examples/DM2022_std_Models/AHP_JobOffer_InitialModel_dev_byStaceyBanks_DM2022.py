@@ -97,16 +97,11 @@ jobOfferModel.addNodeConnectionFromNodeToAllNodesOfCluster("Career Advancement",
 # Create all connections from given node named Remote to given cluster named Alternatives
 jobOfferModel.addNodeConnectionFromNodeToAllNodesOfCluster("Remote", "Alternatives")
 
-# mac path
-input.export4ExcelQuestFull(jobOfferModel, "/Users/Shared/PythonAHP/Examples/IO Files/jobOffer_Excel_Empty.xlsx")
-inputFilePath="/Users/Shared/PythonAHP/Examples/IO Files/jobOffer_Excel_filledinFull.xlsx"
-outputFilepath = "/Users/Shared/PythonAHP/Examples/IO Files/jobOffer_Results.xlsx"
-
-#windows path
-#input.export4ExcelQuestFull(jobOfferModel, "C:/Users/Public/PythonAHP/Examples/IO Files/jobOffer_Excel_Empty.xlsx")
-#inputFilePath="C:/Users/Public/PythonAHP/Examples/IO Files/jobOffer_Excel_filledinFull.xlsx"
-#outputFilepath = "C:/Users/Public/PythonAHP/Examples/IO Files/jobOffer_Results.xlsx"
-
+# Create Excel survey and import results
+input.export4ExcelQuestFull(jobOfferModel, "AHP_JobOffer_DM2022_Excel_Empty.xlsx")
+inputFilePath="AHP_JobOffer_DM2022_Excel_filledin.xlsx"
+outputFilepath = "AHP_JobOffer_DM2022_Results.xlsx"
+# Import filledin jugments to calculate resuts
 calc.calcAHPMatricesSave2File(jobOfferModel,inputFilePath,outputFilepath,True,False,True,True)
-
+# sensitivity analysis
 calc.sensitivityCellSupermatrixPlot(jobOfferModel,"Alternatives",outputFilepath,"Total Compensation","Benefits","Career Advancement","Remote")
