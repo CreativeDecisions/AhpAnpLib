@@ -1,0 +1,395 @@
+set top_net [getTopNet $net]
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_matrix
+set x 1188
+set y 302
+set desc {These are the primary factors that drove the US economy in the early 1990's.}
+set name {0 Primary Factors}
+set color #f18d95
+set iconUU {}
+set iconFont "-*-times-bold-r-normal-*-14-*-*-*-*-*"
+set winFont "-*-times-bold-r-normal-*-30-*-*-*-*-*"
+set width 323
+set height 228
+set clusterName {0 Primary Factors}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1 Aggregate Demand}
+set desc {}
+set x 10
+set y 11
+set color {#ffff9b}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2 Aggregate Supply}
+set desc {}
+set x 13
+set y 72
+set color {#a6d2d2}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3 Global Financial Context}
+set desc {Financial, Economic and Political and interactions among nations}
+set x 3
+set y 137
+set color {#b5a5d1}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 467
+set y 462
+set desc {}
+set name {1 Aggregate Demand Factors}
+set color #ffff9b
+set iconUU {}
+set iconFont "-*-times-bold-r-normal-*-14-*-*-*-*-*"
+set winFont "-*-times-bold-r-normal-*-30-*-*-*-*-*"
+set width -178
+set height 256
+set clusterName {1 Aggregate Demand Factors}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1 Consumption}
+set desc {U.S. Consumption}
+set x 8
+set y 3
+set color {#ffffff}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2 Net Exports}
+set desc {U.S. Exports}
+set x 240
+set y 5
+set color {#ffffff}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3 Investment}
+set desc {Investment in the U.S.}
+set x 14
+set y 65
+set color {#ffffff}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {4 Confidence}
+set desc {The confidence of the U.S. consumer}
+set x 239
+set y 73
+set color {#ffffff}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {5 Fiscal Policy}
+set desc {Fiscal Policy followed by the U.S. government}
+set x 9
+set y 135
+set color {#ffffff}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {6 Monetary Policy}
+set desc {The Monetary policy of the Federal Reserve Board of the U.S.}
+set x 224
+set y 140
+set color {#ffffff}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {7 Expected Inflation}
+set desc {With regard to the future course of fiscal policy, monetary policy, price inflation and interest rates}
+set x 9
+set y 201
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 1130
+set y 885
+set desc {}
+set name {2 Aggregate Supply Factors}
+set color #a6d2d2
+set iconUU {}
+set iconFont "-*-times-bold-r-normal-*-14-*-*-*-*-*"
+set winFont "-*-times-bold-r-normal-*-30-*-*-*-*-*"
+set width -433
+set height 199
+set clusterName {2 Aggregate Supply Factors}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1 Labor Costs}
+set desc {Wage Rates and Productivity Growth}
+set x 20
+set y 14
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2 Natural Resource Costs}
+set desc {Primarily Energy Costs and secondarily material costs}
+set x 15
+set y 81
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3 Expectations}
+set desc {Expectations with regard to future inflation and future nominal and real interest rates}
+set x 21
+set y 143
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 1845
+set y 429
+set desc {What kind of world are we living in?}
+set name {3 Global Financial Contexts}
+set color #b5a5d1
+set iconUU {}
+set iconFont "-*-times-medium-r-normal-*-12-*-*-*-*-*"
+set winFont "-*-times-bold-r-normal-*-30-*-*-*-*-*"
+set width 593
+set height 288
+set clusterName {3 Global Financial Contexts}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1 Major International Political Relationships}
+set desc {}
+set x 12
+set y 11
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2 Global Financial Integration}
+set desc {}
+set x 11
+set y 65
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3 Mortgage Crisis Issues}
+set desc {}
+set x 5
+set y 119
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {4 Expectations of Future Oil Prices}
+set desc {description}
+set x 9
+set y 184
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {5 Future Value of the Dollar}
+set desc {description}
+set x 8
+set y 243
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-30-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {0 Primary Factors}
+set final {1 Aggregate Demand Factors}
+connectClusters $net $init $final
+set init {0 Primary Factors}
+set final {2 Aggregate Supply Factors}
+connectClusters $net $init $final
+set init {0 Primary Factors}
+set final {3 Global Financial Contexts}
+connectClusters $net $init $final
+nodeCompareFinished $net {1 Aggregate Demand} {1 Aggregate Demand Factors} 1
+setNodeCompareWord  $net {1 Aggregate Demand} {1 Aggregate Demand Factors} {important}
+nodeCompareFinished $net {2 Aggregate Supply} {2 Aggregate Supply Factors} 1
+setNodeCompareWord  $net {2 Aggregate Supply} {2 Aggregate Supply Factors} {important}
+nodeCompareFinished $net {3 Global Financial Context} {3 Global Financial Contexts} 1
+setNodeCompareWord  $net {3 Global Financial Context} {3 Global Financial Contexts} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-times-medium-r-normal-*-14-*-*-*-*-*}
+setNetClusterIconFont $net {-*-times-bold-r-normal-*-12-*-*-*-*-*}
+setNetNodeFont $net {-*-Arial-medium-r-normal-*-14-*-*-*-*-*}
+setFormulaType $net 0
+#Working on net 0
+catch {limitPowerOptions $net 2 0}
+c-network readAllCompares -network $net -source {
+4
+0 Primary Factors
+3
+1 Aggregate Demand
+2 Aggregate Supply
+3 Global Financial Context
+1 Aggregate Demand Factors
+7
+1 Consumption
+2 Net Exports
+3 Investment
+4 Confidence
+5 Fiscal Policy
+6 Monetary Policy
+7 Expected Inflation
+2 Aggregate Supply Factors
+3
+1 Labor Costs
+2 Natural Resource Costs
+3 Expectations
+3 Global Financial Contexts
+5
+1 Major International Political Relationships
+2 Global Financial Integration
+3 Mortgage Crisis Issues
+4 Expectations of Future Oil Prices
+5 Future Value of the Dollar
+
+4 1,0 0,1 2,2 3,3 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+0
+3 1,0 2,1 3,2 
+ 0.000000  0.000000 
+ 0.000000 
+
+1
+0 
+
+2
+0 
+
+3
+0 
+
+0,0,1
+7 6,0 0,1 1,2 2,3 4,4 5,5 3,6 
+ 0.142857  1.000000  0.500000  0.200000  0.142857  0.166667 
+ 7.000000  7.000000  3.000000  2.000000  5.000000 
+ 0.200000  0.125000  0.142857  0.142857 
+ 0.200000  0.166667  0.333333 
+ 1.000000  4.000000 
+ 4.000000 
+
+0,1,1
+0 
+
+0,2,1
+0 
+
+0,0,2
+0 
+
+0,1,2
+3 0,0 1,1 2,2 
+ 0.333300  0.500000 
+ 3.000000 
+
+0,2,2
+0 
+
+0,0,3
+0 
+
+0,1,3
+0 
+
+0,2,3
+5 0,0 1,1 2,2 3,3 4,4 
+ 0.142900  0.142857  0.166667  0.166667 
+ 1.000000  2.000000  2.000000 
+ 5.000000  5.000000 
+ 3.000000 
+
+}
+set FORMAT 1
+recreateNetInsideFrameOnly $net
