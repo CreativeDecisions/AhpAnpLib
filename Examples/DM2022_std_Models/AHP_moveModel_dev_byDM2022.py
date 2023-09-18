@@ -90,20 +90,13 @@ moveModel.addNodeConnectionFromNodeToAllNodesOfCluster("Job Availability","5Alte
 print(moveModel)
 
 moveModel.showAllClusterConnections()
-
 moveModel.showAllNodeConnections()
 
-
-# mac path
-input.export4ExcelQuestFull(moveModel,"/Users/Shared/PythonAHP/Examples/IO Files/moveModel_Excel_Empty.xlsx",True)
-inputFilPath="/Users/Shared/PythonAHP/Examples/IO Files/moveModel_Excel_Filledin.xlsx"
-outputFilepath="/Users/Shared/PythonAHP/Examples/IO Files/moveModel_Results.xlsx"
-
-# windows path
-#input.export4ExcelQuestFull(moveModel,"C:/Users/Public/PythonAHP/Examples/IO Files/moveModel_Excel_Empty.xlsx",True)
-#inputFilPath="C:/Users/Public/PythonAHP/Examples/IO Files/moveModel_Excel_Filledin.xlsx"
-#outputFilepath="C:/Users/Public/PythonAHP/Examples/IO Files/moveModel_Results.xlsx"
-
+# Export and Import questionnaires
+input.export4ExcelQuestFull(moveModel,"AHP_moveModel_DM2022_Excel_Empty.xlsx",True)
+inputFilPath="AHP_moveModel_DM2022_Excel_Filledin.xlsx"
+outputFilepath="AHP_moveModel_DM2022_Excel_Results.xlsx"
+# calculate results and sensitivity analysis
 calc.calcAHPMatricesSave2File(moveModel,inputFilPath,outputFilepath,True,False,True,True)
 calc.sensitivityCellSupermatrixPlot(moveModel,"5Alternatives",outputFilepath,"Distance","Weather","Job Availability","Safety")
 
