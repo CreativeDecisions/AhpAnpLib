@@ -1,0 +1,47 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"1 Aggregate Demand" [color="#f57a64" style=filled]
+		"2 Aggregate Supply" [color="#f57a64" style=filled]
+		"3 Global Financial Context" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1 Consumption" [color="#64b4f5" style=filled]
+		"2 Net Exports" [color="#64b4f5" style=filled]
+		"3 Investment" [color="#64b4f5" style=filled]
+		"4 Confidence" [color="#64b4f5" style=filled]
+		"5 Fiscal Policy" [color="#64b4f5" style=filled]
+		"6 Monetary Policy" [color="#64b4f5" style=filled]
+		"7 Expected Inflation" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"1 Labor Costs" [color="#63c273" style=filled]
+		"2 Natural Resource Costs" [color="#63c273" style=filled]
+		"3 Expectations" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"1 Major International Political Relationships" [color="#f5e50c" style=filled]
+		"2 Global Financial Integration" [color="#f5e50c" style=filled]
+		"3 Mortgage Crisis Issues" [color="#f5e50c" style=filled]
+		"4 Expectations of Future Oil Prices" [color="#f5e50c" style=filled]
+		"5 Future Value of the Dollar" [color="#f5e50c" style=filled]
+	}
+	"1 Aggregate Demand" -> "7 Expected Inflation"
+	"1 Aggregate Demand" -> "1 Consumption"
+	"1 Aggregate Demand" -> "2 Net Exports"
+	"1 Aggregate Demand" -> "3 Investment"
+	"1 Aggregate Demand" -> "5 Fiscal Policy"
+	"1 Aggregate Demand" -> "6 Monetary Policy"
+	"1 Aggregate Demand" -> "4 Confidence"
+	"2 Aggregate Supply" -> "1 Labor Costs"
+	"2 Aggregate Supply" -> "2 Natural Resource Costs"
+	"2 Aggregate Supply" -> "3 Expectations"
+	"3 Global Financial Context" -> "1 Major International Political Relationships"
+	"3 Global Financial Context" -> "2 Global Financial Integration"
+	"3 Global Financial Context" -> "3 Mortgage Crisis Issues"
+	"3 Global Financial Context" -> "4 Expectations of Future Oil Prices"
+	"3 Global Financial Context" -> "5 Future Value of the Dollar"
+}
