@@ -37,7 +37,7 @@ Reservoir.addNodeConnectionFromAllNodesToAllNodesOfCluster("2Alternative Water L
 input.export4ExcelQuestFull(Reservoir,"WaterReservior_Full_empty.xlsx")
 
 input.importFromExcel(Reservoir,"WaterReservior_Full_filledIn.xlsx",0)
-
+calc.calcAHPMatricesSave2File(Reservoir,"WaterReservior_Full_filledIn.xlsx","WaterReservior_Full_results.xlsx",True,False,True,True)
 #Matrix
 listTitles=calc.nodeNameList(Reservoir)
 

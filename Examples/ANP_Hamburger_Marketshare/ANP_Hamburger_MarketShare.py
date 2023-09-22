@@ -149,3 +149,6 @@ limit = calc.calcLimitANP(weighted,hamburger)
 hamburger.drawGraphModel()
 hamburger.drawGraphClusters()
 
+calc.calcAHPMatricesSave2File(hamburger,"HamburgerModel_Excel_filledIn.xlsx","HamburgerModel_Excel_results.xlsx",True,False,True,True)
+
+
