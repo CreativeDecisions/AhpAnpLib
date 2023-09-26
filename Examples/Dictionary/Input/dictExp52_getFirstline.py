@@ -28,4 +28,4 @@ myModel.addCluster2Model(Cluster2)
 # add connections
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("A","Two")
 #generate a reduced questionnaire of the model to screen/text, it will only print out when the third parameter is True
-FullQuestionnaire= input.genFirstLineQuest(myModel,"important",True)
+Questionnaire= input.genFirstLineQuest(myModel,"important",True)
