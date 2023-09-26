@@ -31,5 +31,5 @@ myModel.addCluster2Model(Cluster2)
 # add connections
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("G","One")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
-#generate a full questionnaire of the model to .txt file that can be imported in Qualtrics survey
+#generate a questionnaire of the model to .txt file that can be imported in Qualtrics survey
 Questionnaire= input.genexport4QualtricsFirstLineQuest("Exp55_QualtricsFistline.txt",myModel,"important",True)
