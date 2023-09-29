@@ -38,25 +38,3 @@ input.export4ExcelQuestFull(Reservoir,"WaterReservior_Full_empty.xlsx")
 
 input.importFromExcel(Reservoir,"WaterReservior_Full_filledIn.xlsx",0)
 calc.calcAHPMatricesSave2File(Reservoir,"WaterReservior_Full_filledIn.xlsx","WaterReservior_Full_results.xlsx",True,False,True,True)
-#Matrix
-listTitles=calc.nodeNameList(Reservoir)
-
-unWighted=calc.calcUnweightedSuperMatrix(Reservoir)
-
-df = pd.DataFrame(unWighted,index=listTitles,columns=listTitles)
-filepath = "WaterReservior_results_unWeighted.xlsx"
-df.to_excel(filepath)
-weighted = calc.calcWeightedSupermatrix(Reservoir)
-df3 = pd.DataFrame(weighted,index=listTitles,columns=listTitles)
-filepath = "WaterReservior_results_Weighted.xlsx"
-df3.to_excel(filepath)
-
-limit = calc.calcLimitANP(weighted,Reservoir)
-
-df2 = pd.DataFrame (limit,index=listTitles)
-filepath = "WaterReservior_results_Limit.xlsx"
-df2.to_excel(filepath)
-
-#plot
-Reservoir.drawGraphModel()
-Reservoir.drawGraphClusters()

@@ -3,8 +3,6 @@ from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 
-import pandas as pd
-
 # initialize model
 economy2001 = str.Model("US Economy Prediction 2001")
 
@@ -61,31 +59,16 @@ economy2001.addNodeConnectionFromAllNodesToAllNodesOfCluster("4 Geopolitical Con
 
 economy2001.addNodeConnectionFromAllNodesToAllNodesOfCluster("4Alternatives","1 Primary Factors")
 
-#visualize the model
+#validate the model structure
 economy2001.printStruct()
-economy2001.drawGraphModel()
-economy2001.drawGraphClusters()
 
 #export questionnaire
 input.export4ExcelQuestFull(economy2001,"USEconomy_Excel_Full_empty.xlsx")
 
-#import the filledin qurstionnaire
-input.importFromExcel(economy2001,"USEconomy_Excel_Full_Filledin.xlsx",0)
+#import the filledin qurstionnaire and get results
+calc.calcAHPMatricesSave2File(economy2001,"USEconomy_Excel_Full_Filledin.xlsx","USEconomy_Excel_Full_results.xlsx",True,False,True,True)
 
-#export matrix
-listTitles=calc.nodeNameList(economy2001)
-unWighted=calc.calcUnweightedSuperMatrix(economy2001)
-df = pd.DataFrame(unWighted,index=listTitles,columns=listTitles)
-filepath = "USEconomy_Excel_results_unWeighted.xlsx"
-df.to_excel(filepath)
-weighted = calc.calcWeightedSupermatrix(economy2001)
-df3 = pd.DataFrame(weighted,index=listTitles,columns=listTitles)
-filepath = "UsEconomy_results_Weighted.xlsx"
-df3.to_excel(filepath)
-limit = calc.calcLimitANP(weighted,economy2001)
-df2 = pd.DataFrame (limit,index=listTitles)
-filepath = "UsEconomy_results_Limit.xlsx"
-df2.to_excel(filepath)
+
 
 
 

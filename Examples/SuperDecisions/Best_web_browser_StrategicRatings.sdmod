@@ -1,0 +1,3711 @@
+set top_net [getTopNet $net]
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+makeNetFormulaic $net
+setNetFormula $net {{$NormalNet(1.Benefits)*$SmartAlt(1.Benefits) + $NormalNet(2.Opportunities)*$SmartAlt(2.Opportunities) + $NormalNet(3.Costs)*(-$SmartAlt(3.Costs)) + $NormalNet(4.Risks)*(-$SmartAlt(4.Risks))} {set {1.Benefits} 0
+set {2.Opportunities} 0
+set {3.Costs} 0
+set {4.Risks} 0}}
+setDefaultCompareMode $net switch_to_question
+set x 395
+set y 30
+set desc {The place where the dummy goal node lives.}
+set name {1 Goal}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 516
+set height 70
+set clusterName {1 Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Determine the best web browser to use}
+set desc {}
+set x 45
+set y 8
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 440
+set y 196
+set desc {Strategic criteria for determining the best web browser.}
+set name {2 Strategic Criteria}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 424
+set height 62
+set clusterName {2 Strategic Criteria}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Enjoyment}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Market}
+set desc {}
+set x 154
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Technology}
+set desc {}
+set x 260
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 93
+set y 392
+set desc {Technology subcriteria for Technoloy strategic criterion.}
+set name {3 Technology Subcriteria}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 452
+set height -51
+set clusterName {3 Technology Subcriteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Features}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Functionality}
+set desc {}
+set x 131
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Security}
+set desc {}
+set x 309
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 779
+set y 391
+set desc {Market subcriteria for Market strategic criterion.}
+set name {4 Market Subcriteria}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 172
+set height 26
+set clusterName {4 Market Subcriteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Accessibility}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Availability}
+set desc {}
+set x 173
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 374
+set y 579
+set desc {This is the toplevel network.}
+set name {Model}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 524
+set height 71
+set clusterName {Model}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1.Benefits}
+set desc {}
+set x 0
+set y 0
+set color {#b3ffd9}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 249
+set y 338
+set desc {The automatically created control criteria cluster}
+set name {Control Criteria}
+set color #b3ffd9
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 284
+set height 80
+set clusterName {Control Criteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Personal}
+set desc {Personal Control Criterion}
+set x 20
+set y 3
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 639
+set y 529
+set desc {Browser Choices}
+set name {Alternatives}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 493
+set height 57
+set clusterName {Alternatives}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Chrome}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Firefox}
+set desc {}
+set x 107
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Internet Explorer}
+set desc {}
+set x 201
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Safari}
+set desc {}
+set x 401
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 705
+set y 152
+set desc {Entertainment of web browser.}
+set name {Entertainment}
+set color #8080ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 157
+set height 168
+set clusterName {Entertainment}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Customization}
+set desc {How much the browser can be customized for the enjoyment of the user.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Fun}
+set desc {Enjoyability of using web browser.}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Look}
+set desc {Web browser user interface.}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 303
+set y 145
+set desc {Features of web browser.}
+set name {Features}
+set color #8080ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 166
+set height 220
+set clusterName {Features}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Apps}
+set desc {Available web browser applications.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Development}
+set desc {Development features of web browser.}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Privacy}
+set desc {Privacy features of web browser.}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Security}
+set desc {Security features of web browser.}
+set x 0
+set y 165
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 1133
+set y 155
+set desc {Functionality of web browser.}
+set name {Functionality}
+set color #8080ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 263
+set height 174
+set clusterName {Functionality}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Ease of Use}
+set desc {How easy the web browser is to use.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {O/S Compatibility}
+set desc {Operating system compatibilityof web browser.}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Speed}
+set desc {Speed of web browser.}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Entertainment}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Features}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Functionality}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Features}
+set final {Entertainment}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Features}
+connectClusters $net $init $final
+set init {Features}
+set final {Features}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Functionality}
+connectClusters $net $init $final
+nodeCompareFinished $net {Apps} {Alternatives} 1
+setNodeCompareWord  $net {Apps} {Alternatives} {important}
+nodeCompareFinished $net {Apps} {Entertainment} 1
+setNodeCompareWord  $net {Apps} {Entertainment} {important}
+nodeCompareFinished $net {Apps} {Features} 1
+setNodeCompareWord  $net {Apps} {Features} {important}
+nodeCompareFinished $net {Chrome} {Features} 1
+setNodeCompareWord  $net {Chrome} {Features} {important}
+nodeCompareFinished $net {Chrome} {Functionality} 1
+setNodeCompareWord  $net {Chrome} {Functionality} {important}
+nodeCompareFinished $net {Customization} {Alternatives} 1
+setNodeCompareWord  $net {Customization} {Alternatives} {important}
+nodeCompareFinished $net {Development} {Alternatives} 1
+setNodeCompareWord  $net {Development} {Alternatives} {important}
+nodeCompareFinished $net {Development} {Entertainment} 1
+setNodeCompareWord  $net {Development} {Entertainment} {important}
+nodeCompareFinished $net {Development} {Features} 1
+setNodeCompareWord  $net {Development} {Features} {important}
+nodeCompareFinished $net {Ease of Use} {Alternatives} 1
+setNodeCompareWord  $net {Ease of Use} {Alternatives} {important}
+nodeCompareFinished $net {Firefox} {Features} 1
+setNodeCompareWord  $net {Firefox} {Features} {important}
+nodeCompareFinished $net {Firefox} {Functionality} 1
+setNodeCompareWord  $net {Firefox} {Functionality} {important}
+nodeCompareFinished $net {Fun} {Alternatives} 1
+setNodeCompareWord  $net {Fun} {Alternatives} {important}
+nodeCompareFinished $net {Internet Explorer} {Features} 1
+setNodeCompareWord  $net {Internet Explorer} {Features} {important}
+nodeCompareFinished $net {Internet Explorer} {Functionality} 1
+setNodeCompareWord  $net {Internet Explorer} {Functionality} {important}
+nodeCompareFinished $net {Look} {Alternatives} 1
+setNodeCompareWord  $net {Look} {Alternatives} {important}
+nodeCompareFinished $net {O/S Compatibility} {Alternatives} 1
+setNodeCompareWord  $net {O/S Compatibility} {Alternatives} {important}
+nodeCompareFinished $net {Privacy} {Alternatives} 1
+setNodeCompareWord  $net {Privacy} {Alternatives} {important}
+nodeCompareFinished $net {Privacy} {Entertainment} 1
+setNodeCompareWord  $net {Privacy} {Entertainment} {important}
+nodeCompareFinished $net {Privacy} {Features} 1
+setNodeCompareWord  $net {Privacy} {Features} {important}
+nodeCompareFinished $net {Safari} {Features} 1
+setNodeCompareWord  $net {Safari} {Features} {important}
+nodeCompareFinished $net {Safari} {Functionality} 1
+setNodeCompareWord  $net {Safari} {Functionality} {important}
+nodeCompareFinished $net {Security} {Alternatives} 1
+setNodeCompareWord  $net {Security} {Alternatives} {important}
+nodeCompareFinished $net {Security} {Entertainment} 1
+setNodeCompareWord  $net {Security} {Entertainment} {important}
+nodeCompareFinished $net {Security} {Features} 1
+setNodeCompareWord  $net {Security} {Features} {important}
+nodeCompareFinished $net {Speed} {Alternatives} 1
+setNodeCompareWord  $net {Speed} {Alternatives} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 2
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+4
+Alternatives
+4
+Chrome
+Firefox
+Internet Explorer
+Safari
+Entertainment
+3
+Customization
+Fun
+Look
+Features
+4
+Apps
+Development
+Privacy
+Security
+Functionality
+3
+Ease of Use
+O/S Compatibility
+Speed
+
+4 0,0 1,1 2,2 3,3 
+ 0.000000  1.000000  1.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+0
+2 2,0 3,1 
+ 6.000000 
+
+1
+1 0,0 
+
+2
+3 2,0 0,1 1,2 
+ 1.000000  0.333333 
+ 1.000000 
+
+3
+1 0,0 
+
+0,0,2
+3 0,0 2,1 3,2 
+ 3.000000  3.000000 
+ 2.000000 
+
+0,1,2
+3 0,0 2,1 3,2 
+ 2.000000  3.000000 
+ 3.000000 
+
+0,2,2
+3 0,0 2,1 3,2 
+ 0.250000  0.142857 
+ 0.333300 
+
+0,3,2
+3 0,0 2,1 3,2 
+ 0.250000  0.333333 
+ 2.000000 
+
+0,0,3
+3 0,0 1,1 2,2 
+ 0.250000  0.250000 
+ 2.000000 
+
+0,1,3
+3 0,0 1,1 2,2 
+ 0.333333  3.000000 
+ 5.000000 
+
+0,2,3
+3 0,0 1,1 2,2 
+ 4.000000  3.000000 
+ 0.333300 
+
+0,3,3
+3 0,0 1,1 2,2 
+ 4.000000  3.000000 
+ 0.333333 
+
+1,0,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  6.000000  4.000000 
+ 6.000000  4.000000 
+ 1.000000 
+
+1,1,0
+4 0,0 1,1 2,2 3,3 
+ 2.000000  6.000000  2.000000 
+ 7.000000  2.000000 
+ 0.200000 
+
+1,2,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  6.000000  0.333333 
+ 6.000000  0.333333 
+ 0.166667 
+
+2,0,0
+4 0,0 1,1 2,2 3,3 
+ 0.500000  6.000000  5.000000 
+ 6.000000  5.000000 
+ 0.500000 
+
+2,1,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  7.000000  6.000000 
+ 7.000000  6.000000 
+ 0.500000 
+
+2,2,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  2.000000  2.000000 
+ 2.000000  2.000000 
+ 1.000000 
+
+2,3,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  2.000000  2.000000 
+ 2.000000  2.000000 
+ 1.000000 
+
+2,0,1
+3 0,0 1,1 2,2 
+ 0.250000  0.500000 
+ 3.000000 
+
+2,1,1
+3 0,0 1,1 2,2 
+ 4.000000  4.000000 
+ 0.500000 
+
+2,2,1
+3 0,0 1,1 2,2 
+ 1.000000  1.000000 
+ 1.000000 
+
+2,3,1
+3 0,0 1,1 2,2 
+ 1.000000  1.000000 
+ 1.000000 
+
+2,0,2
+2 2,0 3,1 
+ 1.000000 
+
+2,1,2
+3 2,0 3,1 1,2 
+ 1.000000  5.000000 
+ 5.000000 
+
+2,2,2
+2 0,0 1,1 
+ 3.000000 
+
+2,3,2
+2 0,0 1,1 
+ 3.000000 
+
+3,0,0
+4 0,0 1,1 2,2 3,3 
+ 2.000000  6.000000  3.000000 
+ 6.000000  5.000000 
+ 0.333300 
+
+3,1,0
+4 0,0 1,1 2,2 3,3 
+ 0.333333  6.000000  4.000000 
+ 7.000000  5.000000 
+ 1.000000 
+
+3,2,0
+4 0,0 1,1 2,2 3,3 
+ 5.000000  7.000000  3.000000 
+ 2.000000  0.250000 
+ 0.166667 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {Personal}
+hideSub $net $name
+set clusterName {Control Criteria}
+set name {Professional}
+set desc {Professional Control Criterion}
+set x 169
+set y 2
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 379
+set y 497
+set desc {Browser Choices}
+set name {Alternatives}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 498
+set height 61
+set clusterName {Alternatives}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Chrome}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Firefox}
+set desc {}
+set x 107
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Internet Explorer}
+set desc {}
+set x 201
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Safari}
+set desc {}
+set x 401
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 73
+set y 94
+set desc {Features of web browser.}
+set name {Features}
+set color #8080ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 196
+set height 224
+set clusterName {Features}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Apps}
+set desc {Number of applications the web browser has.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Development}
+set desc {Availability of the development of third party applications.}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Privacy}
+set desc {Web browser privacy features.}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Security}
+set desc {Web browser security.  Bigger market share generally means more suceptibility to attackers.}
+set x 0
+set y 165
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 854
+set y 96
+set desc {Functionality of web browser.}
+set name {Functionality}
+set color #8080ff
+set iconUU {no icon data}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 321
+set height 176
+set clusterName {Functionality}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Ease of Use}
+set desc {How easy is the web browser to use.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {O/S Compatibility}
+set desc {How many operating systems is the browser compatible with.}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Speed}
+set desc {Web browser speed.}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 485
+set y 151
+set desc {Market of web browser.}
+set name {Market}
+set color #8080ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 129
+set height 122
+set clusterName {Market}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Brand Equity}
+set desc {Value of web browser brand name.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Market Share}
+set desc {Web browser market share.}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Features}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Functionality}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Market}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Features}
+connectClusters $net $init $final
+set init {Features}
+set final {Features}
+connectClusters $net $init $final
+set init {Market}
+set final {Features}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Functionality}
+connectClusters $net $init $final
+set init {Features}
+set final {Market}
+connectClusters $net $init $final
+set init {Market}
+set final {Market}
+connectClusters $net $init $final
+nodeCompareFinished $net {Apps} {Alternatives} 1
+setNodeCompareWord  $net {Apps} {Alternatives} {important}
+nodeCompareFinished $net {Brand Equity} {Alternatives} 1
+setNodeCompareWord  $net {Brand Equity} {Alternatives} {important}
+nodeCompareFinished $net {Brand Equity} {Market} 1
+setNodeCompareWord  $net {Brand Equity} {Market} {important}
+nodeCompareFinished $net {Chrome} {Features} 1
+setNodeCompareWord  $net {Chrome} {Features} {important}
+nodeCompareFinished $net {Chrome} {Functionality} 1
+setNodeCompareWord  $net {Chrome} {Functionality} {important}
+nodeCompareFinished $net {Development} {Alternatives} 1
+setNodeCompareWord  $net {Development} {Alternatives} {important}
+nodeCompareFinished $net {Ease of Use} {Alternatives} 1
+setNodeCompareWord  $net {Ease of Use} {Alternatives} {important}
+nodeCompareFinished $net {Firefox} {Features} 1
+setNodeCompareWord  $net {Firefox} {Features} {important}
+nodeCompareFinished $net {Firefox} {Functionality} 1
+setNodeCompareWord  $net {Firefox} {Functionality} {important}
+nodeCompareFinished $net {Internet Explorer} {Features} 1
+setNodeCompareWord  $net {Internet Explorer} {Features} {important}
+nodeCompareFinished $net {Internet Explorer} {Functionality} 1
+setNodeCompareWord  $net {Internet Explorer} {Functionality} {important}
+nodeCompareFinished $net {Market Share} {Alternatives} 1
+setNodeCompareWord  $net {Market Share} {Alternatives} {important}
+nodeCompareFinished $net {Market Share} {Market} 1
+setNodeCompareWord  $net {Market Share} {Market} {important}
+nodeCompareFinished $net {O/S Compatibility} {Alternatives} 1
+setNodeCompareWord  $net {O/S Compatibility} {Alternatives} {important}
+nodeCompareFinished $net {Privacy} {Alternatives} 1
+setNodeCompareWord  $net {Privacy} {Alternatives} {important}
+nodeCompareFinished $net {Safari} {Features} 1
+setNodeCompareWord  $net {Safari} {Features} {important}
+nodeCompareFinished $net {Safari} {Functionality} 1
+setNodeCompareWord  $net {Safari} {Functionality} {important}
+nodeCompareFinished $net {Security} {Alternatives} 1
+setNodeCompareWord  $net {Security} {Alternatives} {important}
+nodeCompareFinished $net {Speed} {Alternatives} 1
+setNodeCompareWord  $net {Speed} {Alternatives} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 3
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+4
+Alternatives
+4
+Chrome
+Firefox
+Internet Explorer
+Safari
+Features
+4
+Apps
+Development
+Privacy
+Security
+Functionality
+3
+Ease of Use
+O/S Compatibility
+Speed
+Market
+2
+Brand Equity
+Market Share
+
+4 0,0 1,1 2,2 3,3 
+ 0.000000  1.000000  1.000000  1.000000 
+ 1.000000  1.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  1.000000 
+0
+2 2,0 1,1 
+ 3.000300 
+
+1
+3 0,0 1,1 3,2 
+ 1.000000  0.333333 
+ 1.000000 
+
+2
+1 0,0 
+
+3
+3 0,0 3,1 1,2 
+ 1.000000  1.000000 
+ 0.500000 
+
+0,0,1
+2 1,0 3,1 
+ 5.000000 
+
+0,1,1
+2 1,0 3,1 
+ 5.000000 
+
+0,2,1
+2 1,0 3,1 
+ 0.142900 
+
+0,3,1
+2 1,0 3,1 
+ 0.200000 
+
+0,0,2
+3 0,0 1,1 2,2 
+ 0.333333  0.250000 
+ 1.000000 
+
+0,1,2
+3 0,0 1,1 2,2 
+ 0.166667  0.200000 
+ 3.000000 
+
+0,2,2
+3 0,0 1,1 2,2 
+ 7.000000  5.000000 
+ 0.333333 
+
+0,3,2
+3 0,0 1,1 2,2 
+ 5.000000  4.000000 
+ 0.333300 
+
+1,0,0
+4 0,0 1,1 2,2 3,3 
+ 0.500000  7.000000  6.000000 
+ 8.000000  7.000000 
+ 1.000000 
+
+1,1,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  7.000000  7.000000 
+ 7.000000  7.000000 
+ 1.000000 
+
+1,2,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  1.000000  1.000000 
+ 1.000000  1.000000 
+ 1.000000 
+
+1,3,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  7.000000  2.000000 
+ 7.000000  2.000000 
+ 0.142900 
+
+1,0,1
+0 
+
+1,1,1
+1 2,0 
+
+1,2,1
+1 1,0 
+
+1,3,1
+0 
+
+1,0,3
+0 
+
+1,1,3
+0 
+
+1,2,3
+0 
+
+1,3,3
+1 1,0 
+
+2,0,0
+4 0,0 1,1 2,2 3,3 
+ 2.000000  7.000000  3.000000 
+ 7.000000  2.000000 
+ 0.250000 
+
+2,1,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  9.000000  9.000000 
+ 9.000000  9.000000 
+ 1.000000 
+
+2,2,0
+4 0,0 1,1 2,2 3,3 
+ 5.000000  7.000000  3.000000 
+ 3.000000  0.333333 
+ 0.200000 
+
+3,0,0
+4 0,0 1,1 2,2 3,3 
+ 0.500000  0.200000  0.333333 
+ 0.250000  2.000000 
+ 4.000000 
+
+3,1,0
+4 0,0 1,1 2,2 3,3 
+ 0.200000  0.166667  3.000000 
+ 0.333300  6.000000 
+ 7.000000 
+
+3,0,1
+0 
+
+3,1,1
+1 3,0 
+
+3,0,3
+2 0,0 1,1 
+ 3.000000 
+
+3,1,3
+2 0,0 1,1 
+ 3.000000 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {Professional}
+hideSub $net $name
+set clusterName {Control Criteria}
+set x 213
+set y 14
+set desc {The automatically created control criteria goal cluster}
+set name {Control Criteria Goal}
+set color #b3ffd9
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 394
+set height 55
+set clusterName {Control Criteria Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Goal: Benefits Control Criteria}
+set desc {}
+set x 29
+set y 11
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Control Criteria Goal}
+set final {Control Criteria}
+connectClusters $net $init $final
+nodeCompareFinished $net {Goal: Benefits Control Criteria} {Control Criteria} 1
+setNodeCompareWord  $net {Goal: Benefits Control Criteria} {Control Criteria} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 1
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+2
+Control Criteria
+2
+Personal
+Professional
+Control Criteria Goal
+1
+Goal: Benefits Control Criteria
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 0.000000  0.000000 
+0
+0 
+
+1
+1 0,0 
+
+1,0,0
+2 0,0 1,1 
+ 2.000000 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {1.Benefits}
+hideSub $net $name
+set clusterName {Model}
+set name {2.Opportunities}
+set desc {}
+set x 129
+set y 0
+set color {#8cc6ff}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 197
+set y 314
+set desc {The automatically created control criteria cluster}
+set name {Control Criteria}
+set color #8cc6ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 210
+set height 80
+set clusterName {Control Criteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Personal}
+set desc {Personal Control Criterion}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 259
+set y 484
+set desc {Browser choices}
+set name {Alternatives}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 506
+set height 8
+set clusterName {Alternatives}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Chrome}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Firefox}
+set desc {}
+set x 107
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Internet Explorer}
+set desc {}
+set x 201
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Safari}
+set desc {}
+set x 401
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 245
+set y 194
+set desc {Technological opportunities}
+set name {Technological}
+set color #008080
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 534
+set height 65
+set clusterName {Technological}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Communication}
+set desc {Use for e-mail, networking, etc.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Customization}
+set desc {Ability to customize browser to user needs.}
+set x 189
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Development}
+set desc {Ability to develop applications/extensions.}
+set x 363
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Technological}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Technological}
+connectClusters $net $init $final
+set init {Technological}
+set final {Technological}
+connectClusters $net $init $final
+nodeCompareFinished $net {Chrome} {Technological} 1
+setNodeCompareWord  $net {Chrome} {Technological} {important}
+nodeCompareFinished $net {Communication} {Alternatives} 1
+setNodeCompareWord  $net {Communication} {Alternatives} {important}
+nodeCompareFinished $net {Communication} {Technological} 1
+setNodeCompareWord  $net {Communication} {Technological} {important}
+nodeCompareFinished $net {Customization} {Alternatives} 1
+setNodeCompareWord  $net {Customization} {Alternatives} {important}
+nodeCompareFinished $net {Customization} {Technological} 1
+setNodeCompareWord  $net {Customization} {Technological} {important}
+nodeCompareFinished $net {Development} {Alternatives} 1
+setNodeCompareWord  $net {Development} {Alternatives} {important}
+nodeCompareFinished $net {Development} {Technological} 1
+setNodeCompareWord  $net {Development} {Technological} {important}
+nodeCompareFinished $net {Firefox} {Technological} 1
+setNodeCompareWord  $net {Firefox} {Technological} {important}
+nodeCompareFinished $net {Internet Explorer} {Technological} 1
+setNodeCompareWord  $net {Internet Explorer} {Technological} {important}
+nodeCompareFinished $net {Safari} {Technological} 1
+setNodeCompareWord  $net {Safari} {Technological} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 5
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+2
+Alternatives
+4
+Chrome
+Firefox
+Internet Explorer
+Safari
+Technological
+3
+Communication
+Customization
+Development
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 1.000000  1.000000 
+0
+1 1,0 
+
+1
+2 1,0 0,1 
+ 2.000000 
+
+0,0,1
+2 0,0 1,1 
+ 2.000000 
+
+0,1,1
+2 0,0 1,1 
+ 0.333300 
+
+0,2,1
+2 0,0 1,1 
+ 3.000000 
+
+0,3,1
+2 0,0 1,1 
+ 4.000000 
+
+1,0,0
+4 0,0 1,1 2,2 3,3 
+ 4.000000  5.000000  0.500000 
+ 2.000000  0.333333 
+ 0.250000 
+
+1,1,0
+4 0,0 1,1 2,2 3,3 
+ 0.500000  6.000000  5.000000 
+ 7.000000  6.000000 
+ 0.500000 
+
+1,2,0
+4 0,0 1,1 2,2 3,3 
+ 0.500000  6.000000  5.000000 
+ 7.000000  6.000000 
+ 0.500000 
+
+1,0,1
+3 0,0 1,1 2,2 
+ 2.000000  4.000000 
+ 3.000000 
+
+1,1,1
+3 0,0 1,1 2,2 
+ 3.000000  4.000000 
+ 3.000000 
+
+1,2,1
+3 0,0 1,1 2,2 
+ 2.000000  3.000000 
+ 2.000000 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {Personal}
+hideSub $net $name
+set clusterName {Control Criteria}
+set name {Professional}
+set desc {Professional Control Criterion}
+set x 131
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 595
+set y 468
+set desc {Browser Choices}
+set name {Alternatives}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 498
+set height 58
+set clusterName {Alternatives}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Chrome}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Firefox}
+set desc {}
+set x 107
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Internet Explorer}
+set desc {}
+set x 201
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Safari}
+set desc {}
+set x 401
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 956
+set y 138
+set desc {Market opportunities.}
+set name {Market}
+set color #008080
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 238
+set height 63
+set clusterName {Market}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Growth Potential}
+set desc {Potential to grow market share.}
+set x 30
+set y 18
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 412
+set y 144
+set desc {Technological opportunities.}
+set name {Technological}
+set color #008080
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 322
+set height 65
+set clusterName {Technological}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Development}
+set desc {Application development.}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Mobile Web}
+set desc {Mobile web opportunities}
+set x 163
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Market}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Technological}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Technological}
+set final {Market}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Technological}
+connectClusters $net $init $final
+set init {Market}
+set final {Technological}
+connectClusters $net $init $final
+set init {Technological}
+set final {Technological}
+connectClusters $net $init $final
+nodeCompareFinished $net {Development} {Alternatives} 1
+setNodeCompareWord  $net {Development} {Alternatives} {important}
+nodeCompareFinished $net {Development} {Technological} 1
+setNodeCompareWord  $net {Development} {Technological} {important}
+nodeCompareFinished $net {Growth Potential} {Alternatives} 1
+setNodeCompareWord  $net {Growth Potential} {Alternatives} {important}
+nodeCompareFinished $net {Mobile Web} {Alternatives} 1
+setNodeCompareWord  $net {Mobile Web} {Alternatives} {important}
+nodeCompareFinished $net {Mobile Web} {Technological} 1
+setNodeCompareWord  $net {Mobile Web} {Technological} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 6
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+3
+Alternatives
+4
+Chrome
+Firefox
+Internet Explorer
+Safari
+Market
+1
+Growth Potential
+Technological
+2
+Development
+Mobile Web
+
+3 0,0 1,1 2,2 
+ 0.000000  1.000000  1.000000 
+ 0.000000  0.000000  1.000000 
+ 1.000000  1.000000  1.000000 
+0
+1 2,0 
+
+1
+2 0,0 2,1 
+ 0.500000 
+
+2
+3 1,0 0,1 2,2 
+ 1.000000  0.500000 
+ 0.500000 
+
+0,0,2
+1 1,0 
+
+0,1,2
+1 1,0 
+
+0,2,2
+1 1,0 
+
+0,3,2
+1 1,0 
+
+1,0,0
+4 2,0 0,1 1,2 3,3 
+ 0.200000  0.250000  0.500000 
+ 3.000000  5.000000 
+ 5.000000 
+
+1,0,2
+1 1,0 
+
+2,0,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  5.000000  4.000000 
+ 6.000000  5.000000 
+ 0.500000 
+
+2,1,0
+4 0,0 1,1 2,2 3,3 
+ 5.000000  3.000000  0.333333 
+ 0.333300  0.142857 
+ 0.200000 
+
+2,0,1
+0 
+
+2,1,1
+1 0,0 
+
+2,0,2
+2 0,0 1,1 
+ 0.250000 
+
+2,1,2
+2 0,0 1,1 
+ 0.250000 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {Professional}
+hideSub $net $name
+set clusterName {Control Criteria}
+set x 124
+set y 7
+set desc {The automatically created control criteria goal cluster}
+set name {Control Criteria Goal}
+set color #8cc6ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 474
+set height 60
+set clusterName {Control Criteria Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Goal: Opportunities Control Criteria}
+set desc {}
+set x 32
+set y 1
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Control Criteria Goal}
+set final {Control Criteria}
+connectClusters $net $init $final
+nodeCompareFinished $net {Goal: Opportunities Control Criteria} {Control Criteria} 1
+setNodeCompareWord  $net {Goal: Opportunities Control Criteria} {Control Criteria} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 4
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+2
+Control Criteria
+2
+Personal
+Professional
+Control Criteria Goal
+1
+Goal: Opportunities Control Criteria
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 0.000000  0.000000 
+0
+0 
+
+1
+1 0,0 
+
+1,0,0
+2 0,0 1,1 
+ 0.200000 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {2.Opportunities}
+hideSub $net $name
+set clusterName {Model}
+set name {3.Costs}
+set desc {}
+set x 315
+set y 0
+set color {#ffb7ff}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 131
+set y 335
+set desc {The automatically created control criteria cluster}
+set name {Control Criteria}
+set color #ffb7ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 204
+set height 82
+set clusterName {Control Criteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Personal}
+set desc {Personal Control Criterion}
+set x 7
+set y 3
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 197
+set y 112
+set desc {description}
+set name {Accessibility}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 120
+set height 176
+set clusterName {Accessibility}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Adaptability}
+set desc {How easy is it for new user to adapt to browser?}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Ease of Download}
+set desc {How easy is it to download the browser?  Can it be used on all platforms?}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Size of Download}
+set desc {description}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 99
+set y 483
+set desc {Browser Choices}
+set name {Alternatives}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 501
+set height 57
+set clusterName {Alternatives}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Chrome}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Firefox}
+set desc {}
+set x 107
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Internet Explorer}
+set desc {}
+set x 201
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Safari}
+set desc {}
+set x 401
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Alternatives}
+set final {Accessibility}
+connectClusters $net $init $final
+set init {Accessibility}
+set final {Alternatives}
+connectClusters $net $init $final
+nodeCompareFinished $net {Adaptability} {Alternatives} 1
+setNodeCompareWord  $net {Adaptability} {Alternatives} {preferrable}
+nodeCompareFinished $net {Chrome} {Accessibility} 1
+setNodeCompareWord  $net {Chrome} {Accessibility} {important}
+nodeCompareFinished $net {Firefox} {Accessibility} 1
+setNodeCompareWord  $net {Firefox} {Accessibility} {important}
+nodeCompareFinished $net {Internet Explorer} {Accessibility} 1
+setNodeCompareWord  $net {Internet Explorer} {Accessibility} {important}
+nodeCompareFinished $net {Safari} {Accessibility} 1
+setNodeCompareWord  $net {Safari} {Accessibility} {important}
+nodeCompareFinished $net {Size of Download} {Alternatives} 1
+setNodeCompareWord  $net {Size of Download} {Alternatives} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 8
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+2
+Accessibility
+3
+Adaptability
+Ease of Download
+Size of Download
+Alternatives
+4
+Chrome
+Firefox
+Internet Explorer
+Safari
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 1.000000  0.000000 
+0
+1 1,0 
+
+1
+1 0,0 
+
+0,0,1
+4 0,0 1,1 2,2 3,3 
+ 6.000000  4.000000  2.000000 
+ 0.500000  1.000000 
+ 2.000000 
+
+0,1,1
+0 
+
+0,2,1
+4 0,0 1,1 2,2 3,3 
+ 0.166667  0.250000  1.000000 
+ 3.000000  6.000000 
+ 3.000000 
+
+1,0,0
+3 0,0 1,1 2,2 
+ 5.000000  5.000000 
+ 2.000000 
+
+1,1,0
+3 0,0 1,1 2,2 
+ 5.000000  5.000000 
+ 0.500000 
+
+1,2,0
+3 0,0 1,1 2,2 
+ 5.000000  5.000000 
+ 0.500000 
+
+1,3,0
+3 0,0 1,1 2,2 
+ 5.000000  5.000000 
+ 0.500000 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {Personal}
+hideSub $net $name
+set clusterName {Control Criteria}
+set name {Professional}
+set desc {Professional Control Criterion}
+set x 143
+set y 2
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 191
+set y 45
+set desc {description}
+set name {Accessibility}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 211
+set height 172
+set clusterName {Accessibility}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Adaptability}
+set desc {How long will it take new user to adapt to browser, understand it?}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Ease of Download}
+set desc {description}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Size of Download}
+set desc {description}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 97
+set y 428
+set desc {Browser Choices}
+set name {Alternatives}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 496
+set height 61
+set clusterName {Alternatives}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Chrome}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Firefox}
+set desc {}
+set x 107
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Internet Explorer}
+set desc {}
+set x 201
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Safari}
+set desc {}
+set x 401
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Alternatives}
+set final {Accessibility}
+connectClusters $net $init $final
+set init {Accessibility}
+set final {Alternatives}
+connectClusters $net $init $final
+nodeCompareFinished $net {Adaptability} {Alternatives} 1
+setNodeCompareWord  $net {Adaptability} {Alternatives} {important}
+nodeCompareFinished $net {Chrome} {Accessibility} 1
+setNodeCompareWord  $net {Chrome} {Accessibility} {important}
+nodeCompareFinished $net {Firefox} {Accessibility} 1
+setNodeCompareWord  $net {Firefox} {Accessibility} {important}
+nodeCompareFinished $net {Internet Explorer} {Accessibility} 1
+setNodeCompareWord  $net {Internet Explorer} {Accessibility} {important}
+nodeCompareFinished $net {Safari} {Accessibility} 1
+setNodeCompareWord  $net {Safari} {Accessibility} {important}
+nodeCompareFinished $net {Size of Download} {Alternatives} 1
+setNodeCompareWord  $net {Size of Download} {Alternatives} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 9
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+2
+Accessibility
+3
+Adaptability
+Ease of Download
+Size of Download
+Alternatives
+4
+Chrome
+Firefox
+Internet Explorer
+Safari
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 1.000000  0.000000 
+0
+1 1,0 
+
+1
+1 0,0 
+
+0,0,1
+4 0,0 1,1 2,2 3,3 
+ 3.000000  0.500000  4.000000 
+ 0.333333  0.500000 
+ 4.000000 
+
+0,1,1
+0 
+
+0,2,1
+4 0,0 1,1 2,2 3,3 
+ 0.166700  0.250000  1.000000 
+ 3.000000  6.000000 
+ 3.000000 
+
+1,0,0
+3 1,0 0,1 2,2 
+ 0.250000  1.000000 
+ 4.000000 
+
+1,1,0
+3 1,0 0,1 2,2 
+ 0.250000  1.000000 
+ 4.000000 
+
+1,2,0
+3 1,0 0,1 2,2 
+ 0.250000  1.000000 
+ 4.000000 
+
+1,3,0
+3 1,0 0,1 2,2 
+ 0.250000  1.000000 
+ 4.000000 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {Professional}
+hideSub $net $name
+set clusterName {Control Criteria}
+set x 100
+set y 13
+set desc {The automatically created control criteria goal cluster}
+set name {Control Criteria Goal}
+set color #ffb7ff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 116
+set height 41
+set clusterName {Control Criteria Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Goal: Costs Control Criteria}
+set desc {}
+set x 19
+set y 3
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Control Criteria Goal}
+set final {Control Criteria}
+connectClusters $net $init $final
+nodeCompareFinished $net {Goal: Costs Control Criteria} {Control Criteria} 1
+setNodeCompareWord  $net {Goal: Costs Control Criteria} {Control Criteria} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 7
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+2
+Control Criteria
+2
+Personal
+Professional
+Control Criteria Goal
+1
+Goal: Costs Control Criteria
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 0.000000  0.000000 
+0
+0 
+
+1
+1 0,0 
+
+1,0,0
+2 0,0 1,1 
+ 0.333300 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {3.Costs}
+hideSub $net $name
+set clusterName {Model}
+set name {4.Risks}
+set desc {}
+set x 419
+set y 0
+set color {#ffffaa}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 169
+set y 292
+set desc {The automatically created control criteria cluster}
+set name {Control Criteria}
+set color #ffffaa
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 309
+set height 79
+set clusterName {Control Criteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Personal}
+set desc {Personal Control Criterion}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 580
+set y 512
+set desc {Browser Choices}
+set name {Alternatives}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 498
+set height 41
+set clusterName {Alternatives}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Chrome}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Firefox}
+set desc {}
+set x 107
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Internet Explorer}
+set desc {}
+set x 201
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Safari}
+set desc {}
+set x 401
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 342
+set y 100
+set desc {description}
+set name {Availability}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 359
+set height 229
+set clusterName {Availability}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Availability across Platforms}
+set desc {description}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Default Browser?}
+set desc {description}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Mobile Availability}
+set desc {description}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Shared Computer Default?}
+set desc {description}
+set x 0
+set y 165
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 993
+set y 132
+set desc {description}
+set name {Security}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 294
+set height 167
+set clusterName {Security}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Adware Protection}
+set desc {description}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Spyware Protection}
+set desc {description}
+set x 0
+set y 55
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Web History Tracking}
+set desc {description}
+set x 0
+set y 110
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Availability}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Security}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Availability}
+connectClusters $net $init $final
+set init {Availability}
+set final {Availability}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Security}
+connectClusters $net $init $final
+set init {Availability}
+set final {Security}
+connectClusters $net $init $final
+nodeCompareFinished $net {Adware Protection} {Alternatives} 1
+setNodeCompareWord  $net {Adware Protection} {Alternatives} {preferrable}
+nodeCompareFinished $net {Availability across Platforms} {Alternatives} 1
+setNodeCompareWord  $net {Availability across Platforms} {Alternatives} {important}
+nodeCompareFinished $net {Chrome} {Availability} 1
+setNodeCompareWord  $net {Chrome} {Availability} {important}
+nodeCompareFinished $net {Chrome} {Security} 1
+setNodeCompareWord  $net {Chrome} {Security} {important}
+nodeCompareFinished $net {Default Browser?} {Alternatives} 1
+setNodeCompareWord  $net {Default Browser?} {Alternatives} {preferrable}
+nodeCompareFinished $net {Firefox} {Availability} 1
+setNodeCompareWord  $net {Firefox} {Availability} {important}
+nodeCompareFinished $net {Firefox} {Security} 1
+setNodeCompareWord  $net {Firefox} {Security} {important}
+nodeCompareFinished $net {Internet Explorer} {Availability} 1
+setNodeCompareWord  $net {Internet Explorer} {Availability} {important}
+nodeCompareFinished $net {Internet Explorer} {Security} 1
+setNodeCompareWord  $net {Internet Explorer} {Security} {important}
+nodeCompareFinished $net {Mobile Availability} {Alternatives} 1
+setNodeCompareWord  $net {Mobile Availability} {Alternatives} {preferrable}
+nodeCompareFinished $net {Safari} {Availability} 1
+setNodeCompareWord  $net {Safari} {Availability} {important}
+nodeCompareFinished $net {Safari} {Security} 1
+setNodeCompareWord  $net {Safari} {Security} {important}
+nodeCompareFinished $net {Spyware Protection} {Alternatives} 1
+setNodeCompareWord  $net {Spyware Protection} {Alternatives} {preferrable}
+nodeCompareFinished $net {Web History Tracking} {Alternatives} 1
+setNodeCompareWord  $net {Web History Tracking} {Alternatives} {preferrable}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 11
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+3
+Alternatives
+4
+Chrome
+Firefox
+Internet Explorer
+Safari
+Availability
+4
+Availability across Platforms
+Default Browser?
+Mobile Availability
+Shared Computer Default?
+Security
+3
+Adware Protection
+Spyware Protection
+Web History Tracking
+
+3 0,0 1,1 2,2 
+ 0.000000  1.000000  1.000000 
+ 1.000000  1.000000  0.000000 
+ 1.000000  1.000000  0.000000 
+0
+2 1,0 2,1 
+ 3.000000 
+
+1
+3 2,0 1,1 0,2 
+ 0.500000  1.000000 
+ 1.000000 
+
+2
+1 0,0 
+
+0,0,1
+4 0,0 1,1 2,2 3,3 
+ 4.000000  0.500000  2.000000 
+ 0.333333  0.333333 
+ 3.000000 
+
+0,1,1
+4 0,0 1,1 2,2 3,3 
+ 5.000000  4.000000  5.000000 
+ 1.000000  0.333333 
+ 1.000000 
+
+0,2,1
+4 0,0 1,1 2,2 3,3 
+ 0.200000  0.333333  0.500000 
+ 4.000000  1.000000 
+ 0.333300 
+
+0,3,1
+4 0,0 1,1 2,2 3,3 
+ 0.333333  2.000000  4.000000 
+ 3.000000  5.000000 
+ 3.000000 
+
+0,0,2
+3 0,0 1,1 2,2 
+ 1.000000  3.000000 
+ 3.000000 
+
+0,1,2
+3 0,0 1,1 2,2 
+ 1.000000  3.000000 
+ 3.000000 
+
+0,2,2
+3 0,0 1,1 2,2 
+ 1.000000  3.000000 
+ 3.000000 
+
+0,3,2
+3 0,0 1,1 2,2 
+ 1.000000  3.000000 
+ 3.000000 
+
+1,0,0
+4 0,0 1,1 2,2 3,3 
+ 1.000000  7.000000  6.000000 
+ 7.000000  6.000000 
+ 1.000000 
+
+1,1,0
+4 0,0 1,1 2,2 3,3 
+ 3.000000  0.166667  0.250000 
+ 0.142857  0.142857 
+ 1.000000 
+
+1,2,0
+4 0,0 1,1 2,2 3,3 
+ 3.000000  1.000000  0.333333 
+ 0.333333  0.200000 
+ 0.333300 
+
+1,3,0
+0 
+
+1,0,1
+0 
+
+1,1,1
+0 
+
+1,2,1
+0 
+
+1,3,1
+1 1,0 
+
+1,0,2
+0 
+
+1,1,2
+0 
+
+1,2,2
+0 
+
+1,3,2
+1 2,0 
+
+2,0,0
+4 0,0 1,1 2,2 3,3 
+ 3.000000  2.000000  1.000000 
+ 0.500000  0.500000 
+ 2.000000 
+
+2,1,0
+4 0,0 1,1 2,2 3,3 
+ 3.000000  2.000000  1.000000 
+ 0.333333  0.333333 
+ 2.000000 
+
+2,2,0
+4 0,0 1,1 2,2 3,3 
+ 6.000000  4.000000  1.000000 
+ 0.500000  0.166667 
+ 0.250000 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {Personal}
+hideSub $net $name
+set clusterName {Control Criteria}
+set name {Professional}
+set desc {Professional Control Criterion}
+set x 131
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set subNumb [makeNodeHaveSub $net $name hideIt]
+set subnet_name [netName $subNumb]
+networkBusy $top_net "Reading $subnet_name" .1 500
+set _subnet_name [netName $subNumb]
+lappend bkupnet $net
+set net $subNumb
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_question
+set x 409
+set y 507
+set desc {Browser Choices}
+set name {Alternatives}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 487
+set height 50
+set clusterName {Alternatives}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Chrome}
+set desc {}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Firefox}
+set desc {}
+set x 107
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Internet Explorer}
+set desc {}
+set x 201
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Safari}
+set desc {}
+set x 401
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 161
+set y 156
+set desc {description}
+set name {Availability}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 333
+set height 210
+set clusterName {Availability}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Availability across Platforms}
+set desc {description}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Default Browser?}
+set desc {description}
+set x 0
+set y 50
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Mobile Availability}
+set desc {description}
+set x 0
+set y 100
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Shared Computer Default?}
+set desc {description}
+set x 0
+set y 150
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 791
+set y 154
+set desc {description}
+set name {Security}
+set color white
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 270
+set height 199
+set clusterName {Security}
+set clusterCompareWord {important}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Adware Protection}
+set desc {description}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {NSFW Filtering}
+set desc {description}
+set x 0
+set y 50
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Spyware Protection}
+set desc {description}
+set x 0
+set y 100
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Web History Tracking}
+set desc {description}
+set x 0
+set y 150
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Security}
+set final {Alternatives}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Availability}
+connectClusters $net $init $final
+set init {Availability}
+set final {Availability}
+connectClusters $net $init $final
+set init {Security}
+set final {Availability}
+connectClusters $net $init $final
+set init {Alternatives}
+set final {Security}
+connectClusters $net $init $final
+set init {Availability}
+set final {Security}
+connectClusters $net $init $final
+set init {Security}
+set final {Security}
+connectClusters $net $init $final
+nodeCompareFinished $net {Adware Protection} {Alternatives} 1
+setNodeCompareWord  $net {Adware Protection} {Alternatives} {important}
+nodeCompareFinished $net {Chrome} {Availability} 1
+setNodeCompareWord  $net {Chrome} {Availability} {important}
+nodeCompareFinished $net {Chrome} {Security} 1
+setNodeCompareWord  $net {Chrome} {Security} {important}
+nodeCompareFinished $net {Firefox} {Availability} 1
+setNodeCompareWord  $net {Firefox} {Availability} {important}
+nodeCompareFinished $net {Firefox} {Security} 1
+setNodeCompareWord  $net {Firefox} {Security} {important}
+nodeCompareFinished $net {Internet Explorer} {Availability} 1
+setNodeCompareWord  $net {Internet Explorer} {Availability} {important}
+nodeCompareFinished $net {Internet Explorer} {Security} 1
+setNodeCompareWord  $net {Internet Explorer} {Security} {important}
+nodeCompareFinished $net {NSFW Filtering} {Alternatives} 1
+setNodeCompareWord  $net {NSFW Filtering} {Alternatives} {important}
+nodeCompareFinished $net {Safari} {Availability} 1
+setNodeCompareWord  $net {Safari} {Availability} {important}
+nodeCompareFinished $net {Safari} {Security} 1
+setNodeCompareWord  $net {Safari} {Security} {important}
+nodeCompareFinished $net {Shared Computer Default?} {Security} 1
+setNodeCompareWord  $net {Shared Computer Default?} {Security} {important}
+nodeCompareFinished $net {Spyware Protection} {Alternatives} 1
+setNodeCompareWord  $net {Spyware Protection} {Alternatives} {important}
+nodeCompareFinished $net {Web History Tracking} {Alternatives} 1
+setNodeCompareWord  $net {Web History Tracking} {Alternatives} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 12
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+3
+Alternatives
+4
+Chrome
+Firefox
+Internet Explorer
+Safari
+Availability
+4
+Availability across Platforms
+Default Browser?
+Mobile Availability
+Shared Computer Default?
+Security
+4
+Adware Protection
+NSFW Filtering
+Spyware Protection
+Web History Tracking
+
+3 0,0 2,1 1,2 
+ 0.000000  1.000000  0.000000 
+ 1.000000  1.000000  1.000000 
+ 1.000000  1.000000  1.000000 
+0
+2 1,0 2,1 
+ 3.000000 
+
+1
+2 2,0 1,1 
+ 0.333333 
+
+2
+3 2,0 1,1 0,2 
+ 0.500000  1.000000 
+ 1.000000 
+
+0,0,1
+4 3,0 2,1 1,2 0,3 
+ 0.500000  2.000000  0.333333 
+ 3.000000  0.500000 
+ 0.250000 
+
+0,1,1
+4 3,0 2,1 1,2 0,3 
+ 3.000300  3.000000  0.333333 
+ 2.000000  0.250000 
+ 0.200000 
+
+0,2,1
+4 3,0 2,1 1,2 0,3 
+ 3.000300  1.000000  4.000000 
+ 0.250000  2.000000 
+ 3.000000 
+
+0,3,1
+4 3,0 2,1 1,2 0,3 
+ 0.500000  0.333333  0.333333 
+ 0.500000  2.000000 
+ 3.000000 
+
+0,0,2
+4 1,0 0,1 2,2 3,3 
+ 4.000000  4.000000  2.000000 
+ 1.000000  0.333333 
+ 0.500000 
+
+0,1,2
+4 1,0 0,1 2,2 3,3 
+ 4.000000  4.000000  2.000000 
+ 1.000000  0.250000 
+ 0.250000 
+
+0,2,2
+4 1,0 0,1 2,2 3,3 
+ 4.000000  4.000000  2.000000 
+ 1.000000  0.250000 
+ 0.250000 
+
+0,3,2
+4 1,0 0,1 2,2 3,3 
+ 4.000000  4.000000  2.000000 
+ 1.000000  0.333333 
+ 0.333300 
+
+1,0,1
+0 
+
+1,1,1
+0 
+
+1,2,1
+0 
+
+1,3,1
+1 1,0 
+
+1,0,2
+0 
+
+1,1,2
+0 
+
+1,2,2
+0 
+
+1,3,2
+2 3,0 1,1 
+ 0.250000 
+
+2,0,0
+4 0,0 1,1 2,2 3,3 
+ 5.000000  3.000000  1.000000 
+ 0.500000  0.200000 
+ 0.333300 
+
+2,1,0
+4 0,0 1,1 2,2 3,3 
+ 3.000000  1.000000  1.000000 
+ 0.333333  0.333333 
+ 1.000000 
+
+2,2,0
+4 0,0 1,1 2,2 3,3 
+ 5.000000  4.000000  1.000000 
+ 0.333333  0.200000 
+ 0.250000 
+
+2,3,0
+4 0,0 1,1 2,2 3,3 
+ 5.000000  3.000000  1.000000 
+ 0.500000  0.200000 
+ 0.333300 
+
+2,0,1
+0 
+
+2,1,1
+1 2,0 
+
+2,2,1
+0 
+
+2,3,1
+0 
+
+2,0,2
+0 
+
+2,1,2
+0 
+
+2,2,2
+0 
+
+2,3,2
+1 1,0 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {Professional}
+hideSub $net $name
+set clusterName {Control Criteria}
+set x 135
+set y 4
+set desc {The automatically created control criteria goal cluster}
+set name {Control Criteria Goal}
+set color #ffffaa
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 4
+set height 56
+set clusterName {Control Criteria Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Goal: Risks Control Criteria}
+set desc {}
+set x 19
+set y 13
+set color {white}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Control Criteria Goal}
+set final {Control Criteria}
+connectClusters $net $init $final
+nodeCompareFinished $net {Goal: Risks Control Criteria} {Control Criteria} 1
+setNodeCompareWord  $net {Goal: Risks Control Criteria} {Control Criteria} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 10
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+2
+Control Criteria
+2
+Personal
+Professional
+Control Criteria Goal
+1
+Goal: Risks Control Criteria
+
+2 0,0 1,1 
+ 0.000000  1.000000 
+ 0.000000  0.000000 
+0
+0 
+
+1
+1 0,0 
+
+1,0,0
+2 0,0 1,1 
+ 0.333300 
+
+}
+networkNotBusy $top_net
+set net [lindex $bkupnet end]
+set bkupnet [lreplace $bkupnet end end]
+set name {4.Risks}
+hideSub $net $name
+set clusterName {Model}
+set init {1 Goal}
+set final {2 Strategic Criteria}
+connectClusters $net $init $final
+set init {2 Strategic Criteria}
+set final {3 Technology Subcriteria}
+connectClusters $net $init $final
+set init {2 Strategic Criteria}
+set final {4 Market Subcriteria}
+connectClusters $net $init $final
+nodeCompareFinished $net {Determine the best web browser to use} {2 Strategic Criteria} 1
+setNodeCompareWord  $net {Determine the best web browser to use} {2 Strategic Criteria} {important}
+nodeCompareFinished $net {Market} {4 Market Subcriteria} 1
+setNodeCompareWord  $net {Market} {4 Market Subcriteria} {important}
+nodeCompareFinished $net {Technology} {3 Technology Subcriteria} 1
+setNodeCompareWord  $net {Technology} {3 Technology Subcriteria} {important}
+setOptimization 0 {New 1} {{$objective} {___COSTS___ 100 Safari {0 1 1 0 100} {Internet Explorer} {0 1 1 0 100} Chrome {0 1 1 0 100} Firefox {0 1 1 0 100}} {} {} {} {
+
+}}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 3
+#Working on net 0
+catch {limitPowerOptions $net 2 1}
+c-network readAllCompares -network $net -source {
+5
+1 Goal
+1
+Determine the best web browser to use
+2 Strategic Criteria
+3
+Enjoyment
+Market
+Technology
+3 Technology Subcriteria
+3
+Features
+Functionality
+Security
+4 Market Subcriteria
+2
+Accessibility
+Availability
+Model
+4
+1.Benefits
+2.Opportunities
+3.Costs
+4.Risks
+
+4 1,0 0,1 2,2 3,3 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+0
+1 1,0 
+
+1
+2 2,0 3,1 
+ 4.000000 
+
+2
+0 
+
+3
+0 
+
+4
+0 
+
+0,0,1
+3 0,0 1,1 2,2 
+ 2.000000  0.500000 
+ 0.333300 
+
+1,0,2
+0 
+
+1,1,2
+0 
+
+1,2,2
+3 0,0 1,1 2,2 
+ 2.000000  0.500000 
+ 0.500000 
+
+1,0,3
+0 
+
+1,1,3
+2 0,0 1,1 
+ 0.500000 
+
+1,2,3
+0 
+
+}
+ratings new -network $net -src {
+6
+Enjoyment
+Features
+Functionality
+Security
+Accessibility
+Availability
+0
+4
+1.Benefits
+2.Opportunities
+3.Costs
+4.Risks
+4 6
+0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 
+1.000000 0.000000 0.000000 1.000000 1.000000 0.000000 
+2.000000 1.000000 2.000000 2.000000 0.000000 2.000000 
+2.000000 1.000000 2.000000 0.000000 2.000000 0.000000 
+4 6
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+High
+Medium
+Low
+1.000000
+ 3.000000  5.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+Good
+Average
+Small
+1.000000
+ 3.000000  5.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+Good
+Average
+Small
+1.000000
+ 3.000000  5.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+High
+Medium
+Low
+1.000000
+ 3.000000  5.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+High
+Medium
+Low
+1.000000
+ 3.000000  5.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+3
+High
+Medium
+Low
+1.000000
+ 3.000000  5.000000  0.000000 
+ 3.000000  0.000000 
+ 0.000000 
+0
+0
+}
+set FORMAT 1
+recreateNetInsideFrameOnly $net
