@@ -120,7 +120,8 @@ Economy2008.addNodeConnectionFromNodeToAllNodesOfCluster("Oil Prices",CLAlternat
 Economy2008.addNodeConnectionFromNodeToAllNodesOfCluster("Future Dollar",CLAlternatives.name)
 
 #Make connections from Aggregate Supply nodes to alternatives
-Economy2008.addNodeConnectionFromAllNodesToAllNodesOfCluster (CLMortgageCrisisIssues.name,CLAlternatives.name)
+Economy2008.addNodeConnectionFromAllNodesToAllNodesOfCluster (CLAggregateSupplyFactors.name,CLAlternatives.name)
+Economy2008.addNodeConnectionFromAllNodesToAllNodesOfCluster(CLMortgageCrisisIssues.name,CLAlternatives.name)
 
 #Make connections back from Alternatives to Primary Factors
 Economy2008.addNodeConnectionFromAllNodesToAllNodesOfCluster(CLAlternatives.name,CLPrimaryFactors.name)
@@ -128,6 +129,7 @@ Economy2008.addNodeConnectionFromAllNodesToAllNodesOfCluster(CLAlternatives.name
 #Export Questionnaire for judgments
 input.export4ExcelQuestFull(Economy2008,"Economy2008_empty.xlsx")
 Economy2008.drawGraphModel()
+Economy2008.printStruct()
 
 
 
