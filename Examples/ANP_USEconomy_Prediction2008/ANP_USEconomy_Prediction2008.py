@@ -128,8 +128,11 @@ Economy2008.addNodeConnectionFromAllNodesToAllNodesOfCluster(CLAlternatives.name
 
 #Export Questionnaire for judgments
 input.export4ExcelQuestFull(Economy2008,"Economy2008_empty.xlsx")
-Economy2008.drawGraphModel()
-Economy2008.printStruct()
+#Economy2008.drawGraphModel()
+#Economy2008.printStruct()
+
+calc.calcAHPMatricesSave2File(Economy2008,"2008Economy_filled.xlsx","Economy2008_results.xlsx")
+
 
 
 

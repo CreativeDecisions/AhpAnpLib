@@ -1,0 +1,166 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Agg Demand" [color="#f57a64" style=filled]
+		"Agg Supply" [color="#f57a64" style=filled]
+		"Global Financial" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		Consumption [color="#64b4f5" style=filled]
+		Exports [color="#64b4f5" style=filled]
+		Investment [color="#64b4f5" style=filled]
+		Confidence [color="#64b4f5" style=filled]
+		"Fiscal Policy" [color="#64b4f5" style=filled]
+		"Monetary Policy" [color="#64b4f5" style=filled]
+		"Expected Inflation" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"Tax Policy" [color="#63c273" style=filled]
+		"Govt Expenditure" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"Labor Cost" [color="#f5e50c" style=filled]
+		"Resource Cost" [color="#f5e50c" style=filled]
+		Expectations [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		"International Relations" [color="#cb7bed" style=filled]
+		"Financial Integration" [color="#cb7bed" style=filled]
+		"Mortgage Crisis" [color="#cb7bed" style=filled]
+		"Oil Prices" [color="#cb7bed" style=filled]
+		"Future Dollar" [color="#cb7bed" style=filled]
+	}
+	subgraph cluster_5 {
+		color=lightgrey style=filled
+		"Housing Prices" [color="#f7952d" style=filled]
+		"Mortgage-backed Securities" [color="#f7952d" style=filled]
+		"Credit Default Swaps" [color="#f7952d" style=filled]
+		"Govt Intervention" [color="#f7952d" style=filled]
+		"Financial Reporting" [color="#f7952d" style=filled]
+	}
+	subgraph cluster_6 {
+		color=lightgrey style=filled
+		"Six Months" [color="#f79ee4" style=filled]
+		"Twelve Months" [color="#f79ee4" style=filled]
+		"Twentyfour Months" [color="#f79ee4" style=filled]
+		"Thirtysix Months" [color="#f79ee4" style=filled]
+	}
+	"Agg Demand" -> Consumption
+	"Agg Demand" -> Exports
+	"Agg Demand" -> Investment
+	"Agg Demand" -> Confidence
+	"Agg Demand" -> "Fiscal Policy"
+	"Agg Demand" -> "Monetary Policy"
+	"Agg Demand" -> "Expected Inflation"
+	"Agg Supply" -> "Labor Cost"
+	"Agg Supply" -> "Resource Cost"
+	"Agg Supply" -> Expectations
+	"Global Financial" -> "International Relations"
+	"Global Financial" -> "Financial Integration"
+	"Global Financial" -> "Mortgage Crisis"
+	"Global Financial" -> "Oil Prices"
+	"Global Financial" -> "Future Dollar"
+	Consumption -> "Six Months"
+	Consumption -> "Twelve Months"
+	Consumption -> "Twentyfour Months"
+	Consumption -> "Thirtysix Months"
+	Exports -> "Six Months"
+	Exports -> "Twelve Months"
+	Exports -> "Twentyfour Months"
+	Exports -> "Thirtysix Months"
+	Investment -> "Six Months"
+	Investment -> "Twelve Months"
+	Investment -> "Twentyfour Months"
+	Investment -> "Thirtysix Months"
+	Confidence -> "Six Months"
+	Confidence -> "Twelve Months"
+	Confidence -> "Twentyfour Months"
+	Confidence -> "Thirtysix Months"
+	"Fiscal Policy" -> "Tax Policy"
+	"Fiscal Policy" -> "Govt Expenditure"
+	"Monetary Policy" -> "Six Months"
+	"Monetary Policy" -> "Twelve Months"
+	"Monetary Policy" -> "Twentyfour Months"
+	"Monetary Policy" -> "Thirtysix Months"
+	"Expected Inflation" -> "Six Months"
+	"Expected Inflation" -> "Twelve Months"
+	"Expected Inflation" -> "Twentyfour Months"
+	"Expected Inflation" -> "Thirtysix Months"
+	"Tax Policy" -> "Six Months"
+	"Tax Policy" -> "Twelve Months"
+	"Tax Policy" -> "Twentyfour Months"
+	"Tax Policy" -> "Thirtysix Months"
+	"Govt Expenditure" -> "Six Months"
+	"Govt Expenditure" -> "Twelve Months"
+	"Govt Expenditure" -> "Twentyfour Months"
+	"Govt Expenditure" -> "Thirtysix Months"
+	"Labor Cost" -> "Six Months"
+	"Labor Cost" -> "Twelve Months"
+	"Labor Cost" -> "Twentyfour Months"
+	"Labor Cost" -> "Thirtysix Months"
+	"Resource Cost" -> "Six Months"
+	"Resource Cost" -> "Twelve Months"
+	"Resource Cost" -> "Twentyfour Months"
+	"Resource Cost" -> "Thirtysix Months"
+	Expectations -> "Six Months"
+	Expectations -> "Twelve Months"
+	Expectations -> "Twentyfour Months"
+	Expectations -> "Thirtysix Months"
+	"International Relations" -> "Six Months"
+	"International Relations" -> "Twelve Months"
+	"International Relations" -> "Twentyfour Months"
+	"International Relations" -> "Thirtysix Months"
+	"Financial Integration" -> "Six Months"
+	"Financial Integration" -> "Twelve Months"
+	"Financial Integration" -> "Twentyfour Months"
+	"Financial Integration" -> "Thirtysix Months"
+	"Mortgage Crisis" -> "Housing Prices"
+	"Mortgage Crisis" -> "Mortgage-backed Securities"
+	"Mortgage Crisis" -> "Credit Default Swaps"
+	"Mortgage Crisis" -> "Govt Intervention"
+	"Mortgage Crisis" -> "Financial Reporting"
+	"Oil Prices" -> "Six Months"
+	"Oil Prices" -> "Twelve Months"
+	"Oil Prices" -> "Twentyfour Months"
+	"Oil Prices" -> "Thirtysix Months"
+	"Future Dollar" -> "Six Months"
+	"Future Dollar" -> "Twelve Months"
+	"Future Dollar" -> "Twentyfour Months"
+	"Future Dollar" -> "Thirtysix Months"
+	"Housing Prices" -> "Six Months"
+	"Housing Prices" -> "Twelve Months"
+	"Housing Prices" -> "Twentyfour Months"
+	"Housing Prices" -> "Thirtysix Months"
+	"Mortgage-backed Securities" -> "Six Months"
+	"Mortgage-backed Securities" -> "Twelve Months"
+	"Mortgage-backed Securities" -> "Twentyfour Months"
+	"Mortgage-backed Securities" -> "Thirtysix Months"
+	"Credit Default Swaps" -> "Six Months"
+	"Credit Default Swaps" -> "Twelve Months"
+	"Credit Default Swaps" -> "Twentyfour Months"
+	"Credit Default Swaps" -> "Thirtysix Months"
+	"Govt Intervention" -> "Six Months"
+	"Govt Intervention" -> "Twelve Months"
+	"Govt Intervention" -> "Twentyfour Months"
+	"Govt Intervention" -> "Thirtysix Months"
+	"Financial Reporting" -> "Six Months"
+	"Financial Reporting" -> "Twelve Months"
+	"Financial Reporting" -> "Twentyfour Months"
+	"Financial Reporting" -> "Thirtysix Months"
+	"Six Months" -> "Agg Demand"
+	"Six Months" -> "Agg Supply"
+	"Six Months" -> "Global Financial"
+	"Twelve Months" -> "Agg Demand"
+	"Twelve Months" -> "Agg Supply"
+	"Twelve Months" -> "Global Financial"
+	"Twentyfour Months" -> "Agg Demand"
+	"Twentyfour Months" -> "Agg Supply"
+	"Twentyfour Months" -> "Global Financial"
+	"Thirtysix Months" -> "Agg Demand"
+	"Thirtysix Months" -> "Agg Supply"
+	"Thirtysix Months" -> "Global Financial"
+}
