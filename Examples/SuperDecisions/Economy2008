@@ -1,0 +1,166 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"1 Aggregate Demand" [color="#f57a64" style=filled]
+		"2 Aggregate Supply" [color="#f57a64" style=filled]
+		"3 Global Financial Context" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1 Consumption" [color="#64b4f5" style=filled]
+		"2 Net Exports" [color="#64b4f5" style=filled]
+		"3 Investment" [color="#64b4f5" style=filled]
+		"4 Confidence" [color="#64b4f5" style=filled]
+		"5 Fiscal Policy" [color="#64b4f5" style=filled]
+		"6 Monetary Policy" [color="#64b4f5" style=filled]
+		"7 Expected Inflation" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"1 Labor Costs" [color="#63c273" style=filled]
+		"2 Natural Resource Costs" [color="#63c273" style=filled]
+		"3 Expectations" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"1 Major International Political Relationships" [color="#f5e50c" style=filled]
+		"2 Global Financial Integration" [color="#f5e50c" style=filled]
+		"3 Mortgage Crisis Issues" [color="#f5e50c" style=filled]
+		"4 Expectations of Future Oil Prices" [color="#f5e50c" style=filled]
+		"5 Future Value of the Dollar" [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		"1 Six months" [color="#cb7bed" style=filled]
+		"2  Twelve months" [color="#cb7bed" style=filled]
+		"3 Twenty four months" [color="#cb7bed" style=filled]
+		"4  Thirty six months" [color="#cb7bed" style=filled]
+	}
+	subgraph cluster_5 {
+		color=lightgrey style=filled
+		"1 Tax Policy" [color="#f7952d" style=filled]
+		"2 Gov't Expenditure" [color="#f7952d" style=filled]
+	}
+	subgraph cluster_6 {
+		color=lightgrey style=filled
+		"1 Uncertainty about Housing Prices" [color="#f79ee4" style=filled]
+		"2 Uncertainty about Mortgage-backed Securities" [color="#f79ee4" style=filled]
+		"3 Role of Credit Default Swaps" [color="#f79ee4" style=filled]
+		"4 Gov't  Ownership & Intervention" [color="#f79ee4" style=filled]
+		"5 Lack of Confidence in Financial Reporting" [color="#f79ee4" style=filled]
+	}
+	"1 Aggregate Demand" -> "7 Expected Inflation"
+	"1 Aggregate Demand" -> "1 Consumption"
+	"1 Aggregate Demand" -> "2 Net Exports"
+	"1 Aggregate Demand" -> "3 Investment"
+	"1 Aggregate Demand" -> "5 Fiscal Policy"
+	"1 Aggregate Demand" -> "6 Monetary Policy"
+	"1 Aggregate Demand" -> "4 Confidence"
+	"2 Aggregate Supply" -> "1 Labor Costs"
+	"2 Aggregate Supply" -> "2 Natural Resource Costs"
+	"2 Aggregate Supply" -> "3 Expectations"
+	"3 Global Financial Context" -> "1 Major International Political Relationships"
+	"3 Global Financial Context" -> "2 Global Financial Integration"
+	"3 Global Financial Context" -> "3 Mortgage Crisis Issues"
+	"3 Global Financial Context" -> "4 Expectations of Future Oil Prices"
+	"3 Global Financial Context" -> "5 Future Value of the Dollar"
+	"1 Consumption" -> "1 Six months"
+	"1 Consumption" -> "2  Twelve months"
+	"1 Consumption" -> "3 Twenty four months"
+	"1 Consumption" -> "4  Thirty six months"
+	"2 Net Exports" -> "1 Six months"
+	"2 Net Exports" -> "2  Twelve months"
+	"2 Net Exports" -> "3 Twenty four months"
+	"2 Net Exports" -> "4  Thirty six months"
+	"3 Investment" -> "1 Six months"
+	"3 Investment" -> "2  Twelve months"
+	"3 Investment" -> "3 Twenty four months"
+	"3 Investment" -> "4  Thirty six months"
+	"4 Confidence" -> "1 Six months"
+	"4 Confidence" -> "2  Twelve months"
+	"4 Confidence" -> "3 Twenty four months"
+	"4 Confidence" -> "4  Thirty six months"
+	"5 Fiscal Policy" -> "1 Tax Policy"
+	"5 Fiscal Policy" -> "2 Gov't Expenditure"
+	"6 Monetary Policy" -> "1 Six months"
+	"6 Monetary Policy" -> "2  Twelve months"
+	"6 Monetary Policy" -> "3 Twenty four months"
+	"6 Monetary Policy" -> "4  Thirty six months"
+	"7 Expected Inflation" -> "1 Six months"
+	"7 Expected Inflation" -> "2  Twelve months"
+	"7 Expected Inflation" -> "3 Twenty four months"
+	"7 Expected Inflation" -> "4  Thirty six months"
+	"1 Labor Costs" -> "1 Six months"
+	"1 Labor Costs" -> "2  Twelve months"
+	"1 Labor Costs" -> "3 Twenty four months"
+	"1 Labor Costs" -> "4  Thirty six months"
+	"2 Natural Resource Costs" -> "1 Six months"
+	"2 Natural Resource Costs" -> "2  Twelve months"
+	"2 Natural Resource Costs" -> "3 Twenty four months"
+	"2 Natural Resource Costs" -> "4  Thirty six months"
+	"3 Expectations" -> "1 Six months"
+	"3 Expectations" -> "2  Twelve months"
+	"3 Expectations" -> "3 Twenty four months"
+	"3 Expectations" -> "4  Thirty six months"
+	"1 Major International Political Relationships" -> "1 Six months"
+	"1 Major International Political Relationships" -> "2  Twelve months"
+	"1 Major International Political Relationships" -> "3 Twenty four months"
+	"1 Major International Political Relationships" -> "4  Thirty six months"
+	"2 Global Financial Integration" -> "1 Six months"
+	"2 Global Financial Integration" -> "2  Twelve months"
+	"2 Global Financial Integration" -> "3 Twenty four months"
+	"2 Global Financial Integration" -> "4  Thirty six months"
+	"3 Mortgage Crisis Issues" -> "2 Uncertainty about Mortgage-backed Securities"
+	"3 Mortgage Crisis Issues" -> "1 Uncertainty about Housing Prices"
+	"3 Mortgage Crisis Issues" -> "5 Lack of Confidence in Financial Reporting"
+	"3 Mortgage Crisis Issues" -> "4 Gov't  Ownership & Intervention"
+	"3 Mortgage Crisis Issues" -> "3 Role of Credit Default Swaps"
+	"4 Expectations of Future Oil Prices" -> "1 Six months"
+	"4 Expectations of Future Oil Prices" -> "2  Twelve months"
+	"4 Expectations of Future Oil Prices" -> "3 Twenty four months"
+	"4 Expectations of Future Oil Prices" -> "4  Thirty six months"
+	"5 Future Value of the Dollar" -> "1 Six months"
+	"5 Future Value of the Dollar" -> "2  Twelve months"
+	"5 Future Value of the Dollar" -> "3 Twenty four months"
+	"5 Future Value of the Dollar" -> "4  Thirty six months"
+	"1 Six months" -> "1 Aggregate Demand"
+	"1 Six months" -> "2 Aggregate Supply"
+	"1 Six months" -> "3 Global Financial Context"
+	"2  Twelve months" -> "1 Aggregate Demand"
+	"2  Twelve months" -> "2 Aggregate Supply"
+	"2  Twelve months" -> "3 Global Financial Context"
+	"3 Twenty four months" -> "1 Aggregate Demand"
+	"3 Twenty four months" -> "2 Aggregate Supply"
+	"3 Twenty four months" -> "3 Global Financial Context"
+	"4  Thirty six months" -> "1 Aggregate Demand"
+	"4  Thirty six months" -> "2 Aggregate Supply"
+	"4  Thirty six months" -> "3 Global Financial Context"
+	"1 Tax Policy" -> "1 Six months"
+	"1 Tax Policy" -> "2  Twelve months"
+	"1 Tax Policy" -> "3 Twenty four months"
+	"1 Tax Policy" -> "4  Thirty six months"
+	"2 Gov't Expenditure" -> "1 Six months"
+	"2 Gov't Expenditure" -> "2  Twelve months"
+	"2 Gov't Expenditure" -> "3 Twenty four months"
+	"2 Gov't Expenditure" -> "4  Thirty six months"
+	"1 Uncertainty about Housing Prices" -> "1 Six months"
+	"1 Uncertainty about Housing Prices" -> "2  Twelve months"
+	"1 Uncertainty about Housing Prices" -> "3 Twenty four months"
+	"1 Uncertainty about Housing Prices" -> "4  Thirty six months"
+	"2 Uncertainty about Mortgage-backed Securities" -> "1 Six months"
+	"2 Uncertainty about Mortgage-backed Securities" -> "2  Twelve months"
+	"2 Uncertainty about Mortgage-backed Securities" -> "3 Twenty four months"
+	"2 Uncertainty about Mortgage-backed Securities" -> "4  Thirty six months"
+	"3 Role of Credit Default Swaps" -> "1 Six months"
+	"3 Role of Credit Default Swaps" -> "2  Twelve months"
+	"3 Role of Credit Default Swaps" -> "3 Twenty four months"
+	"3 Role of Credit Default Swaps" -> "4  Thirty six months"
+	"4 Gov't  Ownership & Intervention" -> "1 Six months"
+	"4 Gov't  Ownership & Intervention" -> "2  Twelve months"
+	"4 Gov't  Ownership & Intervention" -> "3 Twenty four months"
+	"4 Gov't  Ownership & Intervention" -> "4  Thirty six months"
+	"5 Lack of Confidence in Financial Reporting" -> "1 Six months"
+	"5 Lack of Confidence in Financial Reporting" -> "2  Twelve months"
+	"5 Lack of Confidence in Financial Reporting" -> "3 Twenty four months"
+	"5 Lack of Confidence in Financial Reporting" -> "4  Thirty six months"
+}
