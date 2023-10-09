@@ -37,8 +37,9 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 #generate a full questionnaire of the model and export the pairwise comparison matrix to an Excel file
 #we can set to show the estimated priorities in the excel using the third parameter show_estimates as True
 #we can set the verb as True in the fourth parameter to see the process print out in the screen while export excel
-input.export4ExcelQuestFull(myModel,"Example60_Excel_FullQuestionnaire_empty.xlsx",True,True)
-calc.calcAHPMatricesSave2File(myModel,"Example60_Excel_FullQuestionnaire_filledin.xlsx","Example60_Excel_CriteriaPriorities.xlsx",True,False,True)
+input.export4ExcelQuestFull(myModel,"Example60_Excel_FullQuestionnaire_empty.xlsx",True,False)
+#you can import the pairewise comparison for cirteria now or later
+#calc.calcAHPMatricesSave2File(myModel,"Example60_Excel_FullQuestionnaire_filledin.xlsx","Example60_Excel_CriteriaPriorities.xlsx",True,False,True)
 
 myModel.setModelTypeRatings()
 
@@ -54,4 +55,4 @@ myModel.rateModel.addScaleByVar(modelScale)
 #assign scales to each criterion
 myModel.rateModel.assignScale2CriterionByName("Y","ModelScale")
 myModel.rateModel.assignScale2CriterionByName("Z","ModelScale")
-input.export4ExcelRatingScales(myModel,"Exp60_ModelScale_empty.xlsx",False,True,False)
+input.export4ExcelRatingScales(myModel,"Exp60_ModelScale_empty.xlsx",True,True,True)
