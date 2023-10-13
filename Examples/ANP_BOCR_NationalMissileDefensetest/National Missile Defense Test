@@ -1,0 +1,38 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		Goal [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"World Peace" [color="#64b4f5" style=filled]
+		"Huamn Well-being" [color="#64b4f5" style=filled]
+		"International Politics" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"Adversary Countries" [color="#63c273" style=filled]
+		"Security Dilemma" [color="#63c273" style=filled]
+		Terrorism [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"Technological Advancement" [color="#f5e50c" style=filled]
+		"Market Creation" [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		"Militart Relations" [color="#cb7bed" style=filled]
+		"Diplomatic Relations" [color="#cb7bed" style=filled]
+	}
+	Goal -> "World Peace"
+	Goal -> "Huamn Well-being"
+	Goal -> "International Politics"
+	"World Peace" -> "Adversary Countries"
+	"World Peace" -> "Security Dilemma"
+	"World Peace" -> Terrorism
+	"Huamn Well-being" -> "Market Creation"
+	"Huamn Well-being" -> "Technological Advancement"
+	"International Politics" -> "Militart Relations"
+	"International Politics" -> "Diplomatic Relations"
+}

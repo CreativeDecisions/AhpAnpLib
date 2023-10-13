@@ -1,0 +1,47 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Benefits goal" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Benefits-Economic" [color="#64b4f5" style=filled]
+		"Benefits-Political" [color="#64b4f5" style=filled]
+		"Benefits-Security" [color="#64b4f5" style=filled]
+		"Benefits-Technology" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"Benefits-Local" [color="#63c273" style=filled]
+		"Benefits-Defense Industry" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"Benefits-Bargaining Power" [color="#f5e50c" style=filled]
+		"Benefits-Military Leadership" [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		"Benefits-Anti-terrorism" [color="#cb7bed" style=filled]
+		Deterrence [color="#cb7bed" style=filled]
+		MilitaryCapability [color="#cb7bed" style=filled]
+	}
+	subgraph cluster_5 {
+		color=lightgrey style=filled
+		"Tech Leadership" [color="#f7952d" style=filled]
+		"Tech Advancement" [color="#f7952d" style=filled]
+	}
+	"Benefits goal" -> "Benefits-Economic"
+	"Benefits goal" -> "Benefits-Political"
+	"Benefits goal" -> "Benefits-Security"
+	"Benefits goal" -> "Benefits-Technology"
+	"Benefits-Economic" -> "Benefits-Local"
+	"Benefits-Economic" -> "Benefits-Defense Industry"
+	"Benefits-Political" -> "Benefits-Bargaining Power"
+	"Benefits-Political" -> "Benefits-Military Leadership"
+	"Benefits-Security" -> "Benefits-Anti-terrorism"
+	"Benefits-Security" -> Deterrence
+	"Benefits-Security" -> MilitaryCapability
+	"Benefits-Technology" -> "Tech Leadership"
+	"Benefits-Technology" -> "Tech Advancement"
+}
