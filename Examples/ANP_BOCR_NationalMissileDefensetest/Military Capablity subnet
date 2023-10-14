@@ -1,0 +1,73 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		Military [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		Congress [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		Industry [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		Allies [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		"Tech Experts" [color="#cb7bed" style=filled]
+	}
+	subgraph cluster_5 {
+		color=lightgrey style=filled
+		"Deploy NMD" [color="#f7952d" style=filled]
+		"Global Defense" [color="#f7952d" style=filled]
+		"R and D" [color="#f7952d" style=filled]
+		Termination [color="#f7952d" style=filled]
+	}
+	Military -> Congress
+	Military -> Allies
+	Military -> "Deploy NMD"
+	Military -> "Global Defense"
+	Military -> "R and D"
+	Military -> Termination
+	Congress -> "Deploy NMD"
+	Congress -> "Global Defense"
+	Congress -> "R and D"
+	Congress -> Termination
+	Congress -> Military
+	Industry -> Congress
+	Industry -> Military
+	Industry -> "Deploy NMD"
+	Industry -> "Global Defense"
+	Industry -> "R and D"
+	Industry -> Termination
+	Allies -> Congress
+	Allies -> Military
+	Allies -> "Global Defense"
+	"Tech Experts" -> Congress
+	"Tech Experts" -> Military
+	"Tech Experts" -> "Deploy NMD"
+	"Tech Experts" -> "Global Defense"
+	"Tech Experts" -> "R and D"
+	"Tech Experts" -> Termination
+	"Deploy NMD" -> Military
+	"Deploy NMD" -> Congress
+	"Deploy NMD" -> Industry
+	"Deploy NMD" -> Allies
+	"Deploy NMD" -> "Tech Experts"
+	"Global Defense" -> Military
+	"Global Defense" -> Congress
+	"Global Defense" -> Industry
+	"Global Defense" -> Allies
+	"Global Defense" -> "Tech Experts"
+	"Global Defense" -> "Deploy NMD"
+	"Global Defense" -> "R and D"
+	"R and D" -> Military
+	"R and D" -> Congress
+	"R and D" -> Industry
+	"R and D" -> Allies
+	"R and D" -> "Tech Experts"
+	"R and D" -> "Deploy NMD"
+}
