@@ -23,4 +23,5 @@ myModel.addCluster2Model(twoCluster)
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("Cluster A","Cluster B")
 
 myModel.showAllClusterConnections()
+myModel.drawGraphClusters()
 
