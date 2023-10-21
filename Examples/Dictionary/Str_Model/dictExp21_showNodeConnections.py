@@ -1,4 +1,3 @@
-
 from AhpAnpLib import structs_AHPLib as str
 
 myModel=str.Model("my model")
@@ -29,5 +28,8 @@ myModel.addCluster2Model(Cluster3)
 #add connections
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("B","Three")
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("A","Two")
+myModel.addNodeConnectionFromNodeToNodeList("X","Y","Z")
+myModel.addNodeConnectionFromNodeToAllNodesOfCluster("Z","Two")
+myModel.addNodeConnectionFromTo("C","A")
 
 myModel.showAllNodeConnections()

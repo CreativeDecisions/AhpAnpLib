@@ -17,7 +17,6 @@ Cluster0=str.Cluster("Goal",0)
 Cluster1=str.Cluster("One",0)
 Cluster2=str.Cluster("Two",1)
 #add nodes to clusters
-#add nodes to clusters
 Cluster0.addNode2Cluster(GNode)
 Cluster1.addNode2Cluster(ANode) 
 Cluster1.addNode2Cluster(BNode)
