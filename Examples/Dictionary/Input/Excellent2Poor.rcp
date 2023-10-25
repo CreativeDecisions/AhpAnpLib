@@ -1,0 +1,11 @@
+#RATINGS COMPARISONS TEMPLATE
+set group {!DEFAULT_GROUPING!__!_!!______++++_}
+ratings newGroup -network $net -criteria $crit -group $group
+set nnodes 5
+ratings newCategory -network $net -criteria $crit -group $group -category {Excellent}
+ratings newCategory -network $net -criteria $crit -group $group -category {Above Average}
+ratings newCategory -network $net -criteria $crit -group $group -category {Average}
+ratings newCategory -network $net -criteria $crit -group $group -category {Below Average}
+ratings newCategory -network $net -criteria $crit -group $group -category {Poor}
+set values {2.000000 5.000000 7.000000 9.000000 4.000000 5.000000 8.000000 4.000000 7.000000 3.000000}
+::RA::setAllCategoryCompares $net $crit $group $values $nnodes
