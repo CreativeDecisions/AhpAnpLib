@@ -8,5 +8,5 @@ myCluster=str.Cluster("my cluster",0)
 
 myCluster.addNode2Cluster(myNode)
 
-print(f"Parent cluster of my node is: {myNode.parCluster}")
-print(f"Parent cluster of second node is: {mySecNode.parCluster}")
+print(f"Parent cluster of my node is: {myNode.myParentCluster()}")
+print(f"Parent cluster of second node is: {mySecNode.myParentCluster()}")
