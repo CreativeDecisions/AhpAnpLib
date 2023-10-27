@@ -1,6 +1,6 @@
 from AhpAnpLib import structs_AHPLib as str
 
-myModel=str.Model("Model’s name")
+myModel=str.Model("My model")
 # create nodes
 myNode=str.Node("Node Name Z",0)
 myOtherNode=str.Node("Node Name X",1)

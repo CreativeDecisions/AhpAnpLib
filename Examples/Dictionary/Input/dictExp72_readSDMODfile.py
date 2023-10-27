@@ -1,3 +1,3 @@
 from AhpAnpLib import inputs_AHPLib as input
 
-carModel=input.readSDMODfile("Example 72 Car Model","Exp72_CarModel.sdmod",True,False)
+print(input.convertJudgVec2Pairwise (my_list=[1,2,3], my_order=2, mat_size=3))

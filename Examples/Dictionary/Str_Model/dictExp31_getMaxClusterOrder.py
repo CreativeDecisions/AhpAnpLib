@@ -1,4 +1,3 @@
-
 from AhpAnpLib import structs_AHPLib as str
 
 myModel=str.Model("my model")
@@ -19,13 +18,9 @@ Cluster1.addNode2Cluster(ANode)
 Cluster1.addNode2Cluster(BNode)
 Cluster2.addNode2Cluster(CNode) 
 Cluster2.addNode2Cluster(DNode) 
-Cluster3.addNode2Cluster(XNode)
-Cluster3.addNode2Cluster(YNode)
-Cluster3.addNode2Cluster(ZNode)
+Cluster3.addMultipleNodes2Cluster(XNode,YNode,ZNode)
 #add clusters to the model 
-myModel.addCluster2Model(Cluster1)
-myModel.addCluster2Model(Cluster2)
-myModel.addCluster2Model(Cluster3)
+myModel.addMultipleClusters2Model(Cluster1,Cluster2,Cluster3)
 
 clusterMaxOrder=myModel.getMaxClusterOrder()
 print(f"The maximum cluster display order in the current myModel is {clusterMaxOrder}")
