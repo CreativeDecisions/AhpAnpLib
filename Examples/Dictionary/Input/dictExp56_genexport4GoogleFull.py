@@ -31,3 +31,4 @@ myModel.addNodeConnectionFromNodeToAllNodesOfCluster("A","Two")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("Two","Three")
 #generate a full questionnaire of the model to .csv file that can be imported in Google Forms
 FullQuestionnaire= input.genexport4GoogleQuestFull("Exp56_GoogleQuestFull.csv",myModel,"important",True)
+FullQuestionnaire= input.genexport4GoogleQuestFull("Exp56_GoogleQuestFull_noHowmuch.csv",myModel,"important",False)

@@ -17,7 +17,7 @@ ZNode=str.Node("Z",6)
 Cluster0=str.Cluster("Goal",0)
 Cluster1=str.Cluster("One",0)
 Cluster2=str.Cluster("Two",1)
-#add nodes to clusters
+
 #add nodes to clusters
 Cluster0.addNode2Cluster(GNode)
 Cluster1.addNode2Cluster(ANode) 
@@ -38,8 +38,8 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 #we can set to show the estimated priorities in the excel using the third parameter show_estimates as True
 #we can set the verb as True in the fourth parameter to see the process print out in the screen while export excel
 input.export4ExcelQuestFull(myModel,"Example60_Excel_FullQuestionnaire_empty.xlsx",True,False)
-#you can import the pairewise comparison for cirteria now or later
-#calc.calcAHPMatricesSave2File(myModel,"Example60_Excel_FullQuestionnaire_filledin.xlsx","Example60_Excel_CriteriaPriorities.xlsx",True,False,True)
+
+calc.calcAHPMatricesSave2File(myModel,"Example60_Excel_FullQuestionnaire_filledin.xlsx","Example60_Excel_CriteriaPriorities.xlsx",True,False,True)
 
 myModel.setModelTypeRatings()
 

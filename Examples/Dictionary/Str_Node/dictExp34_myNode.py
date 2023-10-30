@@ -1,7 +1,6 @@
 from AhpAnpLib import structs_AHPLib as str
 
-myNode=str.Node("my node",0) 
-mySecNode=str.Node("second node",1) 
-XNode=str.Node("x",3) 
-
-print(myNode,mySecNode,XNode)
+myNode=str.Node('cost',4) 
+mySecNode=str.Node('comfort',2) 
+XNode=str.Node('another criterion name',3) 
+print(mySecNode,XNode,myNode)

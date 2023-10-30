@@ -37,7 +37,7 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 #we can set to show the estimated priorities in the excel using the third parameter show_estimates as True
 #we can set the verb as True in the fourth parameter to see the process print out in the screen while export excel
 input.export4ExcelQuestFull(myModel,"Example67_Excel_FullQuestionnaire_empty.xlsx",True,False)
-#import the pairewise comparison for cirteria priorities
+#import the pairwise comparison for criteria priorities
 calc.calcAHPMatricesSave2File(myModel,"Example67_Excel_FullQuestionnaire_filledin.xlsx","Example67_Excel_CriteriaPriorities.xlsx",True,False,True)
 
 myModel.setModelTypeRatings()

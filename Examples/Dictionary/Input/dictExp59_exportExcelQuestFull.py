@@ -15,7 +15,7 @@ ZNode=str.Node("Z",6)
 Cluster0=str.Cluster("Goal",0)
 Cluster1=str.Cluster("One",0)
 Cluster2=str.Cluster("Two",1)
-#add nodes to clusters
+
 #add nodes to clusters
 Cluster0.addNode2Cluster(GNode)
 Cluster1.addNode2Cluster(ANode) 
@@ -35,4 +35,4 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 #generate a full questionnaire of the model and export the pairwise comparison matrix to an Excel file
 #we can set to show the estimated priorities in the excel using the third parameter show_estimates as True
 #we can set the verb as True in the fourth parameter to see the process print out in the screen while export excel
-input.export4ExcelQuestFull(myModel,"Example59_Excel_FullQuestionnaire_empty.xlsx",True,True)
+input.export4ExcelQuestFull(myModel,"Example59_Excel_FullQuestionnaire_empty.xlsx",False,True)
