@@ -35,7 +35,7 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 #generate a full questionnaire of the model and export the pairwise comparison matrix to an Excel file
 #we can set to show the estimated priorities in the excel using the third parameter show_estimates as True
 #we can set the verb as True in the fourth parameter to see the process print out in the screen while export excel
-input.export4ExcelQuestFull(myModel,"Example65_Excel_FullQuestionnaire_empty.xlsx",True,False)
+input.export4ExcelQuestFull(myModel,"Exp65_Excel_FullQuestionnaire_empty.xlsx",True,False)
 print('Pairwise comparison matrices before import judgment excel: ',myModel.all_pc_matrices)
-input.importFromExcel(myModel,"Example65_Excel_FullQuestionnaire_filledin.xlsx","pairwise_comp",False)
+input.importFromExcel(myModel,"Exp65_Excel_FullQuestionnaire_filledin.xlsx","pairwise_comp",False)
 print('Pairwise comparison matrices after import judgment excel: ',myModel.all_pc_matrices)

@@ -37,9 +37,9 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 #generate a full questionnaire of the model and export the pairwise comparison matrix to an Excel file
 #we can set to show the estimated priorities in the excel using the third parameter show_estimates as True
 #we can set the verb as True in the fourth parameter to see the process print out in the screen while export excel
-input.export4ExcelQuestFull(myModel,"Example63_Excel_FullQuestionnaire_empty.xlsx",True,False)
+input.export4ExcelQuestFull(myModel,"Exp63_Excel_FullQuestionnaire_empty.xlsx",True,False)
 #import the pairewise comparison for cirteria now or later
-calc.calcAHPMatricesSave2File(myModel,"Example63_Excel_FullQuestionnaire_filledin.xlsx","Example63_Excel_CriteriaPriorities.xlsx",True,False,True)
+calc.calcAHPMatricesSave2File(myModel,"Exp63_Excel_FullQuestionnaire_filledin.xlsx","Exp63_Excel_CriteriaPriorities.xlsx",True,False,True)
 
 myModel.setModelTypeRatings()
 
