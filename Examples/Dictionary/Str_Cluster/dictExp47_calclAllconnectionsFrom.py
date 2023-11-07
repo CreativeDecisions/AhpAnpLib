@@ -18,8 +18,6 @@ myModel.addCluster2Model(twoCluster)
 
 myModel.addNodeConnectionFromNodeToNodeList("Node X","Node Y","Node Z")
 
-oneCluster.calcAllConnectionsFrom()
+oneCluster.calcAllConnectionsFrom(True)
 
 print(oneCluster.connectedTo)
-twoCluster.calcAllConnectionsFrom(True)
-twoCluster.calcAllConnectionsFrom(False)

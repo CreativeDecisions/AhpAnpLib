@@ -16,16 +16,11 @@ Cluster2=str.Cluster("Two",1)
 Cluster3=str.Cluster("Three",2)
 #add nodes to clusters
 Cluster1.addNode2Cluster(ANode) 
-Cluster2.addNode2Cluster(BNode)
-Cluster2.addNode2Cluster(CNode) 
-Cluster2.addNode2Cluster(DNode) 
-Cluster3.addNode2Cluster(XNode)
-Cluster3.addNode2Cluster(YNode)
-Cluster3.addNode2Cluster(ZNode)
+Cluster2.addMultipleNodes2Cluster(BNode,CNode,DNode)
+Cluster3.addMultipleNodes2Cluster(XNode,YNode,ZNode)
+
 #add clusters to the model 
-myModel.addCluster2Model(Cluster1)
-myModel.addCluster2Model(Cluster2)
-myModel.addCluster2Model(Cluster3)
+myModel.addMultipleClusters2Model(Cluster1,Cluster2,Cluster3)
 # add connections
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("A","Two")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("Two","Three")

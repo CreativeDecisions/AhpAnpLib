@@ -14,15 +14,18 @@ ZNode=str.Node("Z",6)
 Cluster1=str.Cluster("One",0)
 Cluster2=str.Cluster("Two",1)
 
-#add nodes to clusters
+#add nodes to the clusters using the node’s variable name to represent the node object
+#you should not add the same node to different clusters in a given model
+#both nodes and clusters can be re-used but in different models
 Cluster1.addNode2Cluster(ANode) 
+
 Cluster2.addNode2Cluster(BNode)
 Cluster2.addNode2Cluster(CNode) 
 Cluster2.addNode2Cluster(DNode) 
 Cluster2.addNode2Cluster(XNode)
 Cluster2.addNode2Cluster(YNode)
 Cluster2.addNode2Cluster(ZNode)
-#add clusters to the model 
+#add clusters to the model using the clusters’ variable name to represent the cluster object
 myModel.addCluster2Model(Cluster1)
 myModel.addCluster2Model(Cluster2)
 # add connections

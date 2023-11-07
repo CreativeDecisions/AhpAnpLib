@@ -15,13 +15,12 @@ Cluster2=str.Cluster("Two",1)
 #add nodes to clusters
 Cluster1.addNode2Cluster(ANode) 
 Cluster1.addNode2Cluster(BNode)
-Cluster2.addNode2Cluster(CNode) 
-Cluster2.addNode2Cluster(DNode) 
-Cluster2.addNode2Cluster(XNode)
-Cluster2.addNode2Cluster(YNode)
-Cluster2.addNode2Cluster(ZNode)
+
+Cluster2.addMultipleNodes2Cluster(CNode,DNode,XNode,YNode,ZNode) 
 #add clusters to the model 
 myModel.addCluster2Model(Cluster1)
 myModel.addCluster2Model(Cluster2)
 
-print(f"The maximum node display order in Cluster2 is {Cluster2.getMaxNodeOrderOfCluster()}")
+max=Cluster2.getMaxNodeOrderOfCluster()
+
+print(f"The maximum node display order in Cluster2 is {max}")
