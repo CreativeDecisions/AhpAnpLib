@@ -19,12 +19,7 @@ Cluster2=str.Cluster("Two",1)
 #both nodes and clusters can be re-used but in different models
 Cluster1.addNode2Cluster(ANode) 
 
-Cluster2.addNode2Cluster(BNode)
-Cluster2.addNode2Cluster(CNode) 
-Cluster2.addNode2Cluster(DNode) 
-Cluster2.addNode2Cluster(XNode)
-Cluster2.addNode2Cluster(YNode)
-Cluster2.addNode2Cluster(ZNode)
+Cluster2.addMultipleNodes2Cluster(BNode,CNode,DNode,XNode,YNode,ZNode)
 #add clusters to the model using the clusters’ variable name to represent the cluster object
 myModel.addCluster2Model(Cluster1)
 myModel.addCluster2Model(Cluster2)
