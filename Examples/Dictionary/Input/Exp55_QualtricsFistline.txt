@@ -1,0 +1,251 @@
+[[AdvancedFormat]]
+[[Block: With respect to: G]]
+
+[[Question:MC:SingleAnswer]]
+1. With respect to G which one is more important:
+
+[[Choices]]
+A
+B
+
+[[Question:MC:Dropdown]]
+2. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+3. With respect to G which one is more important:
+
+[[Choices]]
+A
+C
+
+[[Question:MC:Dropdown]]
+4. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+5. With respect to G which one is more important:
+
+[[Choices]]
+A
+D
+
+[[Question:MC:Dropdown]]
+6. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: A]]
+
+[[Question:MC:SingleAnswer]]
+7. With respect to A which one is more important:
+
+[[Choices]]
+X
+Y
+
+[[Question:MC:Dropdown]]
+8. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+9. With respect to A which one is more important:
+
+[[Choices]]
+X
+Z
+
+[[Question:MC:Dropdown]]
+10. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: B]]
+
+[[Question:MC:SingleAnswer]]
+11. With respect to B which one is more important:
+
+[[Choices]]
+X
+Y
+
+[[Question:MC:Dropdown]]
+12. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+13. With respect to B which one is more important:
+
+[[Choices]]
+X
+Z
+
+[[Question:MC:Dropdown]]
+14. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: C]]
+
+[[Question:MC:SingleAnswer]]
+15. With respect to C which one is more important:
+
+[[Choices]]
+X
+Y
+
+[[Question:MC:Dropdown]]
+16. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+17. With respect to C which one is more important:
+
+[[Choices]]
+X
+Z
+
+[[Question:MC:Dropdown]]
+18. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: D]]
+
+[[Question:MC:SingleAnswer]]
+19. With respect to D which one is more important:
+
+[[Choices]]
+X
+Y
+
+[[Question:MC:Dropdown]]
+20. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+21. With respect to D which one is more important:
+
+[[Choices]]
+X
+Z
+
+[[Question:MC:Dropdown]]
+22. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: X]]
+[[Block: With respect to: Y]]
+[[Block: With respect to: Z]]

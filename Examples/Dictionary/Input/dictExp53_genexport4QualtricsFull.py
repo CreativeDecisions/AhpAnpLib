@@ -25,5 +25,5 @@ myModel.addMultipleClusters2Model(Cluster1,Cluster2,Cluster3)
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("A","Two")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("Two","Three")
 #generate a full questionnaire of the model to .txt file that can be imported in Qualtrics survey
-FullQuestionnaire= input.genexport4QualtricsQuestFull("Exp53_QualtricsFull.txt",myModel,"important",True)
+FullQuestionnaire= input.genexport4QualtricsQuestFull("Exp53_QualtricsFull.txt",myModel,"important")
 FullQuestionnaire= input.genexport4QualtricsQuestFull("Exp53_QualtricsSection1.txt",myModel,"dominant",False)

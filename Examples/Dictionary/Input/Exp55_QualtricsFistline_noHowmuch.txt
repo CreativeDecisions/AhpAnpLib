@@ -1,0 +1,97 @@
+[[AdvancedFormat]]
+[[Block: With respect to: G]]
+
+[[Question:MC:SingleAnswer]]
+1. With respect to G which one is more dominant:
+
+[[Choices]]
+A
+B
+
+
+[[Question:MC:SingleAnswer]]
+2. With respect to G which one is more dominant:
+
+[[Choices]]
+A
+C
+
+
+[[Question:MC:SingleAnswer]]
+3. With respect to G which one is more dominant:
+
+[[Choices]]
+A
+D
+
+[[Block: With respect to: A]]
+
+[[Question:MC:SingleAnswer]]
+4. With respect to A which one is more dominant:
+
+[[Choices]]
+X
+Y
+
+
+[[Question:MC:SingleAnswer]]
+5. With respect to A which one is more dominant:
+
+[[Choices]]
+X
+Z
+
+[[Block: With respect to: B]]
+
+[[Question:MC:SingleAnswer]]
+6. With respect to B which one is more dominant:
+
+[[Choices]]
+X
+Y
+
+
+[[Question:MC:SingleAnswer]]
+7. With respect to B which one is more dominant:
+
+[[Choices]]
+X
+Z
+
+[[Block: With respect to: C]]
+
+[[Question:MC:SingleAnswer]]
+8. With respect to C which one is more dominant:
+
+[[Choices]]
+X
+Y
+
+
+[[Question:MC:SingleAnswer]]
+9. With respect to C which one is more dominant:
+
+[[Choices]]
+X
+Z
+
+[[Block: With respect to: D]]
+
+[[Question:MC:SingleAnswer]]
+10. With respect to D which one is more dominant:
+
+[[Choices]]
+X
+Y
+
+
+[[Question:MC:SingleAnswer]]
+11. With respect to D which one is more dominant:
+
+[[Choices]]
+X
+Z
+
+[[Block: With respect to: X]]
+[[Block: With respect to: Y]]
+[[Block: With respect to: Z]]
