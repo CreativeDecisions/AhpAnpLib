@@ -25,5 +25,5 @@ myModel.addMultipleClusters2Model(Cluster0,Cluster2,Cluster1)
 myModel.addNodeConnectionFromNodeToAllNodesOfCluster("G","One")
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 #generate a questionnaire of the model to .txt file that can be imported in Qualtrics survey
-Questionnaire= input.genexport4QualtricsFirstLineAboveDiagQuest("Exp54_QualtricsFistlineandAbove.txt",myModel,"important")
-Questionnaire= input.genexport4QualtricsFirstLineAboveDiagQuest("Exp54_QualtricsFistlineandAbove_noHowmuch.txt",myModel,"dominant",False)
+Questionnaire= input.genexport4QualtricsFirstLineAboveDiagQuest("Exp54_QualtricsFirstlineandAbove.txt",myModel,"important")
+Questionnaire= input.genexport4QualtricsFirstLineAboveDiagQuest("Exp54_QualtricsFirstlineandAbove_noHowmuch.txt",myModel,"dominant",False)
