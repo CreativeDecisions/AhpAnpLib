@@ -29,10 +29,30 @@ cluster3.addMultipleNodes2Cluster(aNode1,aNode2,aNode3)
 #add clusters to model 
 expModel.addMultipleClusters2Model(cluster1,cluster2,cluster3)
 
-#set up node connections from G Node to all the nodes of cluster1
-expModel.addNodeConnectionFromNodeToAllNodesOfCluster("G","C1")
-#set up node connections from all the nodes of cluster1 to all the nodes of the cluster2
+#set up node connections from G Node to all the nodes of cluster2
+expModel.addNodeConnectionFromNodeToAllNodesOfCluster("G","C2")
+#set up node connections from all the nodes of cluster2 to all the nodes of the cluster3
 expModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("C2","C3")
 
 #export to Excel all pairwise comparison matrices - to be filled in and imported back
 input.export4ExcelQuestFull(expModel,"Exp92_Excel_empty.xlsx",False)
+
+#Import Excel of all pairwise comparison matrices
+input.importFromExcel(expModel,"Exp92_Excel_pwFilledin.xlsx","pairwise_comp")
+
+colPos = calc.pwcMatrixCol (expModel,g_node,g_node)
+print('g_node column, g_node row:',colPos)
+colPos = calc.pwcMatrixCol (expModel,g_node,lv1Node1)
+print('g_node column, lv1Node1 row:',colPos)
+colPos = calc.pwcMatrixCol (expModel,g_node,lv1Node2)
+print('g_node column, lv1Node2 row:',colPos)
+colPos = calc.pwcMatrixCol (expModel,g_node,lv1Node3)
+print('g_node column, lv1Node3 row:',colPos)
+colPos = calc.pwcMatrixCol (expModel,g_node,aNode1)
+print('g_node column, aNode1 row:',colPos)
+colPos = calc.pwcMatrixCol (expModel,lv1Node1,aNode1)
+print('lvNode1 column, aNode1 row:',colPos)
+colPos = calc.pwcMatrixCol (expModel,lv1Node1,aNode2)
+print('lvNode1 column, aNode2 row:',colPos)
+colPos = calc.pwcMatrixCol (expModel,lv1Node1,aNode3)
+print('lvNode1 column, aNode3 row:',colPos)

@@ -29,15 +29,15 @@ cluster3.addMultipleNodes2Cluster(aNode1,aNode2,aNode3)
 #add clusters to model 
 expModel.addMultipleClusters2Model(cluster1,cluster2,cluster3)
 
-#set up node connections from G Node to all the nodes of cluster1
+#set up node connections from G Node to all the nodes of cluster2
 expModel.addNodeConnectionFromNodeToAllNodesOfCluster("G","C2")
-#set up node connections from all the nodes of cluster1 to all the nodes of the cluster2
+#set up node connections from all the nodes of cluster2 to all the nodes of the cluster3
 expModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("C2","C3")
 
 #export to Excel all pairwise comparison matrices - to be filled in and imported back
-input.export4ExcelQuestFull(expModel,"Exp92_Excel_empty.xlsx",False)
+input.export4ExcelQuestFull(expModel,"Exp93_Excel_empty.xlsx",False)
 #Import Excel of all pairwise comparison matrices
-input.importFromExcel(expModel,"Exp92_Excel_pwFilledin.xlsx","pairwise_comp")
+input.importFromExcel(expModel,"Exp93_Excel_pwFilledin.xlsx","pairwise_comp")
 
 rowPos = calc.pwcMatrixRow (expModel,g_node,g_node)
 print('g_node column, g_node row:',rowPos)
