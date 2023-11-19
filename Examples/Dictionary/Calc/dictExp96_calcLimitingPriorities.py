@@ -35,5 +35,5 @@ input.importFromExcel(expModel,"Exp95_Excel_pwFilledin.xlsx","pairwise_comp")
 
 unweighted = calc.calcUnweightedSuperMatrix(expModel)
 weighted = calc.calcWeightedSupermatrix(expModel)
-limit = calc.calcLimitingPriorities(weighted,True)
+limit = calc.calcLimitingPriorities(weighted,False)
 print("Limiting priorities: ",limit)

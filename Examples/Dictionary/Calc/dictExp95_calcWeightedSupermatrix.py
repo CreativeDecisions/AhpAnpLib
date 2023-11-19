@@ -32,7 +32,7 @@ expModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("C2","C2")
 input.export4ExcelQuestFull(expModel,"Exp95_Excel_empty.xlsx",False)
 #Import Excel of all pairwise comparison matrices
 input.importFromExcel(expModel,"Exp95_Excel_pwFilledin.xlsx","pairwise_comp")
-unweighted = calc.calcUnweightedSuperMatrix(expModel)
+unweighted = calc.calcUnweightedSuperMatrix(expModel,False)
 weighted = calc.calcWeightedSupermatrix(expModel)
 print("Unweighted supermatrix: ",unweighted)
 print("Weighted supermatrix: ",weighted)
