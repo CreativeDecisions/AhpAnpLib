@@ -29,9 +29,9 @@ expModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("C1","C2")
 expModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("C2","C1")
 expModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("C2","C2")
 #export to Excel all pairwise comparison matrices - to be filled in and imported back
-input.export4ExcelQuestFull(expModel,"Exp95_Excel_empty.xlsx",False)
+input.export4ExcelQuestFull(expModel,"Exp96_Excel_empty.xlsx",False)
 #Import Excel of all pairwise comparison matrices
-input.importFromExcel(expModel,"Exp95_Excel_pwFilledin.xlsx","pairwise_comp")
+input.importFromExcel(expModel,"Exp96_Excel_pwFilledin.xlsx","pairwise_comp")
 
 unweighted = calc.calcUnweightedSuperMatrix(expModel)
 weighted = calc.calcWeightedSupermatrix(expModel)
