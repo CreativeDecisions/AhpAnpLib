@@ -33,5 +33,5 @@ input.export4ExcelQuestFull(expModel,"Exp103_Excel_empty.xlsx",False)
 #Import Excel of all pairwise comparison matrices
 input.importFromExcel(expModel,"Exp103_Excel_pwFilledin.xlsx","pairwise_comp")
 
-sensitivities = calc.calcSensOfAll(expModel)
-print(sensitivities)
+inconsistencies = calc.calcSensOfAll(expModel)
+print(inconsistencies)

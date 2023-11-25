@@ -52,5 +52,5 @@ myModel.rateModel.assignScale2CriterionByName("Z","ModelScale2")
 input.export4ExcelRatingsSetup(myModel,"Exp104_RatingsSetup_empty.xlsx",True)
 #import ratings scales judgments
 input.importRatingsFromExcel(myModel,"Exp104_RatingScales_filledin.xlsx","rating_scales",False)
-scaleSensitivities = calc.calcSensOfAllScales(myModel)
-print("Sensitivity of scales: ", scaleSensitivities)
+scaleInconsistencies = calc.calcSensOfAllScales(myModel)
+print("Sensitivity of scales: ", scaleInconsistencies)

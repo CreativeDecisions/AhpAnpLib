@@ -29,7 +29,7 @@ myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("One","Two")
 #generate a full questionnaire of the model and export the pairwise comparison matrix to an Excel file
 input.export4ExcelQuestFull(myModel,"Exp106_Excel_FullQuestionnaire_empty.xlsx",True,False)
 #import the pairwise comparison for criteria priorities
-calc.calcAHPMatricesSave2File(myModel,"Exp106_Excel_FullQuestionnaire_filledin.xlsx","Exp66_Excel_CriteriaPriorities.xlsx",True,False,True)
+calc.calcAHPMatricesSave2File(myModel,"Exp106_Excel_FullQuestionnaire_filledin.xlsx","Exp106_Excel_CriteriaPriorities.xlsx",True,False,True)
 
 myModel.setModelTypeRatings()
 #add alternatives for ratings
