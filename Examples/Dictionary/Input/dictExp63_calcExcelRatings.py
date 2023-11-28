@@ -44,7 +44,7 @@ calc.calcAHPMatricesSave2File(myModel,"Exp63_Excel_FullQuestionnaire_filledin.xl
 myModel.setModelTypeRatings()
 
 #add alternatives for ratings
-myModel.rateModel.addAlternativesByName("I","II","III")
+myModel.rateModel.addAlternativesByName("alt I","alt II","alt III")
 #add criteria for ratings
 myModel.rateModel.addCriteriaByVar(XNode,YNode,ZNode)
 #create scale

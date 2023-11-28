@@ -1,0 +1,35 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		G [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		A [color="#64b4f5" style=filled]
+		B [color="#64b4f5" style=filled]
+		C [color="#64b4f5" style=filled]
+		D [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		X [color="#63c273" style=filled]
+		Y [color="#63c273" style=filled]
+		Z [color="#63c273" style=filled]
+	}
+	G -> A
+	G -> B
+	G -> C
+	G -> D
+	A -> X
+	A -> Y
+	A -> Z
+	B -> X
+	B -> Y
+	B -> Z
+	C -> X
+	C -> Y
+	C -> Z
+	D -> X
+	D -> Y
+	D -> Z
+}
