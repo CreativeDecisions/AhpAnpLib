@@ -1,0 +1,142 @@
+set top_net [getTopNet $net]
+set SAVED_WITH_VERSION {2.10.0 made on Fri, 01 Mar 2019 02:54:56 -0500.  VCRevInfo .  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_matrix
+set x 750
+set y 412
+set desc {The cluster to contain the goal node}
+set name {1Goal}
+set color #ddfdff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width -71
+set height 62
+set clusterName {1Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Goal Node}
+set desc {This is the goal node and the goal is to select the best car}
+set x 38
+set y 7
+set color {#ffff95}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 945
+set y 578
+set desc {The criteria for buying a car}
+set name {2Criteria}
+set color #ddfdff
+set iconUU {}
+set iconFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set winFont "-*-Arial-bold-r-normal-*-16-*-*-*-*-*"
+set width 532
+set height 51
+set clusterName {2Criteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1Prestige}
+set desc {Status and prestige projected by the car}
+set x 75
+set y 19
+set color {#ffff95}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2Price}
+set desc {Initial cost of car}
+set x 228
+set y 18
+set color {#ffff95}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3MPG}
+set desc {Miles per gallon}
+set x 349
+set y 18
+set color {#ffff95}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {4Comfort}
+set desc {Comfort of interior and ride}
+set x 465
+set y 17
+set color {#ffff95}
+set iconUU {}
+set font {-*-Arial-medium-r-normal-*-16-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {1Goal}
+set final {2Criteria}
+connectClusters $net $init $final
+nodeCompareFinished $net {Goal Node} {2Criteria} 1
+setNodeCompareWord  $net {Goal Node} {2Criteria} {Preference}
+setNetCompareWord $net {Preference}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetClusterIconFont $net {-*-arial-medium-r-normal-*-16-*-*-*-*-*}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 0
+catch {limitPowerOptions $net 2 0}
+c-network readAllCompares -network $net -source {
+2
+1Goal
+1
+Goal Node
+2Criteria
+4
+1Prestige
+2Price
+3MPG
+4Comfort
+
+2 1,0 0,1 
+ 0.000000  1.000000 
+ 0.000000  0.000000 
+0
+1 1,0 
+
+1
+0 
+
+0,0,1
+4 0,0 1,1 2,2 3,3 
+ 0.250000  0.333333  0.500000 
+ 3.000000  1.500000 
+ 0.333300 
+
+}
+set FORMAT 1
+recreateNetInsideFrameOnly $net
