@@ -35,5 +35,5 @@ input.export4ExcelQuestFull(expModel,"Exp119_Excel_empty.xlsx",False)
 
 calc.calcMatrices(expModel,"Exp119_Excel_pwfilledin.xlsx",True,False)
 # how would nodes priorities in cluster "A" change when "X" changes
-calc.sensitivityCellSupermatrixPlot(expModel,"A","show",True,"X")
-calc.sensitivityCellSupermatrixPlot(expModel,"A","Exp119_Excel_sensitivity.xlsx",True,"Y","Z")
+calc.sensitivityCellSupermatrixPlot(expModel,"A","show",False,"X")
+calc.sensitivityCellSupermatrixPlot(expModel,"A","Exp119_Excel_sensitivity.xlsx",False,"Y","Z")
