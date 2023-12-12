@@ -14,8 +14,8 @@ YNode=str.Node("Y",5)
 ZNode=str.Node("Z",6)
 # create clusters
 Cluster0=str.Cluster("Goal",0)
-Cluster1=str.Cluster("One",0)
-Cluster2=str.Cluster("Two",1)
+Cluster1=str.Cluster("One",1)
+Cluster2=str.Cluster("Two",2)
 #add nodes to clusters
 Cluster0.addNode2Cluster(GNode)
 Cluster1.addMultipleNodes2Cluster(ANode,BNode,CNode,DNode)  
