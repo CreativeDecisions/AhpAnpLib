@@ -13,8 +13,8 @@ YsubCri=str.Node("Y subCri",5)
 ZsubCri=str.Node("Z subCri",6)
 # create clusters
 Cluster0=str.Cluster("Goal",0)
-Cluster1=str.Cluster("One",2)
-Cluster2=str.Cluster("Two",3)
+Cluster1=str.Cluster("One",1)
+Cluster2=str.Cluster("Two",2)
 #add nodes to clusters
 Cluster0.addNode2Cluster(GNode)
 Cluster1.addMultipleNodes2Cluster(ACri,BCri)  
