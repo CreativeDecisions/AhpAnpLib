@@ -53,6 +53,6 @@ myModel.rateModel.assignScale2CriterionByName("Y","ModelScale1")
 myModel.rateModel.assignScale2CriterionByName("Z","ModelScale2")
 
 #calculate rating scales, export ratings scale and export ratings table
-calc.calcRateCritV(myModel,True)
+calc.calcRateCritV(myModel,False)
 input.export4ExcelRatingScales(myModel,"Exp61_RatingsTable.xlsx",True,True,False)
 input.export4ExcelRatingsTable(myModel,"Exp61_RatingsTable.xlsx",False)
