@@ -43,7 +43,7 @@ myModel.rateModel.addCriteriaByVar(YNode,ZNode)
 modelScale1=rate.RatScale("ModelScale1")
 modelScale1.defineScaleByValue(None,False,["Good",1],["Fair",0.6],["Poor",0.3])
 modelScale2=rate.RatScale("ModelScale2")
-modelScale2.defineScaleByValue(None,False,["Excellent",0.7],["Good",0.2],["Average",0.1])
+modelScale2.defineScaleByValue(None,False,"Excellent","Good","Average")
 #add scale to the model
 myModel.rateModel.addScaleByVar(modelScale1)
 myModel.rateModel.addScaleByVar(modelScale2)
