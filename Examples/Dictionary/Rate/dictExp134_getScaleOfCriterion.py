@@ -51,5 +51,4 @@ myModel.rateModel.assignScale2CriterionByName(YsubCri,"ExampleScale2",False)
 myModel.rateModel.assignScale2CriterionByName(ZsubCri,"ExampleScale2",False)
 
 scaleofY = myModel.rateModel.getScaleOfCriterion(YsubCri)
-print(myModel.rateModel.getScaleObjByName("ExampleScale2"))
-
+print(scaleofY)
