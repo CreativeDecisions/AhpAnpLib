@@ -1,0 +1,147 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"1.1At what level should the Dam be kept" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"2.1Financial" [color="#64b4f5" style=filled]
+		"2.2Political" [color="#64b4f5" style=filled]
+		"2.3Environment Protection" [color="#64b4f5" style=filled]
+		"2.4Social Protection" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"3.1Congress" [color="#63c273" style=filled]
+		"3.2Dept of Interior" [color="#63c273" style=filled]
+		"3.3Courts" [color="#63c273" style=filled]
+		"3.4State" [color="#63c273" style=filled]
+		"3.5Lobbies" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"4.1Clout" [color="#f5e50c" style=filled]
+		"4.2Legal Position" [color="#f5e50c" style=filled]
+		"4.4Irreversibility of the Env" [color="#f5e50c" style=filled]
+		"4.5Archeo-logical Problems" [color="#f5e50c" style=filled]
+		"4.6Current Financial Resources" [color="#f5e50c" style=filled]
+		"4.7Potential Financial Loss" [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		"5.1Farmers" [color="#cb7bed" style=filled]
+		"5.2Recreationists" [color="#cb7bed" style=filled]
+		"5.3Power Users" [color="#cb7bed" style=filled]
+		"5.4Environmentalists" [color="#cb7bed" style=filled]
+	}
+	subgraph cluster_5 {
+		color=lightgrey style=filled
+		"6.1Irrigation" [color="#f7952d" style=filled]
+		"6.2Flood Control" [color="#f7952d" style=filled]
+		"6.3Flat Dam" [color="#f7952d" style=filled]
+		"6.4White Dam" [color="#f7952d" style=filled]
+		"6.5Cheap Power" [color="#f7952d" style=filled]
+		"6.6Protect Environment" [color="#f7952d" style=filled]
+	}
+	subgraph cluster_6 {
+		color=lightgrey style=filled
+		"7.1Full Dam" [color="#f79ee4" style=filled]
+		"7.2Half-Full Dam" [color="#f79ee4" style=filled]
+	}
+	"1.1At what level should the Dam be kept" -> "2.3Environment Protection"
+	"1.1At what level should the Dam be kept" -> "2.1Financial"
+	"1.1At what level should the Dam be kept" -> "2.2Political"
+	"1.1At what level should the Dam be kept" -> "2.4Social Protection"
+	"2.1Financial" -> "3.1Congress"
+	"2.1Financial" -> "3.3Courts"
+	"2.1Financial" -> "3.2Dept of Interior"
+	"2.1Financial" -> "3.5Lobbies"
+	"2.1Financial" -> "3.4State"
+	"2.2Political" -> "3.1Congress"
+	"2.2Political" -> "3.3Courts"
+	"2.2Political" -> "3.2Dept of Interior"
+	"2.2Political" -> "3.5Lobbies"
+	"2.2Political" -> "3.4State"
+	"2.3Environment Protection" -> "3.1Congress"
+	"2.3Environment Protection" -> "3.3Courts"
+	"2.3Environment Protection" -> "3.2Dept of Interior"
+	"2.3Environment Protection" -> "3.5Lobbies"
+	"2.3Environment Protection" -> "3.4State"
+	"2.4Social Protection" -> "3.1Congress"
+	"2.4Social Protection" -> "3.3Courts"
+	"2.4Social Protection" -> "3.2Dept of Interior"
+	"2.4Social Protection" -> "3.5Lobbies"
+	"2.4Social Protection" -> "3.4State"
+	"3.1Congress" -> "4.5Archeo-logical Problems"
+	"3.1Congress" -> "4.1Clout"
+	"3.1Congress" -> "4.6Current Financial Resources"
+	"3.1Congress" -> "4.4Irreversibility of the Env"
+	"3.1Congress" -> "4.2Legal Position"
+	"3.1Congress" -> "4.7Potential Financial Loss"
+	"3.2Dept of Interior" -> "4.5Archeo-logical Problems"
+	"3.2Dept of Interior" -> "4.1Clout"
+	"3.2Dept of Interior" -> "4.6Current Financial Resources"
+	"3.2Dept of Interior" -> "4.4Irreversibility of the Env"
+	"3.2Dept of Interior" -> "4.2Legal Position"
+	"3.2Dept of Interior" -> "4.7Potential Financial Loss"
+	"3.3Courts" -> "4.5Archeo-logical Problems"
+	"3.3Courts" -> "4.1Clout"
+	"3.3Courts" -> "4.6Current Financial Resources"
+	"3.3Courts" -> "4.4Irreversibility of the Env"
+	"3.3Courts" -> "4.2Legal Position"
+	"3.3Courts" -> "4.7Potential Financial Loss"
+	"3.4State" -> "4.5Archeo-logical Problems"
+	"3.4State" -> "4.1Clout"
+	"3.4State" -> "4.6Current Financial Resources"
+	"3.4State" -> "4.4Irreversibility of the Env"
+	"3.4State" -> "4.2Legal Position"
+	"3.4State" -> "4.7Potential Financial Loss"
+	"3.5Lobbies" -> "4.5Archeo-logical Problems"
+	"3.5Lobbies" -> "4.1Clout"
+	"3.5Lobbies" -> "4.6Current Financial Resources"
+	"3.5Lobbies" -> "4.4Irreversibility of the Env"
+	"3.5Lobbies" -> "4.2Legal Position"
+	"3.5Lobbies" -> "4.7Potential Financial Loss"
+	"4.1Clout" -> "5.4Environmentalists"
+	"4.1Clout" -> "5.1Farmers"
+	"4.1Clout" -> "5.3Power Users"
+	"4.1Clout" -> "5.2Recreationists"
+	"4.2Legal Position" -> "5.4Environmentalists"
+	"4.2Legal Position" -> "5.1Farmers"
+	"4.2Legal Position" -> "5.3Power Users"
+	"4.2Legal Position" -> "5.2Recreationists"
+	"4.4Irreversibility of the Env" -> "5.4Environmentalists"
+	"4.4Irreversibility of the Env" -> "5.1Farmers"
+	"4.4Irreversibility of the Env" -> "5.3Power Users"
+	"4.4Irreversibility of the Env" -> "5.2Recreationists"
+	"4.5Archeo-logical Problems" -> "5.4Environmentalists"
+	"4.5Archeo-logical Problems" -> "5.1Farmers"
+	"4.5Archeo-logical Problems" -> "5.3Power Users"
+	"4.5Archeo-logical Problems" -> "5.2Recreationists"
+	"4.6Current Financial Resources" -> "5.4Environmentalists"
+	"4.6Current Financial Resources" -> "5.1Farmers"
+	"4.6Current Financial Resources" -> "5.3Power Users"
+	"4.6Current Financial Resources" -> "5.2Recreationists"
+	"4.7Potential Financial Loss" -> "5.4Environmentalists"
+	"4.7Potential Financial Loss" -> "5.1Farmers"
+	"4.7Potential Financial Loss" -> "5.3Power Users"
+	"4.7Potential Financial Loss" -> "5.2Recreationists"
+	"5.1Farmers" -> "6.1Irrigation"
+	"5.1Farmers" -> "6.2Flood Control"
+	"5.2Recreationists" -> "6.3Flat Dam"
+	"5.2Recreationists" -> "6.4White Dam"
+	"5.3Power Users" -> "6.5Cheap Power"
+	"5.4Environmentalists" -> "6.6Protect Environment"
+	"6.1Irrigation" -> "7.1Full Dam"
+	"6.1Irrigation" -> "7.2Half-Full Dam"
+	"6.2Flood Control" -> "7.1Full Dam"
+	"6.2Flood Control" -> "7.2Half-Full Dam"
+	"6.3Flat Dam" -> "7.1Full Dam"
+	"6.3Flat Dam" -> "7.2Half-Full Dam"
+	"6.4White Dam" -> "7.1Full Dam"
+	"6.4White Dam" -> "7.2Half-Full Dam"
+	"6.5Cheap Power" -> "7.1Full Dam"
+	"6.5Cheap Power" -> "7.2Half-Full Dam"
+	"6.6Protect Environment" -> "7.1Full Dam"
+	"6.6Protect Environment" -> "7.2Half-Full Dam"
+}
