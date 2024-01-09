@@ -1,0 +1,35 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"1 Primanti" [color="#f57a64" style=filled]
+		"2 Panera" [color="#f57a64" style=filled]
+		"3 Piada" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"3Menu" [color="#64b4f5" style=filled]
+		"2Price" [color="#64b4f5" style=filled]
+		"1Quality" [color="#64b4f5" style=filled]
+		"4Speed" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"Goal: where to order lunch" [color="#63c273" style=filled]
+	}
+	"3Menu" -> "2 Panera"
+	"3Menu" -> "3 Piada"
+	"3Menu" -> "1 Primanti"
+	"2Price" -> "2 Panera"
+	"2Price" -> "3 Piada"
+	"2Price" -> "1 Primanti"
+	"1Quality" -> "2 Panera"
+	"1Quality" -> "3 Piada"
+	"1Quality" -> "1 Primanti"
+	"4Speed" -> "2 Panera"
+	"4Speed" -> "3 Piada"
+	"4Speed" -> "1 Primanti"
+	Goal:" where to order lunch" -> "3Menu"
+	Goal:" where to order lunch" -> "2Price"
+	Goal:" where to order lunch" -> "1Quality"
+	Goal:" where to order lunch" -> "4Speed"
+}

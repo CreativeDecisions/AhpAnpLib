@@ -1,0 +1,45 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Goal Node" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1Prestige" [color="#64b4f5" style=filled]
+		"2Price" [color="#64b4f5" style=filled]
+		"3MPG" [color="#64b4f5" style=filled]
+		"4Comfort" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"2.1InitialCost" [color="#63c273" style=filled]
+		"2.2MaintenanceCost" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"1Acura TL" [color="#f5e50c" style=filled]
+		"2Toyota Camry" [color="#f5e50c" style=filled]
+		"3Honda Civic" [color="#f5e50c" style=filled]
+	}
+	"Goal Node" -> "1Prestige"
+	"Goal Node" -> "2Price"
+	"Goal Node" -> "3MPG"
+	"Goal Node" -> "4Comfort"
+	"1Prestige" -> "1Acura TL"
+	"1Prestige" -> "2Toyota Camry"
+	"1Prestige" -> "3Honda Civic"
+	"2Price" -> "2.1InitialCost"
+	"2Price" -> "2.2MaintenanceCost"
+	"3MPG" -> "1Acura TL"
+	"3MPG" -> "2Toyota Camry"
+	"3MPG" -> "3Honda Civic"
+	"4Comfort" -> "1Acura TL"
+	"4Comfort" -> "2Toyota Camry"
+	"4Comfort" -> "3Honda Civic"
+	"2.1InitialCost" -> "1Acura TL"
+	"2.1InitialCost" -> "2Toyota Camry"
+	"2.1InitialCost" -> "3Honda Civic"
+	"2.2MaintenanceCost" -> "3Honda Civic"
+	"2.2MaintenanceCost" -> "2Toyota Camry"
+	"2.2MaintenanceCost" -> "1Acura TL"
+}
