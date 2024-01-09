@@ -77,8 +77,8 @@ scale4=rate.RatScale("AttitudeScale")
 scale4.defineScaleByValue(None,False,["Enthused",1],["Above Average",0.359],["Average",0.153],["Negative",0.057])
 EmployEvaluation.rateModel.addScaleByVar(scale4)
 # 3. import from rcp file
-scale5 = input.readRatScaleRPCfile("QuantityScale", "quantity.rcp")
-scale6 = input.readRatScaleRPCfile("QualityScale", "quality.rcp")
+scale5 = input.readRatScaleRCPfile("QuantityScale", "quantity.rcp")
+scale6 = input.readRatScaleRCPfile("QualityScale", "quality.rcp")
 EmployEvaluation.rateModel.addScaleByVar(scale5)
 EmployEvaluation.rateModel.addScaleByVar(scale6)
 
