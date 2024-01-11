@@ -6,6 +6,6 @@ from AhpAnpLib import calcs_AHPLib as calc
 #create model
 mymodel=str.Model("My Model")
 
-input.readStructFromExcel(mymodel,'ExpN_readStruct_Excel.xlsx',"Sheet1", False)
+input.readSupermatrixFromExcel(mymodel,'ExpN_readSupermatrix.xlsx',"Sheet1", False)
 
 mymodel.printStruct()
