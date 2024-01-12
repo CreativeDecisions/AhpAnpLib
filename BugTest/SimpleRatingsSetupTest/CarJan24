@@ -1,0 +1,17 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		CarPurchase [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1Prestige" [color="#64b4f5" style=filled]
+		"2Price" [color="#64b4f5" style=filled]
+		"3MPG" [color="#64b4f5" style=filled]
+		"4Comfort" [color="#64b4f5" style=filled]
+	}
+	CarPurchase -> "1Prestige"
+	CarPurchase -> "2Price"
+	CarPurchase -> "3MPG"
+	CarPurchase -> "4Comfort"
+}
