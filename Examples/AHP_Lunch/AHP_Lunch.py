@@ -44,11 +44,13 @@ lunchModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("2Criteria","3Altern
 # Print out model
 lunchModel.printStruct()
 
+#export empty Excel questionnaire
 input.export4ExcelQuestFull(lunchModel,"lunchModel_Excel_empty.xlsx",True)
 
+#import filled-in Excel quesionnaire, calculate and export results
 inputFilePath="lunchModel_Excel_filledIn.xlsx"
 outputFilePath="lunchModel_Results.xlsx"
 
-#input.importFromExcel(lunchModel,inputFilePath,0)
 calc.calcAHPMatricesSave2File(lunchModel,inputFilePath,outputFilePath,True,True,True,False)
+# conduct sensitivity analysis with respect to 1Quality, 2Price, 3Menu and 4Speed
 calc.sensitivityCellSupermatrixPlot(lunchModel,"3Alternatives",outputFilePath,False,"1Quality","2Price","3Menu","4Speed")

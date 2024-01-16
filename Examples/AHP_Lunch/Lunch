@@ -1,0 +1,35 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		GoalNode [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1Quality" [color="#64b4f5" style=filled]
+		"2Price" [color="#64b4f5" style=filled]
+		"3Menu" [color="#64b4f5" style=filled]
+		"4Speed" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"1Primanti" [color="#63c273" style=filled]
+		"2Panera" [color="#63c273" style=filled]
+		"3Piada" [color="#63c273" style=filled]
+	}
+	GoalNode -> "3Menu"
+	GoalNode -> "1Quality"
+	GoalNode -> "2Price"
+	GoalNode -> "4Speed"
+	"3Menu" -> "1Primanti"
+	"3Menu" -> "2Panera"
+	"3Menu" -> "3Piada"
+	"1Quality" -> "1Primanti"
+	"1Quality" -> "2Panera"
+	"1Quality" -> "3Piada"
+	"2Price" -> "1Primanti"
+	"2Price" -> "2Panera"
+	"2Price" -> "3Piada"
+	"4Speed" -> "1Primanti"
+	"4Speed" -> "2Panera"
+	"4Speed" -> "3Piada"
+}
