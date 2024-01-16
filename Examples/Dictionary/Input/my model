@@ -1,35 +1,45 @@
 digraph G {
 	subgraph cluster_0 {
 		color=lightgrey style=filled
-		G [color="#f57a64" style=filled]
+		Gnode [color="#f57a64" style=filled]
 	}
 	subgraph cluster_1 {
 		color=lightgrey style=filled
-		A [color="#64b4f5" style=filled]
-		B [color="#64b4f5" style=filled]
-		C [color="#64b4f5" style=filled]
-		D [color="#64b4f5" style=filled]
+		N1 [color="#64b4f5" style=filled]
+		N2 [color="#64b4f5" style=filled]
+		N3 [color="#64b4f5" style=filled]
+		N4 [color="#64b4f5" style=filled]
+		N5 [color="#64b4f5" style=filled]
+		N6 [color="#64b4f5" style=filled]
 	}
 	subgraph cluster_2 {
 		color=lightgrey style=filled
-		X [color="#63c273" style=filled]
-		Y [color="#63c273" style=filled]
-		Z [color="#63c273" style=filled]
+		A1 [color="#63c273" style=filled]
+		A2 [color="#63c273" style=filled]
+		A3 [color="#63c273" style=filled]
 	}
-	G -> A
-	G -> B
-	G -> C
-	G -> D
-	A -> X
-	A -> Y
-	A -> Z
-	B -> X
-	B -> Y
-	B -> Z
-	C -> X
-	C -> Y
-	C -> Z
-	D -> X
-	D -> Y
-	D -> Z
+	Gnode -> N1
+	Gnode -> N2
+	Gnode -> N3
+	Gnode -> N4
+	Gnode -> N5
+	Gnode -> N6
+	N1 -> A1
+	N1 -> A2
+	N1 -> A3
+	N2 -> A1
+	N2 -> A2
+	N2 -> A3
+	N3 -> A1
+	N3 -> A2
+	N3 -> A3
+	N4 -> A1
+	N4 -> A2
+	N4 -> A3
+	N5 -> A1
+	N5 -> A2
+	N5 -> A3
+	N6 -> A1
+	N6 -> A2
+	N6 -> A3
 }
