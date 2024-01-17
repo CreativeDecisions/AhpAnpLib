@@ -7,6 +7,6 @@ from AhpAnpLib import calcs_AHPLib as calc
 mymodel=str.Model("My Model")
 
 input.readStructFromExcel(mymodel,'ExpN_readconnectionsstruct_Excel.xlsx',"Sheet2", False)
-input.readConnectionsFromExcel(mymodel,'ExpN_readconnectionsstruct_Excel.xlsx',"Sheet1", False)
+input.readConnectionsFromExcel(mymodel,'ExpN_readconnectionsstruct_Excel.xlsx',"Sheet1", True)
 
 mymodel.printStruct()
