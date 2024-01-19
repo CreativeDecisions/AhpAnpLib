@@ -4,10 +4,7 @@ from AhpAnpLib import ratings_AHPLib as rate
 from AhpAnpLib import calcs_AHPLib as calc
 
 #create model
-mymodel=str.Model("My Model")
-
-input.readSupermatrixFromExcel(mymodel,'ExpN_readSupermatrix.xlsx',"Sheet1", False)
-
-input.export4ExcelQuestFull(mymodel,"ExpN_readSupermatrix_pw_empty.xlsx")
-
-calc.calcAHPMatricesSave2File(mymodel,"ExpN_readSupermatrix_pw_empty.xlsx","ExpN_readSupermatrix_pw_export.xlsx",False,False,True,True)
+superModel=str.Model("My Model")
+input.readSupermatrixFromExcel(superModel,"ExpN_readSupermatrix.xlsx","Sheet1", False)
+superModel.printStruct()
+calc.calcAHPMatricesSave2File(superModel,"","ExpN_readSupermatrix_pw_results.xlsx",False,False,True,False)
