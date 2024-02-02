@@ -14,14 +14,5 @@ cluster2.addMultipleNodes2Cluster(node4,node5)
 
 myModel.addMultipleClusters2Model(cluster1,cluster2)
 myModel.addNodeConnectionFromAllNodesToAllNodesOfCluster(cluster1.name,cluster2.name)
-myModel.addNodeConnectionFromNodeToNodeList(node4.name,node1.name,node2.name)
-list_connect = [[cluster2, node4, cluster1],[cluster1, node3,cluster2],[cluster1,node1,cluster2],[cluster1,node2,cluster2]]
-temp_all_pc_matrices =[[1,0.25,
-                        [4,1]],
-                        [[1,2],
-                        [0.5,1]],
-                        [[1,3],
-                         [0.33333,1]],
-                         [[1,5],
-                          [0.2,1]]]
-print(input.reorder_pwc_np (myModel,temp_all_pc_matrices,list_connect))
+list_connect = [[cluster1, node3,cluster2],[cluster1,node1,cluster2],[cluster1,node2,cluster2]]
+print(input.find_index_pwc (list_connect,cluster1,node2,cluster2))
