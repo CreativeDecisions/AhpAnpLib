@@ -31,7 +31,7 @@ Quality = str.Node("Quality",2)
 subCriteria.addMultipleNodes2Cluster(Quality,Quantity)
 
 # we created goal, criteria, subcriteria above
-# node we add them to the model and add connections to them then we get the AHP structure
+# now we add them to the model and add connections to them then we get the AHP structure
 EmployEvaluation.addCluster2Model(Goal)
 EmployEvaluation.addMultipleClusters2Model(Criteria,subCriteria)
 # when add connections we use cluster or node name
@@ -40,16 +40,16 @@ EmployEvaluation.addMultipleClusters2Model(Criteria,subCriteria)
 EmployEvaluation.addNodeConnectionFromNodeToAllNodesOfCluster(GoalNode.name,Criteria.name)
 EmployEvaluation.addNodeConnectionFromNodeToAllNodesOfCluster("Work","Work Subcriteria")
 
-# when use printStruct command to display and valide the model structure
+# when use printStruct command to display and validate the model structure
 EmployEvaluation.printStruct()
 
-# when create a model, the model by default is a pairewise compare model
+# when create a model, the model by default is a pairwise compare model
 # we use setModelTypeRatings command to change the model to a ratings model
 EmployEvaluation.setModelTypeRatings()
 
 # to set up the ratings model, we add Criteria first
-# when add criteria model we add the bottom level criteria in the AHP model as criteria
-# we can use addCriteriaByVar command by specifying criteria object name
+# when add criteria to the rating model, we add the bottom level criteria in the AHP model as rating criteria
+# we can use addCriteriaByVar command by specifying criteria object/variable name
 # or we can use addCriteriaByName command by specifying criteria name
 EmployEvaluation.rateModel.addCriteriaByVar(Dependability,Education,Experience,Attitude,Leadership)
 EmployEvaluation.rateModel.addCriteriaByName("Quantity","Quality")
@@ -61,7 +61,7 @@ EmployEvaluation.rateModel.addCriteriaByName("Quantity","Quality")
 # then the alternatives will be created automatically
 EmployEvaluation.rateModel.addAlternativesByName("Jim Kendall","Sally Brown","John Carter","Mi Sung","Arturo Chavez")
 
-# 1. Create a new scale (make pairewise comparisons in Excel questionnaire)
+# 1. Create a new scale (make pairwise comparisons in Excel questionnaire)
 scale1=rate.RatScale("OutstandingtoUnsatisfactory")
 scale1.defineScaleByValue(None,False,"Outstanding","Very Good","Good","Below Average","Unsatisfactory")
 # add the scale to the model
