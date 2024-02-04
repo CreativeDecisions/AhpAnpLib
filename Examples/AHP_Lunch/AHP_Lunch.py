@@ -4,7 +4,6 @@ from AhpAnpLib import calcs_AHPLib as calc
 
 #create model
 lunchModel=str.Model("Lunch")
-print(lunchModel)
 
 #create nodes
 goal_node=str.Node("GoalNode",0)
@@ -24,6 +23,8 @@ cluster1=str.Cluster("2Criteria",1)
 cluster2=str.Cluster("3Alternatives",2)
 
 #add nodes to clusters
+#we can use addNode2Cluster to add one node to the cluster
+# or we can use addMultipleNodes2Cluster to add multiple nodes to the cluster all in once
 cluster0.addNode2Cluster(goal_node) 
 cluster1.addMultipleNodes2Cluster(menu,quality,price,speed)
 cluster2.addMultipleNodes2Cluster(alt1,alt2,alt3)
@@ -34,6 +35,7 @@ cluster1.printWithNodes()
 cluster2.printWithNodes()
 
 #add clusters to model 
+#we use addMultipleClusters2Model to add multiple clusters to the model
 lunchModel.addMultipleClusters2Model(cluster0,cluster1,cluster2)
 
 #set up node connections from Goal Node to all the nodes of the 2Criteria cluster
@@ -41,7 +43,7 @@ lunchModel.addNodeConnectionFromNodeToAllNodesOfCluster("GoalNode","2Criteria")
 #set up node connections from all the nodes of the 2Criteria cluster to all the nodes of the cluster 3Alternatives
 lunchModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("2Criteria","3Alternatives")
 
-# Print out model
+# Print out model structure to valide the connections
 lunchModel.printStruct()
 
 #export empty Excel questionnaire
