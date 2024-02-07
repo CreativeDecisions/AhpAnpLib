@@ -5,25 +5,26 @@ from AhpAnpLib import calcs_AHPLib as calc
 
 damModel=str.Model("Dam Model") #create model
 
-goal_cluster=str.Cluster("1Goal cluster",1) #create first cluster: cluster1
-goal_node=str.Node("Choose dam level",1) # create goal node to be placed in cluster1
-goal_cluster.addNode2Cluster(goal_node) # add goal_node to goal_cluster1
-damModel.addCluster2Model(goal_cluster) #Add cluster1 to lunchModel 
+goal_cluster=str.Cluster("1Goal cluster",1) #create first cluster: goal_cluster
+goal_node=str.Node("Choose dam level",1) # create goal_node to be placed in goal_cluster
+goal_cluster.addNode2Cluster(goal_node) # add goal_node to goal_cluster
+damModel.addCluster2Model(goal_cluster) #Add goal_cluster to the damModel 
 
-criteria_cluster2=str.Cluster("2Decision Criteria",2) #create second cluster: cluster 2
+criteria_cluster2=str.Cluster("2Decision Criteria",2) #create second cluster: criteria_cluster2
 
-criteria_node1=str.Node("Financial",21) #create nodes for criteria cluster
+criteria_node1=str.Node("Financial",21) #create nodes for criteria_cluster2
 criteria_node2=str.Node("Political",22)
 criteria_node3=str.Node("Environment protection",23)
 criteria_node4=str.Node("Social protection",24)
 
+#add all criteria nodes to the criteria_cluster2 using addMultipleNodes2Cluster command
 criteria_cluster2.addMultipleNodes2Cluster(criteria_node1,criteria_node2,criteria_node3,criteria_node4)
 
-damModel.addCluster2Model(criteria_cluster2) #add decision criteria cluster to model
+damModel.addCluster2Model(criteria_cluster2) #add criteria_cluster2 to the model
 
-criteria_cluster3=str.Cluster("3Decision Makers",3) #create third cluster: cluster 2
+criteria_cluster3=str.Cluster("3Decision Makers",3) #create third cluster: criteria_cluster3
 
-criteria_node31=str.Node("Congress",31) #create nodes for criteria cluster
+criteria_node31=str.Node("Congress",31) #create nodes for criteria_cluster3
 criteria_node32=str.Node("Dept of Interior",32)
 criteria_node33=str.Node("Courts",33)
 criteria_node34=str.Node("State",34)
@@ -31,11 +32,11 @@ criteria_node35=str.Node("Lobbies",35)
 
 criteria_cluster3.addMultipleNodes2Cluster(criteria_node31,criteria_node32,criteria_node33,criteria_node34,criteria_node35)
 
-damModel.addCluster2Model(criteria_cluster3) #add Decision Makers cluster to model
+damModel.addCluster2Model(criteria_cluster3) #add Decision Makers cluster (criteria_cluster3) to model
 
-criteria_cluster4=str.Cluster("4Factors",4) #create fourth cluster for Factors
+criteria_cluster4=str.Cluster("4Factors",4) #create criteria_cluster4 for Factors
 
-criteria_node41=str.Node("Clout",41) #create all nodes for Factors cluster 4 
+criteria_node41=str.Node("Clout",41) #create all nodes for Factors criteria_cluster4 
 criteria_node42=str.Node("Legal Position",42)
 criteria_node43=str.Node("Irreversability Environment",43)
 criteria_node44=str.Node("Archeological Problems",44)
@@ -46,42 +47,41 @@ criteria_cluster4.addMultipleNodes2Cluster(criteria_node41,criteria_node42,crite
 
 damModel.addCluster2Model(criteria_cluster4)#add Factors cluster to model
 
-criteria_cluster5=str.Cluster("5Groups Affected",5) #create cluster 5 Groups Affected 
+criteria_cluster5=str.Cluster("5Groups Affected",5) #create criteria_cluster5 Groups Affected 
 
-criteria_node51=str.Node("Farmers",51) #create nodes for Groups Affected cluster 5
+criteria_node51=str.Node("Farmers",51) #create nodes for Groups Affected criteria_cluster5
 criteria_node52=str.Node("Recreationists",52)
 criteria_node53=str.Node("Power Users",53)
 criteria_node54=str.Node("Environmentalists",54)
-
+#add nodes to the cluster
 criteria_cluster5.addMultipleNodes2Cluster(criteria_node51,criteria_node52,criteria_node53,criteria_node54)
 
-damModel.addCluster2Model(criteria_cluster5) #add cluster 5 Groups Affected to model
+damModel.addCluster2Model(criteria_cluster5) #add criteria_cluster5 Groups Affected to the model
 
-criteria_cluster6=str.Cluster("6Objectives",6) #create cluster 6 objectives 
+criteria_cluster6=str.Cluster("6Objectives",6) #create criteria_cluster6 objectives 
 
-criteria_node61=str.Node("Irrigation",61) #create nodes for Objectives Cluster 6
+criteria_node61=str.Node("Irrigation",61) #create nodes for Objectives in criteria_cluster6
 criteria_node62=str.Node("Flood Control",62)
 criteria_node63=str.Node("Full Water in Dam",63)
 criteria_node64=str.Node("Low Water in Dam",64)
 criteria_node65=str.Node("Cheap Power",65)
 criteria_node66=str.Node("Protect Environment",66)
-
+#add nodes to the cluster
 criteria_cluster6.addMultipleNodes2Cluster(criteria_node61,criteria_node62,criteria_node63,criteria_node64,criteria_node65,criteria_node66)
 
 
-damModel.addCluster2Model(criteria_cluster6) #add cluster 5 Groups Affected to model
+damModel.addCluster2Model(criteria_cluster6) #add criteria_cluster6 objectives to the model
 
-alternatives_cluster7=str.Cluster("7Alternatives",7) #create cluster 7 alterntives
+alternatives_cluster7=str.Cluster("7Alternatives",7) #create cluster alterntives_cluster7
 
-alternative_node71=str.Node("Full dam",71) #create nodes for Alternatives cluster 7
+alternative_node71=str.Node("Full dam",71) #create nodes for Alternatives
 alternative_node72=str.Node("Half-full dam",72)
-
+#add alternatives nodes to the cluster
 alternatives_cluster7.addMultipleNodes2Cluster(alternative_node71,alternative_node72)
-
+#add alternatives_cluster7 to the model
 damModel.addCluster2Model(alternatives_cluster7)
 
-
-
+#add connections
 damModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("1Goal cluster","2Decision Criteria")
 damModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("2Decision Criteria","3Decision Makers")
 damModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("3Decision Makers","4Factors")
@@ -93,7 +93,7 @@ damModel.addNodeConnectionFromTo("Environmentalists","Protect Environment")
 
 damModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("6Objectives","7Alternatives")
 
-# # Show nodes and connections
+# # Show nodes and cluster connections to validate the model structure
 damModel.showAllNodeConnections()
 print("___________________________________________________________")
 damModel.showAllClusterConnections()
