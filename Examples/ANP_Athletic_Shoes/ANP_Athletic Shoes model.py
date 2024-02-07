@@ -87,4 +87,5 @@ Shoesmodel.remNodeConnectionFromTo("Urban male","Product Line")
 
 #export questionnaires
 input.export4ExcelQuestFull(Shoesmodel,"Athletic Shoes model_empty.xlsx",verb=False)
-#calc.calcAHPMatricesSave2File(Shoesmodel,"Athletic Shoes model_filledIn.xlsx","Athletic Shoes model_results.xlsx",inputFileUse=True,normalbar=False,idealbar=True,verbal=False)
+#calculate and export results
+calc.calcAHPMatricesSave2File(Shoesmodel,"Athletic Shoes model_filledIn.xlsx","Athletic Shoes model_results.xlsx",inputFileUse=True,normalbar=False,idealbar=True,verbal=False)

@@ -1,0 +1,241 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		Adidas [color="#f57a64" style=filled]
+		Nike [color="#f57a64" style=filled]
+		Reebok [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Brand Image" [color="#64b4f5" style=filled]
+		Creativity [color="#64b4f5" style=filled]
+		Frequency [color="#64b4f5" style=filled]
+		"Print Ad." [color="#64b4f5" style=filled]
+		Television [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		Comfort [color="#63c273" style=filled]
+		Innovation [color="#63c273" style=filled]
+		"Product Line" [color="#63c273" style=filled]
+		Quality [color="#63c273" style=filled]
+		Style [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		Others [color="#f5e50c" style=filled]
+		"Professional athletes" [color="#f5e50c" style=filled]
+		Students [color="#f5e50c" style=filled]
+		Teenagers [color="#f5e50c" style=filled]
+		"Urban male" [color="#f5e50c" style=filled]
+	}
+	Adidas -> "Brand Image"
+	Adidas -> Creativity
+	Adidas -> Frequency
+	Adidas -> "Print Ad."
+	Adidas -> Television
+	Adidas -> Comfort
+	Adidas -> Innovation
+	Adidas -> "Product Line"
+	Adidas -> Quality
+	Adidas -> Style
+	Adidas -> Others
+	Adidas -> "Professional athletes"
+	Adidas -> Students
+	Adidas -> Teenagers
+	Adidas -> "Urban male"
+	Nike -> "Brand Image"
+	Nike -> Creativity
+	Nike -> Frequency
+	Nike -> "Print Ad."
+	Nike -> Television
+	Nike -> Comfort
+	Nike -> Innovation
+	Nike -> "Product Line"
+	Nike -> Quality
+	Nike -> Style
+	Nike -> Others
+	Nike -> "Professional athletes"
+	Nike -> Students
+	Nike -> Teenagers
+	Nike -> "Urban male"
+	Reebok -> "Brand Image"
+	Reebok -> Creativity
+	Reebok -> Frequency
+	Reebok -> "Print Ad."
+	Reebok -> Television
+	Reebok -> Comfort
+	Reebok -> Innovation
+	Reebok -> "Product Line"
+	Reebok -> Quality
+	Reebok -> Style
+	Reebok -> Others
+	Reebok -> "Professional athletes"
+	Reebok -> Students
+	Reebok -> Teenagers
+	Reebok -> "Urban male"
+	"Brand Image" -> Adidas
+	"Brand Image" -> Nike
+	"Brand Image" -> Reebok
+	"Brand Image" -> Others
+	"Brand Image" -> "Professional athletes"
+	"Brand Image" -> Students
+	"Brand Image" -> Teenagers
+	"Brand Image" -> "Urban male"
+	Creativity -> Adidas
+	Creativity -> Nike
+	Creativity -> Reebok
+	Creativity -> Comfort
+	Creativity -> Innovation
+	Creativity -> "Product Line"
+	Creativity -> Quality
+	Creativity -> Style
+	Creativity -> Others
+	Creativity -> "Professional athletes"
+	Creativity -> Students
+	Creativity -> Teenagers
+	Creativity -> "Urban male"
+	Creativity -> Television
+	Creativity -> "Print Ad."
+	Frequency -> Adidas
+	Frequency -> Nike
+	Frequency -> Reebok
+	Frequency -> Others
+	Frequency -> "Professional athletes"
+	Frequency -> Students
+	Frequency -> Teenagers
+	Frequency -> "Urban male"
+	Frequency -> Television
+	Frequency -> "Print Ad."
+	"Print Ad." -> Adidas
+	"Print Ad." -> Nike
+	"Print Ad." -> Reebok
+	"Print Ad." -> Comfort
+	"Print Ad." -> Innovation
+	"Print Ad." -> "Product Line"
+	"Print Ad." -> Quality
+	"Print Ad." -> Style
+	"Print Ad." -> Others
+	"Print Ad." -> "Professional athletes"
+	"Print Ad." -> Students
+	"Print Ad." -> Teenagers
+	"Print Ad." -> "Urban male"
+	"Print Ad." -> Creativity
+	"Print Ad." -> Frequency
+	Television -> Adidas
+	Television -> Nike
+	Television -> Reebok
+	Television -> Comfort
+	Television -> Innovation
+	Television -> "Product Line"
+	Television -> Quality
+	Television -> Style
+	Television -> Others
+	Television -> "Professional athletes"
+	Television -> Students
+	Television -> Teenagers
+	Television -> "Urban male"
+	Television -> Creativity
+	Television -> Frequency
+	Comfort -> Adidas
+	Comfort -> Nike
+	Comfort -> Reebok
+	Comfort -> Others
+	Comfort -> "Professional athletes"
+	Comfort -> Students
+	Comfort -> Teenagers
+	Comfort -> "Urban male"
+	Innovation -> Adidas
+	Innovation -> Nike
+	Innovation -> Reebok
+	Innovation -> Others
+	Innovation -> "Professional athletes"
+	Innovation -> Students
+	Innovation -> Teenagers
+	Innovation -> "Urban male"
+	"Product Line" -> Adidas
+	"Product Line" -> Nike
+	"Product Line" -> Reebok
+	"Product Line" -> Others
+	"Product Line" -> "Professional athletes"
+	"Product Line" -> Students
+	"Product Line" -> Teenagers
+	"Product Line" -> "Urban male"
+	Quality -> Adidas
+	Quality -> Nike
+	Quality -> Reebok
+	Quality -> Others
+	Quality -> "Professional athletes"
+	Quality -> Students
+	Quality -> Teenagers
+	Quality -> "Urban male"
+	Style -> Adidas
+	Style -> Nike
+	Style -> Reebok
+	Style -> Others
+	Style -> "Professional athletes"
+	Style -> Students
+	Style -> Teenagers
+	Style -> "Urban male"
+	Others -> Adidas
+	Others -> Nike
+	Others -> Reebok
+	Others -> "Brand Image"
+	Others -> Creativity
+	Others -> Frequency
+	Others -> "Print Ad."
+	Others -> Television
+	Others -> Comfort
+	Others -> Innovation
+	Others -> "Product Line"
+	Others -> Quality
+	Others -> Style
+	"Professional athletes" -> Adidas
+	"Professional athletes" -> Nike
+	"Professional athletes" -> Reebok
+	"Professional athletes" -> "Brand Image"
+	"Professional athletes" -> Creativity
+	"Professional athletes" -> Frequency
+	"Professional athletes" -> "Print Ad."
+	"Professional athletes" -> Television
+	"Professional athletes" -> Comfort
+	"Professional athletes" -> Innovation
+	"Professional athletes" -> Quality
+	"Professional athletes" -> Style
+	Students -> Adidas
+	Students -> Nike
+	Students -> Reebok
+	Students -> "Brand Image"
+	Students -> Creativity
+	Students -> Frequency
+	Students -> "Print Ad."
+	Students -> Television
+	Students -> Comfort
+	Students -> Innovation
+	Students -> Quality
+	Students -> Style
+	Teenagers -> Adidas
+	Teenagers -> Nike
+	Teenagers -> Reebok
+	Teenagers -> "Brand Image"
+	Teenagers -> Creativity
+	Teenagers -> Frequency
+	Teenagers -> "Print Ad."
+	Teenagers -> Television
+	Teenagers -> Comfort
+	Teenagers -> Innovation
+	Teenagers -> "Product Line"
+	Teenagers -> Quality
+	Teenagers -> Style
+	"Urban male" -> Adidas
+	"Urban male" -> Nike
+	"Urban male" -> Reebok
+	"Urban male" -> "Brand Image"
+	"Urban male" -> Creativity
+	"Urban male" -> Frequency
+	"Urban male" -> "Print Ad."
+	"Urban male" -> Television
+	"Urban male" -> Innovation
+	"Urban male" -> Quality
+	"Urban male" -> Style
+}
