@@ -3,7 +3,10 @@ from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 
+#Hamburger model
 hamburger=str.Model("Hamburger Marketshare")
+
+#1 Alternatives
 clusterAlternatives=str.Cluster("1 Alternatives",0)
 a1 = str.Node("1 McDonald's",1)
 a2 = str.Node("2 Burger King",2)
@@ -42,7 +45,7 @@ clusterOther.addMultipleNodes2Cluster(o1,o2,o3,o4,o5,o6,o7,o8)
 
 hamburger.addMultipleClusters2Model(clusterAlternatives,clusterAdvertising,clusterQualityofFood,clusterOther)
 
-#alternative nodes connects to all nodes expect itself in Alternatives cluster
+#alternative nodes connects to all nodes except themselves in Alternatives cluster
 hamburger.addNodeConnectionFromTo("1 McDonald's","2 Burger King")
 hamburger.addNodeConnectionFromTo("1 McDonald's","3 Wendy's")
 hamburger.addNodeConnectionFromTo("2 Burger King","1 McDonald's")
@@ -51,7 +54,7 @@ hamburger.addNodeConnectionFromTo("3 Wendy's","1 McDonald's")
 hamburger.addNodeConnectionFromTo("3 Wendy's","2 Burger King")
 
 
-#alternative nodes connects to all nodes in all other clusters
+#alternative nodes connect to all nodes in all other clusters
 hamburger.addNodeConnectionFromAllNodesToAllNodesOfCluster("1 Alternatives","2 Advertising")
 hamburger.addNodeConnectionFromAllNodesToAllNodesOfCluster("1 Alternatives","3 Quality of Food")
 hamburger.addNodeConnectionFromAllNodesToAllNodesOfCluster("1 Alternatives","4 Other")
@@ -80,7 +83,7 @@ hamburger.addNodeConnectionFromAllNodesToAllNodesOfCluster("3 Quality of Food","
 hamburger.addNodeConnectionFromTo("3 Portion","1 Price")
 hamburger.addNodeConnectionFromTo("3 Portion","7 Take-out")
 
-#price node connects
+#price node connect alternatives and ..
 hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("1 Price","1 Alternatives")
 
 hamburger.addNodeConnectionFromTo("1 Price","2 Promotion")
@@ -133,22 +136,10 @@ hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("8 Reputation","2 Adverti
 hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("8 Reputation","3 Quality of Food" )
 hamburger.addNodeConnectionFromNodeToAllNodesOfCluster("8 Reputation","4 Other" )
 
-# Excel
+# Excel questionnaire
 input.export4ExcelQuestFull(hamburger,"HamburgerModel_Excel_empty.xlsx",False)
 
-#Import Excel with filledin
-input.importFromExcel(hamburger,'HamburgerModel_Excel_filledIn.xlsx',0)
-
-# calculate supermatrix 
-# unweighted supermatrix, weighted supermatrix and limit supermatrix
-unWighted=calc.calcUnweightedSuperMatrix(hamburger)
-weighted = calc.calcWeightedSupermatrix(hamburger)
-limit = calc.calcLimitANP(weighted,hamburger)
-
-#plot
-hamburger.drawGraphModel()
-hamburger.drawGraphClusters()
-
-calc.calcAHPMatricesSave2File(hamburger,"HamburgerModel_Excel_filledIn.xlsx","HamburgerModel_Excel_results.xlsx",True,False,True,True)
+#Import Excel with filledin questionnaire, calculate results and export to Excel file
+calc.calcAHPMatricesSave2File(hamburger,"HamburgerModel_Excel_filledIn.xlsx","HamburgerModel_Excel_results.xlsx",True,False,True,False)
 
 
