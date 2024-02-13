@@ -3,16 +3,15 @@ from AhpAnpLib import inputs_AHPLib as input
 from AhpAnpLib import structs_AHPLib as str
 from AhpAnpLib import calcs_AHPLib as calc
 
-import pandas as pd
 
 #Create model
 Reservoir = str.Model("Water Reservoir")
 
-#Create two cluster
+#Create two clusters
 Purposes = str.Cluster("1Purposes",1)
 Alternatives = str.Cluster("2Alternative Water Levels",2)
 
-#Create nodes in Purposes
+#Create nodes in Purposes clusters and add them to the cluster
 FloodControl = str.Node("1FloodControl",1)
 Recreation = str.Node("2Recreation",2)
 Hydroelectric = str.Node("3Hydroelectric Power",3)
@@ -26,7 +25,7 @@ Hi = str.Node("3Hi",3)
 
 Alternatives.addMultipleNodes2Cluster(Lo,Med,Hi)
 
-#Include clusters in the model
+#Add clusters to the model
 Reservoir.addMultipleClusters2Model(Purposes,Alternatives)
 
 #Add connections from all nodes to all nodes
@@ -36,5 +35,5 @@ Reservoir.addNodeConnectionFromAllNodesToAllNodesOfCluster("2Alternative Water L
 #Export Questionnaires
 input.export4ExcelQuestFull(Reservoir,"WaterReservior_Full_empty.xlsx")
 
-input.importFromExcel(Reservoir,"WaterReservior_Full_filledIn.xlsx",0)
+#Import filledin questionnaire to calculate results and export results to Excel file
 calc.calcAHPMatricesSave2File(Reservoir,"WaterReservior_Full_filledIn.xlsx","WaterReservior_Full_results.xlsx",True,False,True,True)
