@@ -5,6 +5,6 @@ from AhpAnpLib import calcs_AHPLib as calc
 
 #create model
 superModel=str.Model("My Model")
-input.readSupermatrixFromExcel(superModel,"ExpN_readSupermatrix.xlsx","Sheet1", False)
+input.readSupermatrixFromExcel(superModel,"ExpN_readSupermatrix.xlsx","Supermatrix", False)
 superModel.printStruct()
 calc.calcAHPMatricesSave2File(superModel,"","ExpN_readSupermatrix_pw_results.xlsx",False,False,True,False)
