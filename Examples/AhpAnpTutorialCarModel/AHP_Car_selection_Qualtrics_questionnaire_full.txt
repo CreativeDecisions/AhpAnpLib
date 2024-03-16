@@ -1,0 +1,606 @@
+[[AdvancedFormat]]
+[[Block: With respect to: GoalNode]]
+
+[[Question:MC:SingleAnswer]]
+1. With respect to GoalNode which one is more preferred:
+
+[[Choices]]
+1Cost
+2Reliability
+
+[[Question:MC:Dropdown]]
+2. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+3. With respect to GoalNode which one is more preferred:
+
+[[Choices]]
+1Cost
+3Performance
+
+[[Question:MC:Dropdown]]
+4. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+5. With respect to GoalNode which one is more preferred:
+
+[[Choices]]
+1Cost
+4Comfort and Style
+
+[[Question:MC:Dropdown]]
+6. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+7. With respect to GoalNode which one is more preferred:
+
+[[Choices]]
+2Reliability
+3Performance
+
+[[Question:MC:Dropdown]]
+8. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+9. With respect to GoalNode which one is more preferred:
+
+[[Choices]]
+2Reliability
+4Comfort and Style
+
+[[Question:MC:Dropdown]]
+10. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+11. With respect to GoalNode which one is more preferred:
+
+[[Choices]]
+3Performance
+4Comfort and Style
+
+[[Question:MC:Dropdown]]
+12. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1Cost]]
+
+[[Question:MC:SingleAnswer]]
+13. With respect to 1Cost which one is more preferred:
+
+[[Choices]]
+1.1Initial Cost
+1.2Monthly Payment
+
+[[Question:MC:Dropdown]]
+14. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+15. With respect to 1Cost which one is more preferred:
+
+[[Choices]]
+1.1Initial Cost
+1.3Resale Value
+
+[[Question:MC:Dropdown]]
+16. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+17. With respect to 1Cost which one is more preferred:
+
+[[Choices]]
+1.2Monthly Payment
+1.3Resale Value
+
+[[Question:MC:Dropdown]]
+18. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 2Reliability]]
+
+[[Question:MC:SingleAnswer]]
+19. With respect to 2Reliability which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+2Honda Odyssey
+
+[[Question:MC:Dropdown]]
+20. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+21. With respect to 2Reliability which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+22. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+23. With respect to 2Reliability which one is more preferred:
+
+[[Choices]]
+2Honda Odyssey
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+24. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 3Performance]]
+
+[[Question:MC:SingleAnswer]]
+25. With respect to 3Performance which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+2Honda Odyssey
+
+[[Question:MC:Dropdown]]
+26. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+27. With respect to 3Performance which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+28. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+29. With respect to 3Performance which one is more preferred:
+
+[[Choices]]
+2Honda Odyssey
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+30. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 4Comfort and Style]]
+
+[[Question:MC:SingleAnswer]]
+31. With respect to 4Comfort and Style which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+2Honda Odyssey
+
+[[Question:MC:Dropdown]]
+32. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+33. With respect to 4Comfort and Style which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+34. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+35. With respect to 4Comfort and Style which one is more preferred:
+
+[[Choices]]
+2Honda Odyssey
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+36. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1.1Initial Cost]]
+
+[[Question:MC:SingleAnswer]]
+37. With respect to 1.1Initial Cost which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+2Honda Odyssey
+
+[[Question:MC:Dropdown]]
+38. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+39. With respect to 1.1Initial Cost which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+40. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+41. With respect to 1.1Initial Cost which one is more preferred:
+
+[[Choices]]
+2Honda Odyssey
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+42. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1.2Monthly Payment]]
+
+[[Question:MC:SingleAnswer]]
+43. With respect to 1.2Monthly Payment which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+2Honda Odyssey
+
+[[Question:MC:Dropdown]]
+44. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+45. With respect to 1.2Monthly Payment which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+46. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+47. With respect to 1.2Monthly Payment which one is more preferred:
+
+[[Choices]]
+2Honda Odyssey
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+48. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1.3Resale Value]]
+
+[[Question:MC:SingleAnswer]]
+49. With respect to 1.3Resale Value which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+2Honda Odyssey
+
+[[Question:MC:Dropdown]]
+50. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+51. With respect to 1.3Resale Value which one is more preferred:
+
+[[Choices]]
+1Toyota Highlander
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+52. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+[[Question:MC:SingleAnswer]]
+53. With respect to 1.3Resale Value which one is more preferred:
+
+[[Choices]]
+2Honda Odyssey
+3Subaru Outback
+
+[[Question:MC:Dropdown]]
+54. By how much?
+
+[[Choices]]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+[[Block: With respect to: 1Toyota Highlander]]
+[[Block: With respect to: 2Honda Odyssey]]
+[[Block: With respect to: 3Subaru Outback]]

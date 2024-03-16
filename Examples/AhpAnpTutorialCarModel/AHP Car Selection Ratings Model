@@ -1,0 +1,38 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		GoalNode [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1Cost" [color="#64b4f5" style=filled]
+		"2Reliability" [color="#64b4f5" style=filled]
+		"3Performance" [color="#64b4f5" style=filled]
+		"4Comfort and Style" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"1.1Initial Cost" [color="#63c273" style=filled]
+		"1.2Monthly Payment" [color="#63c273" style=filled]
+		"1.3Resale Value" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"1Toyota Highlander" [color="#f5e50c" style=filled]
+		"2Honda Odyssey" [color="#f5e50c" style=filled]
+		"3Subaru Outback" [color="#f5e50c" style=filled]
+		"4Acura TL" [color="#f5e50c" style=filled]
+		"5Toyota Camry" [color="#f5e50c" style=filled]
+		"6Honda Civic" [color="#f5e50c" style=filled]
+		"7Fiat" [color="#f5e50c" style=filled]
+		"8MiniCooper" [color="#f5e50c" style=filled]
+		"9Kia Rio" [color="#f5e50c" style=filled]
+	}
+	GoalNode -> "1Cost"
+	GoalNode -> "2Reliability"
+	GoalNode -> "3Performance"
+	GoalNode -> "4Comfort and Style"
+	"1Cost" -> "1.1Initial Cost"
+	"1Cost" -> "1.2Monthly Payment"
+	"1Cost" -> "1.3Resale Value"
+}

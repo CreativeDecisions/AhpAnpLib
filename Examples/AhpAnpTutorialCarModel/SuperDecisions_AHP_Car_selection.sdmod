@@ -1,0 +1,361 @@
+set top_net [getTopNet $net]
+set SAVED_WITH_VERSION {3.0.0 made on Tue, 30 Aug 2016 14:08:20 -0400.  VCRevInfo 3068.  Installed on MacOSX}
+setDefaultCompareMode $net switch_to_matrix
+set x 133
+set y 460
+set desc {The cluster to contain the goal node}
+set name {1Goal}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "-*-Arial-bold-r-normal-*-28-*-*-*-*-*"
+set width 52
+set height 81
+set clusterName {1Goal}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Goal Node}
+set desc {This is the goal node and the goal is to select the best car}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 398
+set y 512
+set desc {The criteria for buying a car}
+set name {2Criteria}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "-*-Arial-bold-r-normal-*-28-*-*-*-*-*"
+set width 344
+set height 131
+set clusterName {2Criteria}
+set clusterCompareWord {Preference}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1Cost}
+set desc {}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2Reliability}
+set desc {}
+set x 0
+set y 35
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3Performance}
+set desc {}
+set x 0
+set y 70
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {4Comfort and Style}
+set desc {4Comfort and Style}
+set x 0
+set y 105
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 547
+set y 855
+set desc {These are the cars that are being evaluated for purchase}
+set name {3Alternatives}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "-*-Arial-bold-r-normal-*-28-*-*-*-*-*"
+set width 642
+set height 60
+set clusterName {3Alternatives}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1Toyota Highlander}
+set desc {StartingPrice:$40,665
+Combined MPG: 25 MPG
+Known for reliability, often lower maintenance costs.
+Approximately $730 per month
+Strong reputation for reliability and resale value.
+Well-regarded for durability and practicality.
+
+Spacious interior with good seating comfort.
+Smooth ride, especially on highways.}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {2Honda Odyssey}
+set desc {Starting price:$37,840
+CombinedMPG: 27 MPG
+Monthly payment: approximately:$680
+Known for reliability, reasonable maintenance costs.
+Family-friendly with versatile seating and features.
+Known for comfort, practicality, and Honda's reputation for quality.
+
+pacious cabin with configurable seating.
+Smooth ride, ideal for long family trips.}
+set x 0
+set y 35
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {3Subaru Outback}
+set desc {Starting price:$28,895
+CombinedMPG: 29 MPG
+Monthly payment: approximately:$610
+Popular among outdoor enthusiasts and families.
+Rugged image, known for safety and versatility.
+Known for comfort, practicality, and Honda's reputation for quality.Spacious interior with ample cargo room.
+All-wheel drive provides confidence in various road conditions.}
+set x 0
+set y 70
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 901
+set y 565
+set desc {}
+set name {CostSubCriteria}
+set color gainsboro
+set iconUU {}
+set iconFont "myDefaultFontCluster"
+set winFont "myDefaultFontCluster"
+set width 170
+set height 180
+set clusterName {CostSubCriteria}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {1.1Initial Cost}
+set desc {}
+set x 0
+set y 0
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {1.2Monthly Payment}
+set desc {}
+set x 0
+set y 35
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {1.3Resale Value}
+set desc {}
+set x 0
+set y 70
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {1Goal}
+set final {2Criteria}
+connectClusters $net $init $final
+set init {2Criteria}
+set final {3Alternatives}
+connectClusters $net $init $final
+set init {CostSubCriteria}
+set final {3Alternatives}
+connectClusters $net $init $final
+set init {2Criteria}
+set final {CostSubCriteria}
+connectClusters $net $init $final
+nodeCompareFinished $net {1.1Initial Cost} {3Alternatives} 1
+setNodeCompareWord  $net {1.1Initial Cost} {3Alternatives} {Preference}
+setNodeCompareDirectMult  $net {1.1Initial Cost} {3Alternatives} -109027.0
+nodeCompareFinished $net {1.2Monthly Payment} {3Alternatives} 1
+setNodeCompareWord  $net {1.2Monthly Payment} {3Alternatives} {Preference}
+setNodeCompareDirectMult  $net {1.2Monthly Payment} {3Alternatives} -1630.0
+nodeCompareFinished $net {1.3Resale Value} {3Alternatives} 1
+setNodeCompareWord  $net {1.3Resale Value} {3Alternatives} {Preference}
+setNodeCompareDirectMult  $net {1.3Resale Value} {3Alternatives} 2019.99999
+setNodeCompareWord  $net {1Cost} {CostSubCriteria} {Preference}
+nodeCompareFinished $net {2Reliability} {3Alternatives} 1
+setNodeCompareWord  $net {2Reliability} {3Alternatives} {Preference}
+nodeCompareFinished $net {3Performance} {3Alternatives} 1
+setNodeCompareWord  $net {3Performance} {3Alternatives} {Preference}
+setNodeCompareWord  $net {4Comfort and Style} {3Alternatives} {Preference}
+nodeCompareFinished $net {Goal Node} {2Criteria} 1
+setNodeCompareWord  $net {Goal Node} {2Criteria} {Preference}
+setNetCompareWord $net {Preference}
+setNetClusterColor $net {gainsboro}
+setNetNodeColor $net {#F0F8FF}
+setNetClusterWinFont $net {myDefaultFontCluster}
+setNetClusterIconFont $net {myDefaultFontCluster}
+setNetNodeFont $net {myDefaultFontNode}
+setFormulaType $net 0
+#Working on net 0
+catch {limitPowerOptions $net 2 0}
+c-network readAllCompares -network $net -source {
+4
+1Goal
+1
+Goal Node
+2Criteria
+4
+1Cost
+2Reliability
+3Performance
+4Comfort and Style
+3Alternatives
+3
+1Toyota Highlander
+2Honda Odyssey
+3Subaru Outback
+CostSubCriteria
+3
+1.1Initial Cost
+1.2Monthly Payment
+1.3Resale Value
+
+4 1,0 0,1 2,2 3,3 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+0
+1 1,0 
+
+1
+2 2,0 3,1 
+ 0.000000 
+
+2
+0 
+
+3
+1 2,0 
+
+0,0,1
+4 3,0 0,1 1,2 2,3 
+ 0.333333  0.333333  3.000000 
+ 3.000000  5.000000 
+ 3.000000 
+
+1,0,2
+0 
+
+1,1,2
+3 0,0 1,1 2,2 
+ 3.000000  5.000000 
+ 3.000000 
+
+1,2,2
+3 0,0 1,1 2,2 
+ 5.000000  3.000000 
+ 0.300000 
+
+1,3,2
+3 0,0 1,1 2,2 
+ 1.500000  4.000000 
+ 3.000000 
+
+1,0,3
+3 0,0 1,1 2,2 
+ 3.000000  7.000000 
+ 5.000000 
+
+1,1,3
+0 
+
+1,2,3
+0 
+
+1,3,3
+0 
+
+3,0,2
+3 0,0 1,1 2,2 
+ 0.973771  0.802572 
+ 0.824189 
+
+3,1,2
+3 2,0 1,1 0,2 
+ 1.145832  1.250000 
+ 1.090909 
+
+3,2,2
+3 0,0 1,1 2,2 
+ 0.833333  0.769231 
+ 0.769231 
+
+}
+
+set FORMAT 1
+recreateNetInsideFrameOnly $net

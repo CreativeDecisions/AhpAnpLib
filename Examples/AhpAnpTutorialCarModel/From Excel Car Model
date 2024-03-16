@@ -1,0 +1,50 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		GoalNode [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"1Cost" [color="#64b4f5" style=filled]
+		"2Reliability" [color="#64b4f5" style=filled]
+		"3Performance" [color="#64b4f5" style=filled]
+		"4Comfort and Style" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"1.1Initial Cost" [color="#63c273" style=filled]
+		"1.2Monthly Payment" [color="#63c273" style=filled]
+		"1.3Resale Value" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"1Toyota Highlander" [color="#f5e50c" style=filled]
+		"2Honda Odyssey" [color="#f5e50c" style=filled]
+		"3Subaru Outback" [color="#f5e50c" style=filled]
+	}
+	GoalNode -> "1Cost"
+	GoalNode -> "2Reliability"
+	GoalNode -> "3Performance"
+	GoalNode -> "4Comfort and Style"
+	"1Cost" -> "1.1Initial Cost"
+	"1Cost" -> "1.2Monthly Payment"
+	"1Cost" -> "1.3Resale Value"
+	"2Reliability" -> "1Toyota Highlander"
+	"2Reliability" -> "2Honda Odyssey"
+	"2Reliability" -> "3Subaru Outback"
+	"3Performance" -> "1Toyota Highlander"
+	"3Performance" -> "2Honda Odyssey"
+	"3Performance" -> "3Subaru Outback"
+	"4Comfort and Style" -> "1Toyota Highlander"
+	"4Comfort and Style" -> "2Honda Odyssey"
+	"4Comfort and Style" -> "3Subaru Outback"
+	"1.1Initial Cost" -> "1Toyota Highlander"
+	"1.1Initial Cost" -> "2Honda Odyssey"
+	"1.1Initial Cost" -> "3Subaru Outback"
+	"1.2Monthly Payment" -> "1Toyota Highlander"
+	"1.2Monthly Payment" -> "2Honda Odyssey"
+	"1.2Monthly Payment" -> "3Subaru Outback"
+	"1.3Resale Value" -> "1Toyota Highlander"
+	"1.3Resale Value" -> "2Honda Odyssey"
+	"1.3Resale Value" -> "3Subaru Outback"
+}
