@@ -17,3 +17,6 @@ carModel.printStruct()
 input.export4ExcelQuestFull(carModel,"AHP_Car_selection_Excel_questionnaire_empty.xlsx",True)
 #import filled-in questionnaire, calculate results and export the results to Excel file
 calc.calcAHPMatricesSave2File(carModel,"AHP_Car_selection_Excel_questionnaire_filledin.xlsx","Excel_AHP_Car_selection_Excel_results.xlsx",True,False,True,False)
+
+#import group decision, calculate results and export group decision results
+calc.calcAHPMatricesSave2File(carModel,"AHP_Car_selection_Excel_questionnaire_filledin_group.xlsx","Excel_AHP_Car_selection_Group_results.xlsx",True,False,True,False)
