@@ -1,0 +1,26 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Hertz EV vs ICE" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Initial Investment" [color="#64b4f5" style=filled]
+		Infrastructure [color="#64b4f5" style=filled]
+		Training [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		EV [color="#63c273" style=filled]
+		ICE [color="#63c273" style=filled]
+	}
+	"Hertz EV vs ICE" -> "Initial Investment"
+	"Hertz EV vs ICE" -> Infrastructure
+	"Hertz EV vs ICE" -> Training
+	"Initial Investment" -> EV
+	"Initial Investment" -> ICE
+	Infrastructure -> EV
+	Infrastructure -> ICE
+	Training -> EV
+	Training -> ICE
+}

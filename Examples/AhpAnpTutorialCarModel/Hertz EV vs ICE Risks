@@ -1,0 +1,26 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Hertz EV vs ICE" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Range Anxiety" [color="#64b4f5" style=filled]
+		"Technology Dependence" [color="#64b4f5" style=filled]
+		"Market Acceptance" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		EV [color="#63c273" style=filled]
+		ICE [color="#63c273" style=filled]
+	}
+	"Hertz EV vs ICE" -> "Range Anxiety"
+	"Hertz EV vs ICE" -> "Technology Dependence"
+	"Hertz EV vs ICE" -> "Market Acceptance"
+	"Range Anxiety" -> EV
+	"Range Anxiety" -> ICE
+	"Technology Dependence" -> EV
+	"Technology Dependence" -> ICE
+	"Market Acceptance" -> EV
+	"Market Acceptance" -> ICE
+}

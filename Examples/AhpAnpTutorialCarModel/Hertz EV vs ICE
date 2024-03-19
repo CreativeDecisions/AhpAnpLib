@@ -1,0 +1,25 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		GoalNode [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		Sustainability [color="#64b4f5" style=filled]
+		"Financial Viability" [color="#64b4f5" style=filled]
+		"Customer Experience" [color="#64b4f5" style=filled]
+		"Technological Innovation" [color="#64b4f5" style=filled]
+		"Market Competitiveness" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		Benefits [color="#63c273" style=filled]
+		Opportunities [color="#63c273" style=filled]
+		Costs [color="#63c273" style=filled]
+		Risks [color="#63c273" style=filled]
+	}
+	GoalNode -> "Financial Viability"
+	GoalNode -> "Customer Experience"
+	GoalNode -> "Technological Innovation"
+	GoalNode -> "Market Competitiveness"
+}

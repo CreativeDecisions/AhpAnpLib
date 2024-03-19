@@ -1,0 +1,26 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Hertz EV vs ICE" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Government Incentives" [color="#64b4f5" style=filled]
+		Partnerships [color="#64b4f5" style=filled]
+		"Brand Image" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		EV [color="#63c273" style=filled]
+		ICE [color="#63c273" style=filled]
+	}
+	"Hertz EV vs ICE" -> "Government Incentives"
+	"Hertz EV vs ICE" -> Partnerships
+	"Hertz EV vs ICE" -> "Brand Image"
+	"Government Incentives" -> EV
+	"Government Incentives" -> ICE
+	Partnerships -> EV
+	Partnerships -> ICE
+	"Brand Image" -> EV
+	"Brand Image" -> ICE
+}

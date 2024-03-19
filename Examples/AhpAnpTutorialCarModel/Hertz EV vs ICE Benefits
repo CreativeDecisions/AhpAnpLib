@@ -1,0 +1,52 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Hertz EV vs ICE" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Performance Factors" [color="#64b4f5" style=filled]
+		"Market Factors" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"Operating Costs" [color="#63c273" style=filled]
+		Investment [color="#63c273" style=filled]
+		"Technological Innovation" [color="#63c273" style=filled]
+		"Environmental Impact" [color="#63c273" style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		"Market Positioning" [color="#f5e50c" style=filled]
+		Availability [color="#f5e50c" style=filled]
+		Familiarity [color="#f5e50c" style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		EV [color="#cb7bed" style=filled]
+		ICE [color="#cb7bed" style=filled]
+	}
+	"Hertz EV vs ICE" -> "Performance Factors"
+	"Hertz EV vs ICE" -> "Market Factors"
+	"Performance Factors" -> "Operating Costs"
+	"Performance Factors" -> Investment
+	"Performance Factors" -> "Technological Innovation"
+	"Performance Factors" -> "Environmental Impact"
+	"Market Factors" -> "Market Positioning"
+	"Market Factors" -> Availability
+	"Market Factors" -> Familiarity
+	"Operating Costs" -> EV
+	"Operating Costs" -> ICE
+	Investment -> EV
+	Investment -> ICE
+	"Technological Innovation" -> EV
+	"Technological Innovation" -> ICE
+	"Environmental Impact" -> EV
+	"Environmental Impact" -> ICE
+	"Market Positioning" -> EV
+	"Market Positioning" -> ICE
+	Availability -> EV
+	Availability -> ICE
+	Familiarity -> EV
+	Familiarity -> ICE
+}
