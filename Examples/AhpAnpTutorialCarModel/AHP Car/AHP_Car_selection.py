@@ -66,10 +66,6 @@ carModel.addNodeConnectionFromAllNodesToAllNodesOfCluster("CostSubCriteria","3Al
 #print out model to help us to do sanity check
 carModel.printStruct()
 
-#show nodes and clusterconnections to help us to check connections
-carModel.drawGraphNodes()
-carModel.drawGraphClusters()
-
 #the graph of the model will be generated in the same folder
 #filepath and filename can be specified
 carModel.drawGraphModel()
